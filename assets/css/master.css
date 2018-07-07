@@ -270,6 +270,13 @@ body {
     display: none
   }
 
+ .card_1,.card_3 {
+   display: none
+ }
+
+ .card_2 {
+   width: 70%;
+ }
 }
 
 @media (max-width: 1050px) {
@@ -282,15 +289,27 @@ body {
     width: 90%;
   }
 
+  .about_background {
+    height: 100%
+  }
+
+ .about_text {
+   height: 100%;
+ }
+
   .matches {
-    
+
   }
 }
 
 @media (max-width: 500px) {
 
   .about_text h1 {
-    font-size: 70rem
+    font-size: 7em
+  }
+
+  .about_text p {
+    font-size: 40em
   }
 
 }
