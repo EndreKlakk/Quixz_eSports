@@ -1,11 +1,10 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
 
-
 body {
   margin: 0;
   padding: 0;
-  font-family: "Raleway";
+  font-family: "Raleway, Lato";
   color: #FFF;
   overflow-x: hidden;
 }
