@@ -113,3 +113,120 @@ body {
   display: block;
   padding-top: 2em
 }
+
+.team {
+  height: 90vh;
+  background-color: #232323;
+  margin: 0;
+  padding: 8rem;
+}
+
+.team h1 {
+  font-size: 6em;
+  color: #F8B52A;
+  margin-top: -4.5rem;
+  text-align: center;
+}
+
+.team h1::before {
+  content: "";
+  width: 10%;
+  display: block;
+  margin: 0 auto;
+  background-color: #F8B52A;
+  height: .5rem;
+  margin-bottom: 2rem
+}
+
+.team_inner {
+  width: 100%;
+  background-color: #F8B52A;
+  height: 90%;
+}
+
+.matches {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.matches img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  z-index: -1
+}
+
+.matches h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 7em;
+  padding-top: 1rem;
+  text-shadow: 0 0 30px #000;
+}
+
+.matches span {
+  display: block;
+  line-height: 1.5rem;
+  font-size: 4.5rem;
+  color: #F8B52A
+}
+
+.matches_cards {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.card_body{
+  background: linear-gradient(to top right, #fff, #dddddd00);
+  width: 20vw;
+  height: 60vh;
+  margin: 5%;
+  display: inline-block;
+}
+
+.card_body h2 {
+  font-size: 3em;
+  margin: 1rem 0;
+  text-shadow: 0 0 30px #000;
+}
+
+.card_body h3 {
+  color: #F8B52A;
+  margin: 0;
+  text-shadow: 0 0 30px #000;
+  font-size: 7em;
+}
+
+.card_body span {
+  display: block;
+  margin-top: 3rem;
+  font-size: 3rem;
+  color: #FFF
+}
+
+.footer {
+  height: 10vh;
+  background: #232323;
+  color: #FFF;
+  padding: 2rem
+}
+
+.footer img {
+  height: 110%;
+  position: relative;
+  float: right;
+  margin: 0;
+}
+
+.footer ul {
+  display: inline-block;
+}
+
+.footer li {
+  display: block;
+}
