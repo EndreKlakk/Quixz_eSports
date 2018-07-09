@@ -9,6 +9,15 @@ body {
   overflow-x: hidden;
 }
 
+*::selection {
+  background: #F8B52A;
+	color: #FFF;
+}
+*::-moz-selection {
+  background: #F8B52A;
+	color: #FFF;
+}
+
 .background_top {
   height: 100vh;
   background-image: url(../image/backgrounds/header.png);
