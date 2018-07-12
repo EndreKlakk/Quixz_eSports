@@ -1,13 +1,11 @@
 @charset "UTF-8";
 @font-face {
-  font-family:"Raleway";
-  src:  url('raleway-bold.woff2') format('woff2'),
-        url('raleway-bold.woff') format('woff');
+  font-family: Raleway;
+  src:   url(raleway-bold.woff) format('woff');
 }
 @font-face {
-  font-family:"Lato";
-  src:  url('lato-regular.woff2') format('woff2'),
-        url('lato-regular.woff') format('woff');
+  font-family:Lato;
+  src:  url(lato-regular.woff) format('woff');
 }
 
 body {
