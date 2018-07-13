@@ -28,21 +28,19 @@
       </div>
       <div class="background_top">
         <h1>Quixz<span>eSports</span></h1>
-<script type="text/javascript">
-    $(document).ready(function(){
-      $('.menu').click(function(){
-        $('ul').toggleClass('active');
-      })
-    })
-</script>
       </div>
+
+<div class="arrow">
+  <a class="fas fa-chevron-down arrow_button" href="#about"></a>
+</div>
+
     </div>
 
 <div class="about_mobile">
       <img src="assets/image/backgrounds/about_mobile.png" alt="">
 </div>
 
-    <div class="about">
+    <div class="about" id="about">
       <img src="assets/image/backgrounds/about.png" alt="">
       <div class="about_background">
         <div class="about_text">
@@ -91,4 +89,32 @@
       <img src="assets/image/logo/logo_500.png" alt="">
     </div>
   </body>
+
+<!-- Hamburger Menu -->
+
+  <script type="text/javascript">
+      $(document).ready(function(){
+        $('.menu').click(function(){
+          $('ul').toggleClass('active');
+        })
+      })
+  </script>
+
+<!-- Smooth Scroll -->
+
+  <script>
+   $(document).ready(function(){
+    $("a").on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 1200, function(){
+          window.location.hash = hash;
+        });
+      }
+    });
+  });
+  </script>
 </html>

@@ -98,6 +98,21 @@ body {
   padding-top: 25%;
 }
 
+.arrow {
+  position: absolute;
+  font-size: 4em;
+  top: 90vh;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.arrow_button {
+  text-decoration: none;
+  color: #F8B52A;
+  text-shadow:  0 0 20px #000
+}
+
 .about {
   height: 70vh;
   background-color: #2B63AF
