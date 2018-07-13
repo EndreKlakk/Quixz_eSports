@@ -266,17 +266,6 @@ body {
   font-family: "Lato"
 }
 
-@media (max-width: 1500px) {
-
-  .about_text h1 {
-    font-size: 3em
-  }
-
-  .about_text p {
-    font-size: 1em
-  }
-
-}
 
 @media (max-width:1200px) {
 
@@ -318,6 +307,7 @@ body {
 
   .about_text p {
     width: 90%;
+    font-size: 1.4em
   }
 
   .about_background {
@@ -330,38 +320,31 @@ body {
    font-size: 2em
  }
 
-  .matches {
-
+  .toggle {
+    display: block;
+    margin-top: 0;
+    padding: 0;
   }
-}
 
-@media (max-width:750px) {
-.toggle {
-  display: block;
-  margin-top: 0;
-  padding: 0;
-}
+  .navbar li {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+    background-color: #F8B52A;
+    font-size: 3vw;
+  }
 
-.navbar li {
-  display: block;
-  text-align: center;
-  padding: 1rem;
-  margin: 0;
-  background-color: #F8B52A;
-  font-size: 1.5rem;
-}
+  .navbar ul {
+    margin-top: 0;
+    margin-right: -1.5em;
+  }
 
-.navbar ul {
-  margin-top: 0;
-  margin-right: -1.5em;
-}
+  ul {
+    display: none
+  }
 
-ul {
-  display: none
-}
-
-.active {
-  display: block;
-}
-
+  .active {
+    display: block;
+  }
 }
