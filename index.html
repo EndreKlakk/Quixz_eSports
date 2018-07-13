@@ -2,18 +2,23 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Quixz eSports</title>
     <link REL="SHORTCUT ICON" HREF="assets/image/logo/logo_500.png">
     <link rel="stylesheet" href="assets/css/master.css">
-    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <meta name="google-site-verification" content="x7yK7kt6bcjL-iz3Vw9X0BDJlCR8mjrBVt_rDVekI04" />
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" >
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css"/>
   </head>
   <body>
     <div class="header">
       <div class="navbar">
       <a href="index.html"><img src="assets/image/logo/logo_500.png" alt=""></a>
         <nav>
+          <div class="toggle">
+            <i class="fas fa-bars menu" aria-hidden="true"></i>
+          </div>
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -24,6 +29,13 @@
       </div>
       <div class="background_top">
         <h1>Quixz<span>eSports</span></h1>
+        <script type="text/javascript">
+        $(document).ready(function(){
+          $('.menu').click(function(){
+            $('ul').toggleClass('active');
+          })
+        })
+        </script>
       </div>
     </div>
 
