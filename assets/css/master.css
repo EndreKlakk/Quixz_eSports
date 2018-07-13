@@ -303,6 +303,7 @@ body {
 
   .about {
     height: 60vh;
+    font-size: .8em
   }
 
   .about_text p {
