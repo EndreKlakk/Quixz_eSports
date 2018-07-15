@@ -240,7 +240,7 @@ body {
 .card_body h2 {
   font-size: 3em;
   margin: 1rem 0;
-  text-shadow: 0 0 30px #000;
+  text-shadow: 0 0 20px #00000070;
 }
 
 .card_body h3 {
@@ -248,14 +248,44 @@ body {
   margin: 0;
   text-shadow: 0 0 20px #00000070;
   font-size: 7em;
-  margin-top: -1rem
+  margin-top: -2rem
 }
 
 .card_body span {
   display: block;
-  margin-top: 2rem;
+  margin-top: .5rem;
   font-size: 3rem;
   color: #FFF
+}
+
+.card_body h4 {
+  font-size: 2.5em;
+  margin: 0;
+  padding-top: 0em;
+  text-shadow: 0 0 10px #00000070;
+}
+
+.fas {
+  font-size: 2.5em;
+  padding: .3em;
+  text-shadow: 0 0 10px #00000070;
+}
+
+.fa-gamepad::before {
+  content: "";
+  width: 100%;
+  height: .2rem;
+  background-color: #F8B52A;
+  display: block;
+  margin-top: -2rem;
+}
+
+.fa-gamepad {
+  padding: 1rem;
+  padding-top: 4rem;
+  margin: 0;
+  font-size: 5em;
+  color: #F8B52A
 }
 
 .footer {
@@ -605,8 +635,8 @@ body {
   }
 
   .card_body h2 {
-    font-size: 2.8em;
-    margin: .5rem 0;
+    font-size: 2em;
+    margin: 1rem 0;
   }
 
   .card_body h3 {
@@ -615,6 +645,23 @@ body {
 
   .card_1,.card_3 {
     display: none
+  }
+
+  .fas {
+    font-size: 2em;
+    margin-top: .5rem
+  }
+
+  .fa-gamepad {
+    font-size: 2em;
+  }
+
+  .card_body h4 {
+    font-size: 2em;
+  }
+
+  .fa-gamepad::before {
+    background-color: rgba(0,0,0,0)
   }
 
   .footer {
