@@ -400,6 +400,10 @@ body {
     display: none
   }
 
+  .navbar img {
+    padding-left: 1em;
+  }
+
   .active {
     display: block;
   }
