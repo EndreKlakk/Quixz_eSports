@@ -265,7 +265,7 @@ body {
   text-shadow: 0 0 10px #00000070;
 }
 
-.fas {
+.match_icon {
   font-size: 2.5em;
   padding: .3em;
   text-shadow: 0 0 10px #00000070;
@@ -647,7 +647,7 @@ body {
     display: none
   }
 
-  .fas {
+  .match_icon {
     font-size: 2em;
     margin-top: .5rem
   }
