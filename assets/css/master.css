@@ -323,23 +323,20 @@ body {
 }
 
 .background_about h1 {
-  padding-top: 8rem;
+  padding-top: 10rem;
   padding-left: 3rem;
   margin: 0;
   font-size: 5em
 }
 
 .background_about h1::after {
-  content:"Quixz eSports";
+  content:"";
   background-color: #F8B52A;
-  width: 20%;
+  width: 13%;
   height: .2rem;
   display: block;
   margin: 0;
   margin-bottom: 5rem;
-  font-size: .4em;
-  font-family: "Lato";
-  color: #FFF;
 }
 
 .about_top {
