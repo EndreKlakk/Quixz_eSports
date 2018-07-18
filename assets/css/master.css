@@ -463,6 +463,27 @@ body {
    margin: 0;
  }
 
+.background_about h1 {
+  font-size: 3em
+}
+
+ .background_about p {
+   width: 80%;
+   display: block;
+   font-size: .8em;
+   padding: 1rem;
+ }
+
+ .about_top img {
+   width: 100%;
+   padding: 0;
+   padding-bottom: 1rem
+ }
+
+ .about_middle img {
+   width: 100%;
+ }
+
 }
 
 @media (max-width:700px) {
