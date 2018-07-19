@@ -290,6 +290,53 @@ body {
   color: #F8B52A
 }
 
+.social {
+  background-color: #2B63AF;
+  height: auto;
+  padding: 2rem;
+}
+
+.social h1 {
+  text-align: center;
+  padding: 0;
+  padding-bottom: 1rem;
+  margin: 0;
+  margin-top: -1rem;
+  font-size: 6em
+}
+
+.twitter {
+  height: auto;
+  width: auto;
+  display: inline-block;
+  width: 40vw;
+}
+
+.twitter_mobile {
+  display: none;
+  margin: 0 auto;
+}
+
+.icons {
+  display: inline-block;
+  font-size: 6em;
+  text-align: center;
+  width: 55vw;
+  position: absolute;
+  margin-top: 15%
+}
+
+.icons a {
+  margin: 3rem;
+  color: #FFF;
+  text-decoration: none
+}
+
+.icons a:hover {
+  color: #F8B52A;
+  text-shadow: 0 0 15px #00000040;
+}
+
 .footer {
   height: 10vh;
   background: #232323;
@@ -415,6 +462,23 @@ body {
  .card_2 {
    width: 70%;
  }
+
+ .icons {
+   display: block;
+   font-size: 6em;
+   text-align: center;
+   width: 100vw;
+ }
+
+ .icons a {
+   margin: 3rem;
+   color: #FFF;
+   text-decoration: none
+ }
+
+ .icons {
+   position: relative;
+ }
 }
 
 @media (max-width:1050px) {
@@ -484,6 +548,14 @@ body {
    width: 100%;
  }
 
+.twitter_mobile {
+  display: block;
+}
+
+.twitter {
+  display: none
+}
+
 }
 
 @media (max-width:700px) {
@@ -549,6 +621,23 @@ body {
 
   .team h1 {
     font-size: 3em;
+  }
+
+  .icons {
+    display: block;
+    font-size: 2em;
+    text-align: center;
+    width: auto;
+  }
+
+  .icons a {
+    margin: 1rem;
+    color: #FFF;
+    text-decoration: none
+  }
+
+  .social h1 {
+    font-size: 4em
   }
 }
 
