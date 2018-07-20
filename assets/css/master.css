@@ -194,14 +194,19 @@ body {
 }
 
 .matches {
-  width: 100%;
+  width: 100vw;
   margin: 0;
   padding: 0;
+  padding-bottom: 3rem;
+  height: auto;
+  background-image: url(../image/backgrounds/matches.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.matches img {
+.matches_background {
+  height: calc(100% + 3rem);
   width: 100%;
-  height: 100%;
   margin: 0;
   padding: 0;
   position: absolute;
@@ -228,66 +233,71 @@ body {
   margin: 0 auto;
   padding: 0;
   text-align: center;
+  height: auto;
 }
 
 .card_body{
   background: linear-gradient(to top right, #ffffff80, #ffffff70);
-  width: 20vw;
-  height: 60vh;
-  margin: 5%;
+  width: 70vw;
+  height: 20vh;
+  display: block;
+  font-family: "Lato";
+  margin: 3rem auto auto auto;
+}
+
+.card_left {
+  width: 30%;
+  height: 100%;
+  text-align: left;
   display: inline-block;
-  font-family: "Lato"
+  float: left;
 }
 
-.card_body h2 {
+.card_left img {
+  height: 80%;
+  margin: 5%;
+  padding: 0;
+}
+
+.card_middle {
+  width: 40%;
+  height: 100%;
+  text-align: center;
+  display: inline-block;
+  margin: 0;
+  text-shadow: 0 0 10px #000000
+}
+
+.card_middle h2 {
   font-size: 3em;
-  margin: 1rem 0;
-  text-shadow: 0 0 20px #00000070;
+  margin: 0;
 }
 
-.card_body h3 {
+.card_middle a {
+  font-size: 1.6em;
+  margin: 0;
   color: #F8B52A;
+  font-family: "Raleway";
+  text-decoration: none
+}
+
+.card_middle h3 {
+  font-size: 3.3em;
   margin: 0;
-  text-shadow: 0 0 20px #00000070;
-  font-size: 7em;
-  margin-top: -2rem
 }
 
-.card_body span {
-  display: block;
-  margin-top: .5rem;
-  font-size: 3rem;
-  color: #FFF
+.card_right {
+  width: 30%;
+  height: 100%;
+  text-align: center;
+  display: inline-block;
+  float: right;
 }
 
-.card_body h4 {
-  font-size: 2.5em;
+.card_right h4 {
+  font-size: 3em;
   margin: 0;
-  padding-top: 0em;
-  text-shadow: 0 0 10px #00000070;
-}
-
-.match_icon {
-  font-size: 2.5em;
-  padding: .3em;
-  text-shadow: 0 0 10px #00000070;
-}
-
-.fa-gamepad::before {
-  content: "";
-  width: 100%;
-  height: .2rem;
-  background-color: #F8B52A;
-  display: block;
-  margin-top: -2rem;
-}
-
-.fa-gamepad {
-  padding: 1rem;
-  padding-top: 4rem;
-  margin: 0;
-  font-size: 5em;
-  color: #F8B52A
+  margin-top: 15%
 }
 
 .social {
@@ -556,6 +566,43 @@ body {
   display: none
 }
 
+.card_body{
+  width: 90vw;
+  height: 20vh;
+}
+
+.card_left {
+  display: none
+}
+
+.card_middle {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: inline-block;
+  margin: 0;
+  text-shadow: 0 0 10px #000000
+}
+
+.card_middle h2 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.card_middle a {
+  font-size: 1.6em;
+  margin: 0;
+  color: #F8B52A;
+  font-family: "Raleway"
+}
+
+.card_middle h3 {
+  display: none
+}
+
+.card_right {
+  display: none
+}
 }
 
 @media (max-width:700px) {
@@ -787,59 +834,6 @@ body {
     width: 100%;
     background-color: #F8B52A;
     height: 60vh;
-  }
-
-  .matches {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-
-  .matches img {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    z-index: -1
-  }
-
-  .matches h1 {
-    font-size: 3em;
-  }
-
-  .matches span {
-    font-size: 2rem;
-  }
-
-  .card_body h2 {
-    font-size: 2em;
-    margin: 1rem 0;
-  }
-
-  .card_body h3 {
-    font-size: 4em;
-  }
-
-  .card_1,.card_3 {
-    display: none
-  }
-
-  .match_icon {
-    font-size: 2em;
-    margin-top: .5rem
-  }
-
-  .fa-gamepad {
-    font-size: 2em;
-  }
-
-  .card_body h4 {
-    font-size: 2em;
-  }
-
-  .fa-gamepad::before {
-    background-color: rgba(0,0,0,0)
   }
 
   .footer {
