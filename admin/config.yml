@@ -3,12 +3,11 @@ backend:
   repo: Barsnes/Quixz_eSports # your GitHub username and repository name, separated by a slash
   branch: master # optional, default value is "master"
 
-media_folder: "/assets/image/artices" # Media files will be stored in the repo under images/uploads
+media_folder: "/assets/image/articles" # Media files will be stored in the repo under images/uploads
 publish_mode: editorial_workflow
 
-
 collections:
-  - name: "blog" # Used in routes, ie.: /admin/collections/:slug/edit
+  - name: "article" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Article" # Used in the UI, ie.: "New Post"
     folder: "_posts" # The path to the folder where the documents are stored
     layout: "blog.html"
@@ -16,7 +15,7 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{day}}-{{month}}-{{year}}-{{slug}}"
     fields: # The fields each document in this collection have
-      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Body", name: "body", widget: "markdown"}
     meta: # Meta data fields. Just like fields, but without any preview element
