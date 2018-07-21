@@ -3,5 +3,5 @@ backend:
   repo: Barsnes/Quixz_eSports # your GitHub username and repository name, separated by a slash
   branch: master # optional, default value is "master"
 
-media_folder: "../assets" # Media files will be stored in the repo under images/uploads
+media_folder: "/assets/image" # Media files will be stored in the repo under images/uploads
 publish_mode: editorial_workflow
