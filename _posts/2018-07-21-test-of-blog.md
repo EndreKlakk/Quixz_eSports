@@ -1,5 +1,6 @@
 ---
 layout: post
-title: Test of blog
+title: Welcome Solheim!
+undefined: /assets/image/artices/welcome_solheim.png
 ---
-Does this blog post work? even with an image?
+> Today we welcome Solheim, our newest player in Rocket League 1v1!
