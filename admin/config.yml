@@ -6,6 +6,10 @@ backend:
 media_folder: "/assets/image/articles" # Media files will be stored in the repo under images/uploads
 publish_mode: editorial_workflow
 
+slug:
+  encoding: "ascii"
+  clean_accents: true
+
 collections:
   - name: "article" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Article" # Used in the UI, ie.: "New Post"

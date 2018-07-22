@@ -3,15 +3,20 @@ layout: default
 title: {{ title }}
 ---
 
+<div class="article">
+  <img src="{{ article.image }}" alt=""></img>
+
+  <h1>{{ article.title }}</h1>
+
+  <p>{{ article.body }}</p>
+
+</div>
+
 <style>
 
-  body {
-    width: 1000px;
-  }
-
-  body img {
-    width: 100%;
-    height: auto;
+  .article {
+    color: #000;
+    padding-top: 15em
   }
 
 </style>
