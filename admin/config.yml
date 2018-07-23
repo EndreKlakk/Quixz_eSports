@@ -18,7 +18,6 @@ collections:
     sort: "date:desc" # Default is title:asc
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{slug}}"
-    permalink: /:year/:title:output_ext
     fields: # The fields each document in this collection have
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Image", name: "image", widget: "image", tagname: "img"}
