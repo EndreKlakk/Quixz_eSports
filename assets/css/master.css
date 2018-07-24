@@ -381,7 +381,8 @@ body {
 }
 
 .about_content h1 {
-  font-family: "Raleway"
+  font-family: "Raleway";
+  font-size: 3em
 }
 
 .about_content img{

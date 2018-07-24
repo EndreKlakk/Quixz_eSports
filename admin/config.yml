@@ -67,6 +67,7 @@ collections:
         slug: "about"
         file: "about.md"
         fields: # The fields each document in this collection have
-          - {label: "Title", name: "title", widget: "hidden", default: "Our History"}
+          - {label: "Title", name: "title", widget: "hidden", default: "About"}
+          - {label: "Title", name: "title_about", default: "Our History"}
           - {label: "Layout", name: "layout", widget: "hidden", default: "about"}
           - {label: "Body", name: "body", widget: "markdown", tagname: "p"}
