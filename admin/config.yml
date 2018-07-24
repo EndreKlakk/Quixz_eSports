@@ -31,11 +31,9 @@ collections:
     label: "Upcoming Matches" # Used in the UI, ie.: "New Post"
     folder: "/_includes" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields: # The fields each document in this collection have
       - {label: "Team Name", name: "teamname", widget: "string", tagname: "h3"}
       - {label: "Match Date", name: "date", widget: "date", format: "DD-MM-YY"}
-      - label: "Game"
-        name: "game"
-        widget: "select"
-        options: ["Counter Strike", "Rocket League", "League of Legends", Heathstone]
+      - {label: "Game", name: "game", widget: "select", options: ["Counter Strike", "Rocket League", "League of Legends", Heathstone]}
       - {label: "Match Link", name: "link", widget: "string"}
