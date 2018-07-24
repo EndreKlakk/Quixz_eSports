@@ -26,3 +26,15 @@ collections:
       - {label: "Body", name: "body", widget: "markdown", tagname: "p"}
     meta: # Meta data fields. Just like fields, but without any preview element
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
+
+  - name: "matches" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Upcoming Matches" # Used in the UI, ie.: "New Post"
+    folder: "/_includes" # The path to the folder where the documents are stored
+    layout: "default.html"
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Team Image", name: "image", widget: "image", tagname: "img"}
+      - {label: "Match Date", name: "date", widget: "date", format: "DD-MM-YY"}
+      - {label: "Game", name: "title", widget: "string", tagname: "h2"}
+    meta: # Meta data fields. Just like fields, but without any preview element
+      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
