@@ -34,7 +34,7 @@ collections:
     slug: "index"
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "hidden", default: "Home"}
-      - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "index"}
       - {label: "Teamname", name: "teamname", widget: "string"}
       - {label: "Date", name: "matchdate", widget: "date", format: "DD-MM-YYYY"}
       - {label: "Game", name: "game", widget: "select", options: ["Counter Strike", "Rocket League", "League of Legends", "Heathstone"]}
