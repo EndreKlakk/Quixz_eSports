@@ -33,11 +33,14 @@ collections:
 
   - name: "homepage" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Homepage" # Used in the UI, ie.: "New Post"
+    delete: false
     files: # The path to the folder where the documents are stored
-      - label: "Upcoming Matches"
+      - label: "Upcoming Matches - 1"
         name: "index"
         slug: "index"
         file: "index.md"
+        widget: Object
+        delete: false
         fields: # The fields each document in this collection have
           - {label: "Title", name: "title", widget: "hidden", default: "Home"}
           - {label: "Layout", name: "layout", widget: "hidden", default: "index"}
@@ -45,14 +48,26 @@ collections:
           - {label: "Date - Match Top", name: "matchdate_top", widget: "date", format: "DD-MM-YYYY"}
           - {label: "Game - Match Top", name: "game_top", widget: "select", options: ["Counter Strike", "Rocket League", "League of Legends", "Heathstone"]}
           - {label: "Link - Match Top", name: "matchlink_top", widget: "string"}
-
+      - label: "Upcoming Matches - 1"
+        name: "index"
+        slug: "index"
+        file: "index.md"
+        widget: Object
+        delete: false
+        fields: # The fields each document in this collection have
           - {label: "Title", name: "title", widget: "hidden", default: "Home"}
           - {label: "Layout", name: "layout", widget: "hidden", default: "index"}
           - {label: "Teamname - Match Middle", name: "teamname_middle", widget: "string"}
           - {label: "Date - Match Middle", name: "matchdate_middle", widget: "date", format: "DD-MM-YYYY"}
           - {label: "Game - Match Middle", name: "game_middle", widget: "select", options: ["Counter Strike", "Rocket League", "League of Legends", "Heathstone"]}
           - {label: "Link - Match Middle", name: "matchlink_middle", widget: "string"}
-
+      - label: "Upcoming Matches - 1"
+        name: "index"
+        slug: "index"
+        file: "index.md"
+        widget: Object
+        delete: false
+        fields: # The fields each document in this collection have
           - {label: "Title", name: "title", widget: "hidden", default: "Home"}
           - {label: "Layout", name: "layout", widget: "hidden", default: "index"}
           - {label: "Teamname - Match Bottom", name: "teamname_bottom", widget: "string"}
@@ -62,11 +77,13 @@ collections:
 
   - name: "about" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "About" # Used in the UI, ie.: "New Post"
+    delete: false
     files: # The path to the folder where the documents are stored
       - label: "About"
         name: "about"
         slug: "about"
         file: "about.md"
+        delete: false
         fields: # The fields each document in this collection have
           - {label: "Title", name: "title", widget: "hidden", default: "About"}
           - {label: "Title", name: "title_about", default: "Our History"}
