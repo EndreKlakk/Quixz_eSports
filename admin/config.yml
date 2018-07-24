@@ -22,7 +22,6 @@ collections:
     sort: "date:desc" # Default is title:asc
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{slug}}"
-    accept_roles: "admin"
     fields: # The fields each document in this collection have
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Image", name: "image", widget: "image", tagname: "img"}
@@ -38,7 +37,6 @@ collections:
       - label: "Upcoming Matches"
         name: "index"
         slug: "index"
-        accept_roles: "player", "admin"
         file: "index.md"
         fields: # The fields each document in this collection have
           - {label: "Title", name: "title", widget: "hidden", default: "Home"}
@@ -67,7 +65,6 @@ collections:
     files: # The path to the folder where the documents are stored
       - label: "About"
         name: "about"
-        accept_roles: "admin"
         slug: "about"
         file: "about.md"
         fields: # The fields each document in this collection have
