@@ -39,7 +39,7 @@ collections:
         name: "index"
         slug: "index"
         file: "index.md"
-        widget: Object
+        widget: Select
         delete: false
         fields: # The fields each document in this collection have
           - label: "Upcoming Matches - 1"
