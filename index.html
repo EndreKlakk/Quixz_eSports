@@ -42,8 +42,6 @@ sitemap: true
 
 <div class="matches">
 
-{% include 2018-07-24-match-1.md %}
-
   <h1>Upcoming<span>Matches</span></h1>
   <div class="matches_cards">
     <div class="card_body">
@@ -51,8 +49,8 @@ sitemap: true
         <img src="assets/image/logo/logo_500.png" alt="Quixz eSports logo">
       </div>
       <div class="card_middle">
-        <h2>{% include 2018-07-24-match-1.md page.matchdate %}</h2>
-        <a href="{{ page.matchlink }}" target="_blank">{{ page.game }}</a>
+        <h2>{% include name.html var={{page.matchdate}} %}</h2>
+        <a href="{{ page.matchlink }}" target="_blank">{% include name.html var={{page.game}} %}</a>
         <h3>VS</h3>
       </div>
       <div class="card_right">
