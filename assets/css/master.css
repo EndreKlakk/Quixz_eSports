@@ -376,8 +376,8 @@ body {
   width: 100vw;
   font-family: "Lato";
   background-color: #2B63AF;
-  height: 100vh;
-  padding-top: 10rem
+  min-height: 100vh;
+  padding-top: 6rem
 }
 
 .about_content h1 {
