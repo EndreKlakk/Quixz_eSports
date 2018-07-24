@@ -35,4 +35,5 @@ collections:
     fields: # The fields each document in this collection have
       - {label: "Team Name", name: "teamname", widget: "string", tagname: "h3"}
       - {label: "Match Date", name: "date", widget: "date", format: "DD-MM-YYYY"}
+      - {label: "Game", name: "game", widget: "select", options: ["Counter Strike", "Rocket League", "League of Legends", "Heathstone"]}
       - {label: "Match Link", name: "matchlink", widget: "text", tagname: "a"}
