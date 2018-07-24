@@ -43,9 +43,6 @@ collections:
         delete: false
         fields: # The fields each document in this collection have
           - label: "Upcoming Matches - 1"
-            name: "index"
-            slug: "index"
-            file: "index.md"
             delete: false
             fields: # The fields each document in this collection have
               - {label: "Title", name: "title", widget: "hidden", default: "Home"}
@@ -55,9 +52,6 @@ collections:
               - {label: "Game - Match Top", name: "game_top", widget: "select", options: ["Counter Strike", "Rocket League", "League of Legends", "Heathstone"]}
               - {label: "Link - Match Top", name: "matchlink_top", widget: "string"}
           - label: "Upcoming Matches - 2"
-            name: "index"
-            slug: "index"
-            file: "index.md"
             delete: false
             fields: # The fields each document in this collection have
               - {label: "Title", name: "title", widget: "hidden", default: "Home"}
@@ -67,9 +61,6 @@ collections:
               - {label: "Game - Match Middle", name: "game_middle", widget: "select", options: ["Counter Strike", "Rocket League", "League of Legends", "Heathstone"]}
               - {label: "Link - Match Middle", name: "matchlink_middle", widget: "string"}
           - label: "Upcoming Matches - 3"
-            name: "index"
-            slug: "index"
-            file: "index.md"
             delete: false
             fields: # The fields each document in this collection have
               - {label: "Title", name: "title", widget: "hidden", default: "Home"}
