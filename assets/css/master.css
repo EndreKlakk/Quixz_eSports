@@ -372,70 +372,15 @@ body {
 
 /* About */
 
-.background_about {
-  background-color: #232323;
-  height: auto;
-  color: #FFF;
-  margin: 0;
-}
-
-.background_about h1 {
-  padding-top: 10rem;
-  padding-left: 3rem;
-  margin: 0;
-  font-size: 5em
-}
-
-.background_about h1::after {
-  content:"";
-  background-color: #F8B52A;
-  width: 13%;
-  height: .2rem;
-  display: block;
-  margin: 0;
-  margin-bottom: 5rem;
-}
-
-.about_top {
-  width: 100%;
-  height: auto;
-  display: inline-block;
-  margin: 0;
-  background-color: #2B63AF;
-}
-
-.background_about p {
+.about_body {
+  width: 700px;
+  padding: 1em;
   font-family: "Lato";
-  width: calc(50% - 3.5rem);
-  padding: 2rem 1rem 0 1rem;
-  margin: 0;
-  display: inline-block;
-  font-size: 1.3em
+  background-color: #2B63AF
 }
 
-.about_top img {
-  width: 50%;
-  margin: 0;
-  padding: 0 1rem 0 0;
-  float: left;
-}
-
-.about_middle {
-  width: 100%;
-  height: auto;
-  display: inline-block;
-  margin: 0;
-}
-
-.about_middle img {
-  width: 50%;
-  margin: 0;
-  padding: 0 0 0 1rem;
-  float: right;
-}
-
-.about_bottom img {
-  width: 100%;
+.about_body h1 {
+  font-family: "Raleway"
 }
 
 @media (max-width:1200px) {
@@ -602,6 +547,10 @@ body {
 
 .card_right {
   display: none
+}
+
+.about_body {
+  width: 100vw;
 }
 }
 
