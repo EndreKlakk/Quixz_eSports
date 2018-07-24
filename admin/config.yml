@@ -33,12 +33,12 @@ collections:
 
   - name: "homepage" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Homepage" # Used in the UI, ie.: "New Post"
-    name: "index"
-    slug: "index"
-    file: "index.md"
     delete: false
     files: # The path to the folder where the documents are stored
       - label: "About Section"
+        name: "index"
+        slug: "index"
+        file: "index.md"
         widget: Object
         delete: false
         fields: # The fields each document in this collection have
@@ -46,6 +46,9 @@ collections:
               - {label: "Body", name: "body", widget: "markdown", tagname: "p"}
 
       - label: "Upcoming Matches"
+        name: "index"
+        slug: "index"
+        file: "index.md"
         widget: Object
         delete: false
         fields: # The fields each document in this collection have
