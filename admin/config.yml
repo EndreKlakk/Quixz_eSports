@@ -33,7 +33,7 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields: # The fields each document in this collection have
-      - {label: "Teamname", name: "teamname", widget: "string", tagname: "h3"}
+      - {label: "Teamname", name: "teamname", widget: "string"}
       - {label: "Date", name: "matchdate", widget: "date", format: "DD-MM-YYYY"}
       - {label: "Game", name: "game", widget: "select", options: ["Counter Strike", "Rocket League", "League of Legends", "Heathstone"]}
-      - {label: "Link", name: "matchlink", widget: "text", tagname: "a"}
+      - {label: "Link", name: "matchlink", widget: "text"}
