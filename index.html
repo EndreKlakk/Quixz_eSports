@@ -2,7 +2,7 @@
 layout: default
 title: Home
 sitemap: true
-include: 
+include: 2018-07-24-match-1.md
 ---
 
 <div class="background_top">
@@ -50,12 +50,12 @@ include:
         <img src="assets/image/logo/logo_500.png" alt="Quixz eSports logo">
       </div>
       <div class="card_middle">
-        <h2>20.07.18</h2>
-        <a href="https://eu.glory4gamers.com/en/tournament/the-single-club-5-en-94548/participants" target="_blank">Rocket League</a>
+        <h2>{{ page.matchdate }}</h2>
+        <a href="{{ page.matchlink }}" target="_blank">{{ page.game }}</a>
         <h3>VS</h3>
       </div>
       <div class="card_right">
-        <h4>teamname</h4>
+        <h4>{{ page.teamname }}</h4>
       </div>
     </div>
   </div>
