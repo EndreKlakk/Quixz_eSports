@@ -31,7 +31,7 @@ collections:
     layout: "null"
     folder: "_includes" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
     fields: # The fields each document in this collection have
       - {label: "Title (Only visible in editor)", name: "title", widget: "string", default: "Match_1"}
       - {label: "Teamname", name: "teamname", widget: "string"}
