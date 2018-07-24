@@ -36,6 +36,8 @@ collections:
     delete: false
     files: # The path to the folder where the documents are stored
       - label: "About Section"
+        name: "upcoming_matches"
+        slug: "upcoming_matches"
         file: "index.md"
         widget: Object
         delete: false
@@ -44,6 +46,8 @@ collections:
               - {label: "Body", name: "body", widget: "markdown", tagname: "p"}
 
       - label: "Upcoming Matches"
+        name: "about"
+        slug: "about"
         file: "index.md"
         widget: Object
         delete: false
