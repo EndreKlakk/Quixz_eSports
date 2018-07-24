@@ -1,9 +1,4 @@
 backend:
-  name: github
-  repo: Barsnes/Quixz_eSports # your GitHub username and repository name, separated by a slash
-  branch: master # optional, default value is "master"
-
-backend:
   name: git-gateway
   accept_roles: #optional - accepts all users if left out
     - admin
