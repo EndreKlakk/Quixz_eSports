@@ -3,6 +3,8 @@ backend:
   accept_roles: #optional - accepts all users if left out
     - admin
 
+display_url: https://quixz.eu
+
 media_folder: "/assets/image/articles" # Media files will be stored in the repo under images/uploads
 
 slug:
@@ -29,7 +31,7 @@ collections:
   - name: "homepage" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Pages" # Used in the UI, ie.: "New Post"
     files: # The path to the folder where the documents are stored
-      - label: "Index Page"
+      - label: "Upcoming Matches"
         name: "index"
         create: true # Allow users to create new documents in this collection
         slug: "index"
@@ -37,7 +39,21 @@ collections:
         fields: # The fields each document in this collection have
           - {label: "Title", name: "title", widget: "hidden", default: "Home"}
           - {label: "Layout", name: "layout", widget: "hidden", default: "index"}
-          - {label: "Teamname", name: "teamname", widget: "string"}
-          - {label: "Date", name: "matchdate", widget: "date", format: "DD-MM-YYYY"}
-          - {label: "Game", name: "game", widget: "select", options: ["Counter Strike", "Rocket League", "League of Legends", "Heathstone"]}
-          - {label: "Link", name: "matchlink", widget: "string"}
+          - {label: "Teamname - Match Top", name: "teamname_top", widget: "string"}
+          - {label: "Date - Match Top", name: "matchdate_top", widget: "date", format: "DD-MM-YYYY"}
+          - {label: "Game - Match Top", name: "game_top", widget: "select", options: ["Counter Strike", "Rocket League", "League of Legends", "Heathstone"]}
+          - {label: "Link - Match Top", name: "matchlink_top", widget: "string"}
+
+          - {label: "Title", name: "title", widget: "hidden", default: "Home"}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "index"}
+          - {label: "Teamname - Match Middle", name: "teamname_middle", widget: "string"}
+          - {label: "Date - Match Middle", name: "matchdate_middle", widget: "date", format: "DD-MM-YYYY"}
+          - {label: "Game - Match Middle", name: "game_middle", widget: "select", options: ["Counter Strike", "Rocket League", "League of Legends", "Heathstone"]}
+          - {label: "Link - Match Middle", name: "matchlink_middle", widget: "string"}
+
+          - {label: "Title", name: "title", widget: "hidden", default: "Home"}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "index"}
+          - {label: "Teamname - Match Bottom", name: "teamname_bottom", widget: "string"}
+          - {label: "Date - Match Bottom", name: "matchdate_bottom", widget: "date", format: "DD-MM-YYYY"}
+          - {label: "Game - Match Bottom", name: "game_bottom", widget: "select", options: ["Counter Strike", "Rocket League", "League of Legends", "Heathstone"]}
+          - {label: "Link - Match Bottom", name: "matchlink_bottom", widget: "string"}
