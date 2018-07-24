@@ -389,8 +389,9 @@ body {
 }
 
 .about_content {
-  width: 700px;
+  width: 50%;
   padding: 1em;
+  margin: 0 25%;
 }
 
 @media (max-width:1200px) {
