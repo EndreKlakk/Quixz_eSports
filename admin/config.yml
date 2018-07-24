@@ -3,6 +3,11 @@ backend:
   repo: Barsnes/Quixz_eSports # your GitHub username and repository name, separated by a slash
   branch: master # optional, default value is "master"
 
+backend:
+  name: git-gateway
+  accept_roles: #optional - accepts all users if left out
+    - admin
+
 media_folder: "/assets/image/articles" # Media files will be stored in the repo under images/uploads
 publish_mode: editorial_workflow
 
