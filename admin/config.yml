@@ -3,6 +3,9 @@ backend:
   accept_roles: #optional - accepts all users if left out
     - admin
 
+  editor:
+     preview: false
+
 display_url: https://quixz.eu
 
 media_folder: "/assets/image/articles" # Media files will be stored in the repo under images/uploads
@@ -19,6 +22,7 @@ collections:
     sort: "date:desc" # Default is title:asc
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{slug}}"
+    accept_roles: "admin"
     fields: # The fields each document in this collection have
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Image", name: "image", widget: "image", tagname: "img"}
@@ -33,8 +37,8 @@ collections:
     files: # The path to the folder where the documents are stored
       - label: "Upcoming Matches"
         name: "index"
-        create: true # Allow users to create new documents in this collection
         slug: "index"
+        accept_roles: "player", "admin"
         file: "index.md"
         fields: # The fields each document in this collection have
           - {label: "Title", name: "title", widget: "hidden", default: "Home"}
@@ -63,7 +67,7 @@ collections:
     files: # The path to the folder where the documents are stored
       - label: "About"
         name: "about"
-        create: true # Allow users to create new documents in this collection
+        accept_roles: "admin"
         slug: "about"
         file: "about.md"
         fields: # The fields each document in this collection have
