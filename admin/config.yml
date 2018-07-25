@@ -35,6 +35,7 @@ collections:
     label: "Homepage" # Used in the UI, ie.: "New Post"
     delete: false
     files: # The path to the folder where the documents are stored
+
       - label: "Upcoming Matches"
         name: "upcoming_matches"
         widget: list
@@ -62,6 +63,14 @@ collections:
           - {label: "Game - Match Bottom", name: "game_bottom", widget: "select", options: ["Counter Strike", "Rocket League", "League of Legends", "Heathstone"]}
           - {label: "Link - Match Bottom", name: "matchlink_bottom", widget: "string"}
 
+      - label: "About Section"
+        name: "about_index"
+        widget: list
+        file: "index.md"
+        delete: false
+        fields: # The fields each document in this collection have
+          - {label: "Title", name: "title_about_index", widget: "hidden", default: "About us"}
+          - {label: "Body", name: "body", widget: "markdown", tagname: "p"}
 
   - name: "about" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "About" # Used in the UI, ie.: "New Post"
@@ -77,12 +86,3 @@ collections:
           - {label: "Title", name: "title_about", default: "Our History"}
           - {label: "Layout", name: "layout", widget: "hidden", default: "about"}
           - {label: "Body", name: "body", widget: "markdown", tagname: "p"}
-
-  - label: "About Section"
-    name: "about"
-    widget: list
-    file: "index.md"
-    delete: false
-    fields: # The fields each document in this collection have
-      - {label: "Title", name: "title_about_index", widget: "hidden", default: "About us"}
-      - {label: "Body", name: "body", widget: "markdown", tagname: "p"}
