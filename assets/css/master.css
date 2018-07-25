@@ -560,11 +560,6 @@ body {
 .card_right {
   display: none
 }
-
-.about_content {
-  width: 100%;
-  margin: 0;
-}
 }
 
 @media (max-width:700px) {
@@ -647,6 +642,10 @@ body {
 
   .social h1 {
     font-size: 4em
+  }
+  .about_content {
+    width: calc(100% - 2em);
+    margin: 0;
   }
 }
 
