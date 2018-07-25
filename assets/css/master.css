@@ -562,7 +562,7 @@ body {
 }
 
 .about_content {
-  width: 100vw;
+  width: 100%;
   margin: 0;
 }
 }
