@@ -5,7 +5,7 @@ teamname_top: teamname
 matchdate_top: 28-07-2018
 game_top: Counter Strike
 matchlink_top: '#'
-teamname_middle: Teamname
+teamname_middle: teamname
 matchdate_middle: 17-08-2018
 game_middle: League of Legends
 matchlink_middle: '#'
