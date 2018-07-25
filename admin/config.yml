@@ -21,7 +21,7 @@ collections:
     layout: "article.html"
     sort: "date:desc" # Default is title:asc
     create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
     fields: # The fields each document in this collection have
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Image", name: "image", widget: "image", tagname: "img"}
