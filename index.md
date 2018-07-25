@@ -2,7 +2,7 @@
 title: Home
 layout: index
 teamname_top: teamname
-matchdate_top: 28.07.18
+matchdate_top: 29-07-2018
 game_top: Counter Strike
 matchlink_top: '#'
 teamname_middle: teamname
@@ -14,3 +14,4 @@ matchdate_bottom: 29.09.18
 game_bottom: League of Legends
 matchlink_bottom: '#'
 ---
+
