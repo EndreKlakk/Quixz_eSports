@@ -7,7 +7,7 @@ In 2015, Tobias Barsnes created Quixz eSports. It started small with the goal of
 
 ![Old Quixz eSports logo](/assets/image/articles/about_top.png)
 
-> _The old Quixz eSports logo._
+> _The old Quixz eSports logo_
 
 Quixz has never had a lot of money, and has therefore relied on dedication from everyone. The founder, Tobias Barsnes, has always been a big asset to Quixz eSports. He has created all graphics, content and funded some expenses. GoldBananaMaster, Wave, Rednaz and Mirx, are other individuals who helped getting Quixz to where it is today.
 

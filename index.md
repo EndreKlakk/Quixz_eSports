@@ -1,7 +1,7 @@
 ---
 title: Home
 layout: index
-teamname_top: Random name
+teamname_top: TESTNAME
 matchdate_top: 29-07-2018
 game_top: Counter Strike
 matchlink_top: '#'
