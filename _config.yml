@@ -13,6 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+permalink: /:categories/:year/:title:output_ext
+
 title: Quixz eSports
 email: contact@quixz.eu
 description: >- # this means to ignore newlines until "baseurl:"

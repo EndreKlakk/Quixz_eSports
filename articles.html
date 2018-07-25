@@ -1,0 +1,64 @@
+---
+layout: default
+---
+<div class="article_body">
+
+  {% for post in site.posts %}
+    <div class="article_list">
+
+      <a href="{{ post.url }}"><img src="..{{ post.image }}" alt=""></a>
+      <h1><a href="{{ post.url }}">{{ post.article_title }}</a></h1>
+      <p>{{ post.desc }}</p>
+      <br>
+
+    </div>
+  {% endfor %}
+ <div style="clear: both;"></div> 
+</div>
+<style>
+
+  .article_body{
+    height: auto;
+    width: calc(100% - 20%);
+    background-color: lightblue;
+    font-family:"Lato";
+    padding: 7em 10%;
+  }
+
+  .article_body > div:first-of-type {
+    width: 100%;
+    margin: 0;
+  }
+
+  .article_list img {
+    width: 100%;
+    box-shadow: 0 0 25px #00000070;
+  }
+
+  .article_list {
+    margin: 0;
+    width: 100%
+  }
+
+  .article_list {
+    width: 47.5%;
+    margin: 0 0 0 2.5%;
+    display: inline-block;
+    float: left;
+  }
+
+  .article_body div:nth-of-type(2n) {
+    margin: 0 2.5% 0 0;
+  }
+
+  .article_list a {
+    font-family: "Raleway";
+    text-decoration: none;
+    color: #FFF;
+  }
+
+  .article_list h1 {
+    margin: .2em 0;
+  }
+
+</style>
