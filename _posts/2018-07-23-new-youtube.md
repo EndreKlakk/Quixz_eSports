@@ -2,7 +2,7 @@
 layout: blog
 image: /assets/image/articles/new_youtube.png
 date_post: '2018-07-28'
-article_title: New Youtube!
+title: New Youtube!
 description: Today we are launching our new youtube channel!
 ---
 Today marks the date we launch our new youtube channel!
