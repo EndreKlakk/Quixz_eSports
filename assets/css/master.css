@@ -373,7 +373,7 @@ body {
 /* About */
 
 .about_body {
-  width: 100vw;
+  width: 100%;
   font-family: "Lato";
   background-color: #2B63AF;
   min-height: 100vh;
