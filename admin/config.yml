@@ -6,8 +6,6 @@ backend:
 editor:
    preview: false
 
-future: true
-
 display_url: https://quixz.eu
 
 media_folder: "/assets/image/articles" # Media files will be stored in the repo under images/uploads
@@ -22,7 +20,6 @@ collections:
     folder: "_posts" # The path to the folder where the documents are stored
     layout: "article.html"
     sort: "date:desc" # Default is title:asc
-    future: true
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields: # The fields each document in this collection have

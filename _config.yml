@@ -15,6 +15,8 @@
 # in the templates via {{ site.myvariable }}.
 permalink: /:categories/:year/:title:output_ext
 
+future: true
+
 title: Quixz eSports
 email: contact@quixz.eu
 description: >- # this means to ignore newlines until "baseurl:"
