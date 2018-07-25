@@ -1,7 +1,7 @@
 ---
 layout: blog
 image: /assets/image/articles/welcome_klakk.png
-title: Our new Heathstone player, Klakk
+title: 'Our new Hearthstone player, Klakk'
 description: >-
   A new player joins the Quixz eSports family, and will be playing the game,
   Hearthstone
