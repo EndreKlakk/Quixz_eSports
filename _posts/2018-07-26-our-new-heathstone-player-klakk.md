@@ -1,7 +1,7 @@
 ---
 layout: blog
 image: /assets/image/articles/welcome_klakk.png
-title: 'Our new Heathstone player, Klakk'
+title: Our new Heathstone player, Klakk
 description: >-
   A new player joins the Quixz eSports family, and will be playing the game,
   Hearthstone
@@ -10,7 +10,7 @@ Today we are please to announce that we are diving into yet another game, [Heath
 
 
 
-Klakk, also know as Endre Stedje, has played the game for many years, but never tried playing professionally. Since he did not have any past results to show, we had our doubts when he contacted us. He said that he had a strong desire to try his hardest, and we believed him. In the end, when all dots connected, we had got ourself a new Hearthstone player. 
+Klakk, also know as Endre Stedje, has played the game for many years, but never tried playing professionally. Since he did not have any past results to show, we had our doubts when he contacted us. He said that he had a strong desire to try his hardest, and we believed him. In the end, when all dots connected, we had got ourself a new Hearthstone player.
 
 
 
