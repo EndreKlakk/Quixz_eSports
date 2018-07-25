@@ -66,7 +66,7 @@ collections:
       - label: "About Section"
         name: "about_index"
         widget: list
-        file: "index.md"
+        file: "index"
         delete: false
         fields: # The fields each document in this collection have
           - {label: "Title", name: "title_about_index", widget: "hidden", default: "About us"}
