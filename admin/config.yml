@@ -41,8 +41,8 @@ collections:
         file: "index.md"
         delete: false
         fields: # The fields each document in this collection have
-          - {label: "Title", name: "title_about", widget: "hidden", default: "About us"}
-          - {label: "Body", name: "body", widget: "markdown", tagname: "p"}
+          - {label: "Title", name: "title_about_index", widget: "hidden", default: "About us"}
+          - {label: "Body", name: "body_about", widget: "markdown", tagname: "p"}
 
       - label: "Upcoming Matches"
         name: "upcoming_matches"
