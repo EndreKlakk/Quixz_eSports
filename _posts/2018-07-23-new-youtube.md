@@ -1,9 +1,9 @@
 ---
 layout: blog
 image: /assets/image/articles/new_youtube.png
-date: '2018-07-23'
+date_post: '2018-07-28'
 article_title: New Youtube!
-description: Today we are excited launching our new youtube channel!
+description: Today we are launching our new youtube channel!
 ---
 Today marks the date we launch our new youtube channel!
 
