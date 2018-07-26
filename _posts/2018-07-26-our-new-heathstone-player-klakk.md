@@ -1,7 +1,7 @@
 ---
 layout: blog
 image: /assets/image/articles/welcome_klakk.png
-date: 23-07-2018
+date: 26-07-2018
 title: 'Our new Hearthstone player, Klakk'
 description: >-
   A new player joins the Quixz eSports family, and will be playing the game,
