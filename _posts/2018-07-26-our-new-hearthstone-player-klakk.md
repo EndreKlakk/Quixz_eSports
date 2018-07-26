@@ -6,6 +6,7 @@ title: 'Our new Hearthstone player, Klakk'
 description: >-
   A new player joins the Quixz eSports family, and will be playing the game,
   Hearthstone
+author: Tobias Barsnes
 ---
 Today we are pleased to announce that we are diving into yet another game, [Hearthstone](https://playhearthstone.com/en-us/). Hearthstone is a strategy game where to players battle, each with their own card-decks. It already has a big community, and we'd love to help it grow.
 
