@@ -25,6 +25,7 @@ collections:
     fields: # The fields each document in this collection have
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Image", name: "image", widget: "image", tagname: "img"}
+      - {label: "Publish Date", name: "date", widget: "date", format: "DD-MM-YY"}
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Body", name: "body", widget: "markdown", tagname: "p"}
       - {label: "Description", name: "description", widget: "string", default: "Only vivible on the Articles page"}
