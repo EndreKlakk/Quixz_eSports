@@ -12,3 +12,10 @@ url: "https://quixz.eu" # the base hostname & protocol for your site, e.g. http:
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+
+defaults:
+  -
+    scope:
+      path:            "admin"
+    values:
+      sitemap:         false
