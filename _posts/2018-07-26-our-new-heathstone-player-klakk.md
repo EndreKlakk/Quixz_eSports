@@ -1,11 +1,11 @@
 ---
 layout: blog
 image: /assets/image/articles/welcome_klakk.png
-title: Our new Hearthstone player, Klakk
+date: 23-07-18
+title: 'Our new Hearthstone player, Klakk'
 description: >-
   A new player joins the Quixz eSports family, and will be playing the game,
   Hearthstone
-date: 25-07-2018
 ---
 Today we are please to announce that we are diving into yet another game, [Heathstone](https://playhearthstone.com/en-us/). Heathstone is a strategy game where to players battle, each with their own card-decks. It is already has a big community, and we'd love to help it grow.
 
