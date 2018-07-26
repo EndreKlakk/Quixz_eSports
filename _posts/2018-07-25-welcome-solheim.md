@@ -1,11 +1,11 @@
 ---
 layout: blog
 image: /assets/image/articles/welcome_solheim.png
-date: 19-07-18
+date: 19-07-2018
 title: Welcome Solheim!
 description: Solheim is the new Rocket League 1v1 player!
 ---
-When looking for players in different games, we decided to start small. Therefore, the 1v1 gamemode in Rocket League was where we started first. The game's main focus when talking about esports, is 3v3, but 1v1 still has a community. 
+When looking for players in different games, we decided to start small. Therefore, the 1v1 gamemode in Rocket League was where we started first. The game's main focus when talking about esports, is 3v3, but 1v1 still has a community.
 
 Rocket League is a game where one or more players face an opposing team, and the main goal is to get the ball into the other goal, using cars. The game has been out for quite some time, and already has a big esports community, something we want to add to.
 
