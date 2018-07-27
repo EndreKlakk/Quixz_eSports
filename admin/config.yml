@@ -41,7 +41,7 @@ collections:
           - {label: "Match", name: "title", widget: "string", default:""}
           - {label: "Team Logo", name: "image", widget: "image", defualt: "assets/image/articles/default_team_logo.png"}
           - {label: "Date", name: "matchdate", widget: "date", format: "DD-MM-YYYY"}
-          - {label: "Game", name: "game", widget: "select", options: ["Counter Strike", "Rocket League", "League of Legends", "Heathstone"]}
+          - {label: "Game", name: "game", widget: "select", options: ["Counter Strike", "Rocket League", "League of Legends", "Hearthstone"]}
           - {label: "Link", name: "matchlink", widget: "string"}
 
   - name: "about" # Used in routes, ie.: /admin/collections/:slug/edit
