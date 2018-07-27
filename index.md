@@ -1,17 +1,16 @@
 ---
 title: Home
 layout: index
-teamname_top: TESTNAME
+image_top: assets/image/articles/default_team_logo.png
 matchdate_top: 29-07-2018
 game_top: Counter Strike
 matchlink_top: '#'
-teamname_middle: teamname
+image_middle: assets/image/articles/default_team_logo.png
 matchdate_middle: 31-08-2018
 game_middle: League of Legends
 matchlink_middle: '#'
-teamname_bottom: teamname
+image_bottom: assets/image/articles/default_team_logo.png
 matchdate_bottom: 04-10-2018
 game_bottom: League of Legends
 matchlink_bottom: '#'
 ---
-
