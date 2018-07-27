@@ -40,17 +40,52 @@ arrows:
     - arrow-alt-circle-left
     - arrow-alt-circle-right
     - arrow-alt-circle-up
+    - arrow-alt-down
+    - arrow-alt-from-bottom
+    - arrow-alt-from-left
+    - arrow-alt-from-right
+    - arrow-alt-from-top
+    - arrow-alt-left
+    - arrow-alt-right
+    - arrow-alt-square-down
+    - arrow-alt-square-left
+    - arrow-alt-square-right
+    - arrow-alt-square-up
+    - arrow-alt-to-bottom
+    - arrow-alt-to-left
+    - arrow-alt-to-right
+    - arrow-alt-to-top
+    - arrow-alt-up
     - arrow-circle-down
     - arrow-circle-left
     - arrow-circle-right
     - arrow-circle-up
     - arrow-down
+    - arrow-from-bottom
+    - arrow-from-left
+    - arrow-from-right
+    - arrow-from-top
     - arrow-left
     - arrow-right
+    - arrow-square-down
+    - arrow-square-left
+    - arrow-square-right
+    - arrow-square-up
+    - arrow-to-bottom
+    - arrow-to-left
+    - arrow-to-right
+    - arrow-to-top
     - arrow-up
+    - arrows
     - arrows-alt
     - arrows-alt-h
     - arrows-alt-v
+    - arrows-h
+    - arrows-v
+    - caret-circle-down
+    - caret-circle-left
+    - caret-circle-right
+    - caret-circle-up
     - caret-down
     - caret-left
     - caret-right
@@ -65,16 +100,32 @@ arrows:
     - chevron-circle-left
     - chevron-circle-right
     - chevron-circle-up
+    - chevron-double-down
+    - chevron-double-left
+    - chevron-double-right
+    - chevron-double-up
     - chevron-down
     - chevron-left
     - chevron-right
+    - chevron-square-down
+    - chevron-square-left
+    - chevron-square-right
+    - chevron-square-up
     - chevron-up
+    - cloud-download
     - cloud-download-alt
+    - cloud-upload
     - cloud-upload-alt
+    - compress-alt
     - download
+    - exchange
     - exchange-alt
+    - expand-alt
+    - expand-arrows
     - expand-arrows-alt
+    - external-link
     - external-link-alt
+    - external-link-square
     - external-link-square-alt
     - hand-point-down
     - hand-point-left
@@ -82,25 +133,41 @@ arrows:
     - hand-point-up
     - hand-pointer
     - history
+    - inbox-in
+    - inbox-out
+    - level-down
     - level-down-alt
+    - level-up
     - level-up-alt
     - location-arrow
     - long-arrow-alt-down
     - long-arrow-alt-left
     - long-arrow-alt-right
     - long-arrow-alt-up
+    - long-arrow-down
+    - long-arrow-left
+    - long-arrow-right
+    - long-arrow-up
     - mouse-pointer
     - play
     - random
     - recycle
     - redo
     - redo-alt
+    - repeat
+    - repeat-1
+    - repeat-1-alt
+    - repeat-alt
     - reply
     - reply-all
     - retweet
+    - retweet-alt
     - share
+    - share-all
     - share-square
+    - sign-in
     - sign-in-alt
+    - sign-out
     - sign-out-alt
     - sort
     - sort-alpha-down
@@ -115,6 +182,7 @@ arrows:
     - sync-alt
     - text-height
     - text-width
+    - triangle
     - undo
     - undo-alt
     - upload
@@ -127,14 +195,20 @@ audio-video:
     - circle
     - closed-captioning
     - compress
+    - compress-alt
+    - compress-wide
     - eject
     - expand
+    - expand-alt
+    - expand-arrows
     - expand-arrows-alt
+    - expand-wide
     - fast-backward
     - fast-forward
     - file-audio
     - file-video
     - film
+    - film-alt
     - forward
     - headphones
     - microphone
@@ -149,10 +223,18 @@ audio-video:
     - play-circle
     - podcast
     - random
+    - rectangle-landscape
+    - rectangle-portrait
+    - rectangle-wide
     - redo
     - redo-alt
+    - repeat
+    - repeat-1
+    - repeat-1-alt
+    - repeat-alt
     - rss
     - rss-square
+    - scrubber
     - step-backward
     - step-forward
     - stop
@@ -163,10 +245,57 @@ audio-video:
     - undo-alt
     - video
     - volume-down
+    - volume-mute
     - volume-off
     - volume-up
     - youtube
   label: Audio & Video
+automotive:
+  icons:
+    - air-freshener
+    - ambulance
+    - bus
+    - bus-alt
+    - car
+    - car-alt
+    - car-battery
+    - car-bump
+    - car-crash
+    - car-garage
+    - car-mechanic
+    - car-side
+    - car-tilt
+    - car-wash
+    - charging-station
+    - engine-warning
+    - gas-pump
+    - gas-pump-slash
+    - motorcycle
+    - oil-can
+    - oil-temp
+    - shuttle-van
+    - steering-wheel
+    - tachometer
+    - tachometer-alt
+    - tachometer-alt-average
+    - tachometer-alt-fast
+    - tachometer-alt-fastest
+    - tachometer-alt-slow
+    - tachometer-alt-slowest
+    - tachometer-average
+    - tachometer-fast
+    - tachometer-fastest
+    - tachometer-slow
+    - tachometer-slowest
+    - taxi
+    - tire
+    - tire-flat
+    - tire-pressure-warning
+    - tire-rugged
+    - truck
+    - truck-monster
+    - truck-pickup
+  label: Automotive
 buildings:
   icons:
     - building
@@ -175,6 +304,7 @@ buildings:
     - hospital
     - hospital-alt
     - industry
+    - industry-alt
     - school
     - university
   label: Buildings
@@ -183,7 +313,11 @@ business:
     - address-book
     - address-card
     - archive
+    - badge
+    - badge-check
     - balance-scale
+    - balance-scale-left
+    - balance-scale-right
     - birthday-cake
     - book
     - briefcase
@@ -219,6 +353,7 @@ business:
     - globe
     - highlighter
     - industry
+    - industry-alt
     - marker
     - paperclip
     - paste
@@ -227,6 +362,7 @@ business:
     - pen-fancy
     - pen-nib
     - pen-square
+    - pencil
     - pencil-alt
     - percent
     - phone
@@ -250,50 +386,95 @@ business:
   label: Business
 charity:
   icons:
+    - book-heart
+    - box-heart
+    - box-usd
     - dollar-sign
     - donate
     - dove
     - gift
     - globe
+    - hand-heart
     - hand-holding-heart
+    - hand-holding-seedling
     - hand-holding-usd
+    - hand-holding-water
+    - hands-heart
     - hands-helping
+    - hands-usd
     - handshake
+    - handshake-alt
     - heart
+    - heart-circle
+    - heart-square
+    - home-heart
     - leaf
+    - leaf-heart
     - parachute-box
     - piggy-bank
     - ribbon
     - seedling
+    - usd-circle
+    - usd-square
   label: Charity
 chat:
   icons:
     - comment
     - comment-alt
+    - comment-alt-check
+    - comment-alt-dots
+    - comment-alt-edit
+    - comment-alt-exclamation
+    - comment-alt-lines
+    - comment-alt-minus
+    - comment-alt-plus
+    - comment-alt-slash
+    - comment-alt-smile
+    - comment-alt-times
+    - comment-check
     - comment-dots
+    - comment-edit
+    - comment-exclamation
+    - comment-lines
+    - comment-minus
+    - comment-plus
     - comment-slash
+    - comment-smile
+    - comment-times
     - comments
+    - comments-alt
     - frown
     - meh
     - phone
+    - phone-plus
     - phone-slash
     - poo
     - quote-left
     - quote-right
     - smile
+    - smile-plus
     - video
+    - video-plus
     - video-slash
   label: Chat
 chess:
   icons:
     - chess
     - chess-bishop
+    - chess-bishop-alt
     - chess-board
+    - chess-clock
+    - chess-clock-alt
     - chess-king
+    - chess-king-alt
     - chess-knight
+    - chess-knight-alt
     - chess-pawn
+    - chess-pawn-alt
     - chess-queen
+    - chess-queen-alt
     - chess-rook
+    - chess-rook-alt
     - square-full
   label: Chess
 code:
@@ -301,9 +482,12 @@ code:
     - archive
     - barcode
     - bath
+    - browser
     - bug
     - code
     - code-branch
+    - code-commit
+    - code-merge
     - coffee
     - file
     - file-alt
@@ -316,11 +500,15 @@ code:
     - microchip
     - project-diagram
     - qrcode
+    - shield
     - shield-alt
+    - shield-check
     - sitemap
     - stream
     - terminal
     - user-secret
+    - window
+    - window-alt
     - window-close
     - window-maximize
     - window-minimize
@@ -348,6 +536,8 @@ communication:
     - envelope-square
     - fax
     - inbox
+    - inbox-in
+    - inbox-out
     - language
     - microphone
     - microphone-alt
@@ -355,6 +545,8 @@ communication:
     - microphone-slash
     - mobile
     - mobile-alt
+    - mobile-android
+    - mobile-android-alt
     - paper-plane
     - phone
     - phone-slash
@@ -369,6 +561,7 @@ computers:
   icons:
     - database
     - desktop
+    - desktop-alt
     - download
     - hdd
     - headphones
@@ -378,6 +571,8 @@ computers:
     - microchip
     - mobile
     - mobile-alt
+    - mobile-android
+    - mobile-android-alt
     - plug
     - power-off
     - print
@@ -386,7 +581,10 @@ computers:
     - stream
     - tablet
     - tablet-alt
+    - tablet-android
+    - tablet-android-alt
     - tv
+    - tv-retro
     - upload
   label: Computers
 currency:
@@ -408,16 +606,21 @@ currency:
     - ruble-sign
     - rupee-sign
     - shekel-sign
+    - usd-circle
+    - usd-square
     - won-sign
     - yen-sign
   label: Currency
 date-time:
   icons:
+    - alarm-clock
     - bell
     - bell-slash
     - calendar
     - calendar-alt
     - calendar-check
+    - calendar-edit
+    - calendar-exclamation
     - calendar-minus
     - calendar-plus
     - calendar-times
@@ -427,6 +630,7 @@ date-time:
     - hourglass-half
     - hourglass-start
     - stopwatch
+    - watch
   label: Date & Time
 design:
   icons:
@@ -440,6 +644,9 @@ design:
     - crosshairs
     - cut
     - drafting-compass
+    - draw-circle
+    - draw-polygon
+    - draw-square
     - edit
     - eraser
     - eye
@@ -448,11 +655,15 @@ design:
     - fill
     - fill-drip
     - highlighter
+    - layer-group
+    - layer-minus
+    - layer-plus
     - magic
     - marker
     - object-group
     - object-ungroup
     - paint-brush
+    - paint-brush-alt
     - paint-roller
     - palette
     - paste
@@ -460,6 +671,7 @@ design:
     - pen-alt
     - pen-fancy
     - pen-nib
+    - pencil
     - pencil-alt
     - pencil-ruler
     - ruler-combined
@@ -492,6 +704,9 @@ editors:
     - file-alt
     - font
     - glasses
+    - h1
+    - h2
+    - h3
     - heading
     - highlighter
     - i-cursor
@@ -512,6 +727,7 @@ editors:
     - pen-alt
     - pen-fancy
     - pen-nib
+    - pencil
     - pencil-alt
     - print
     - quote-left
@@ -522,6 +738,7 @@ editors:
     - reply-all
     - screwdriver
     - share
+    - share-all
     - strikethrough
     - subscript
     - superscript
@@ -542,6 +759,40 @@ editors:
     - unlink
     - wrench
   label: Editors
+education:
+  icons:
+    - apple-alt
+    - atom
+    - atom-alt
+    - award
+    - backpack
+    - bell
+    - bell-school
+    - bell-school-slash
+    - bell-slash
+    - book-alt
+    - book-open
+    - book-reader
+    - books
+    - bus-school
+    - chalkboard
+    - chalkboard-teacher
+    - diploma
+    - file-certificate
+    - glasses-alt
+    - globe-stand
+    - graduation-cap
+    - laptop-code
+    - microscope
+    - music
+    - pencil-paintbrush
+    - ruler-triangle
+    - school
+    - shapes
+    - theater-masks
+    - user-graduate
+    - users-class
+  label: Education
 emoji:
   icons:
     - angry
@@ -591,11 +842,17 @@ files:
     - file-alt
     - file-archive
     - file-audio
+    - file-check
     - file-code
+    - file-edit
     - file-excel
+    - file-exclamation
     - file-image
+    - file-minus
     - file-pdf
+    - file-plus
     - file-powerpoint
+    - file-times
     - file-video
     - file-word
     - folder
@@ -624,6 +881,7 @@ hands:
   icons:
     - allergies
     - hand-holding
+    - hand-holding-box
     - hand-lizard
     - hand-paper
     - hand-peace
@@ -632,6 +890,7 @@ hands:
     - hand-point-right
     - hand-point-up
     - hand-pointer
+    - hand-receiving
     - hand-rock
     - hand-scissors
     - hand-spock
@@ -660,27 +919,39 @@ images:
     - adjust
     - bolt
     - camera
+    - camera-alt
     - camera-retro
     - chalkboard
     - clone
     - compress
+    - compress-wide
     - expand
+    - expand-wide
     - eye
     - eye-dropper
     - eye-slash
     - file-image
     - film
+    - film-alt
     - id-badge
     - id-card
     - image
     - images
     - portrait
+    - rectangle-landscape
+    - rectangle-portrait
+    - rectangle-wide
     - sliders-h
+    - sliders-h-square
+    - sliders-v
+    - sliders-v-square
     - tint
   label: Images
 interfaces:
   icons:
     - award
+    - badge
+    - badge-check
     - ban
     - barcode
     - bars
@@ -694,6 +965,8 @@ interfaces:
     - calendar
     - calendar-alt
     - calendar-check
+    - calendar-edit
+    - calendar-exclamation
     - calendar-minus
     - calendar-plus
     - calendar-times
@@ -706,7 +979,9 @@ interfaces:
     - clipboard
     - clone
     - cloud
+    - cloud-download
     - cloud-download-alt
+    - cloud-upload
     - cloud-upload-alt
     - coffee
     - cog
@@ -718,14 +993,19 @@ interfaces:
     - download
     - edit
     - ellipsis-h
+    - ellipsis-h-alt
     - ellipsis-v
+    - ellipsis-v-alt
     - envelope
     - envelope-open
     - eraser
     - exclamation
     - exclamation-circle
+    - exclamation-square
     - exclamation-triangle
+    - external-link
     - external-link-alt
+    - external-link-square
     - external-link-square-alt
     - eye
     - eye-slash
@@ -752,6 +1032,7 @@ interfaces:
     - i-cursor
     - info
     - info-circle
+    - info-square
     - language
     - magic
     - marker
@@ -762,19 +1043,25 @@ interfaces:
     - microphone-slash
     - minus
     - minus-circle
+    - minus-hexagon
+    - minus-octagon
     - minus-square
     - paste
     - pen
     - pen-alt
     - pen-fancy
+    - pencil
     - pencil-alt
     - plus
     - plus-circle
+    - plus-hexagon
+    - plus-octagon
     - plus-square
     - poo
     - qrcode
     - question
     - question-circle
+    - question-square
     - quote-left
     - quote-right
     - redo
@@ -789,15 +1076,22 @@ interfaces:
     - search-minus
     - search-plus
     - share
+    - share-all
     - share-alt
     - share-alt-square
     - share-square
+    - shield
     - shield-alt
+    - sign-in
     - sign-in-alt
+    - sign-out
     - sign-out-alt
     - signal
     - sitemap
     - sliders-h
+    - sliders-h-square
+    - sliders-v
+    - sliders-v-square
     - smile
     - sort
     - sort-alpha-down
@@ -809,6 +1103,7 @@ interfaces:
     - sort-numeric-up
     - sort-up
     - star
+    - star-exclamation
     - star-half
     - sync
     - sync-alt
@@ -816,11 +1111,15 @@ interfaces:
     - thumbs-up
     - times
     - times-circle
+    - times-hexagon
+    - times-octagon
+    - times-square
     - toggle-off
     - toggle-on
     - trash
     - trash-alt
     - trophy
+    - trophy-alt
     - undo
     - undo-alt
     - upload
@@ -832,22 +1131,44 @@ interfaces:
   label: Interfaces
 logistics:
   icons:
+    - barcode-alt
+    - barcode-read
+    - barcode-scan
     - box
+    - box-check
     - boxes
     - clipboard-check
     - clipboard-list
+    - conveyor-belt
+    - conveyor-belt-alt
     - dolly
+    - dolly-empty
     - dolly-flatbed
+    - dolly-flatbed-alt
+    - dolly-flatbed-empty
+    - forklift
+    - hand-holding-box
+    - hand-receiving
+    - inventory
     - pallet
+    - pallet-alt
+    - scanner
+    - scanner-keyboard
+    - scanner-touchscreen
     - shipping-fast
+    - shipping-timed
+    - tablet-rugged
     - truck
     - warehouse
+    - warehouse-alt
   label: Logistics
 maps:
   icons:
     - ambulance
     - anchor
     - balance-scale
+    - balance-scale-left
+    - balance-scale-right
     - bath
     - bed
     - beer
@@ -864,8 +1185,14 @@ maps:
     - building
     - car
     - coffee
+    - compass-slash
     - crosshairs
+    - directions
+    - do-not-enter
     - dollar-sign
+    - draw-circle
+    - draw-polygon
+    - draw-square
     - eye
     - eye-slash
     - fighter-jet
@@ -889,20 +1216,38 @@ maps:
     - image
     - images
     - industry
+    - industry-alt
     - info
     - info-circle
+    - info-square
     - key
+    - layer-group
+    - layer-minus
+    - layer-plus
     - leaf
     - lemon
     - life-ring
     - lightbulb
+    - location
     - location-arrow
+    - location-circle
+    - location-slash
     - low-vision
     - magnet
     - male
     - map
     - map-marker
     - map-marker-alt
+    - map-marker-alt-slash
+    - map-marker-check
+    - map-marker-edit
+    - map-marker-exclamation
+    - map-marker-minus
+    - map-marker-plus
+    - map-marker-question
+    - map-marker-slash
+    - map-marker-smile
+    - map-marker-times
     - map-pin
     - map-signs
     - medkit
@@ -911,11 +1256,16 @@ maps:
     - motorcycle
     - music
     - newspaper
+    - parking
+    - parking-circle
+    - parking-circle-slash
+    - parking-slash
     - paw
     - phone
     - phone-square
     - phone-volume
     - plane
+    - plane-alt
     - plug
     - plus
     - plus-square
@@ -923,6 +1273,9 @@ maps:
     - recycle
     - road
     - rocket
+    - route
+    - route-highway
+    - route-interstate
     - search
     - search-minus
     - search-plus
@@ -939,17 +1292,30 @@ maps:
     - tags
     - taxi
     - thumbtack
+    - ticket
     - ticket-alt
     - tint
+    - traffic-cone
+    - traffic-light
+    - traffic-light-go
+    - traffic-light-slow
+    - traffic-light-stop
     - train
     - tree
+    - tree-alt
     - trophy
+    - trophy-alt
     - truck
     - tty
     - umbrella
     - university
+    - usd-circle
+    - usd-square
+    - utensil-fork
+    - utensil-knife
     - utensil-spoon
     - utensils
+    - utensils-alt
     - wheelchair
     - wifi
     - wine-glass
@@ -976,61 +1342,110 @@ medical:
     - allergies
     - ambulance
     - band-aid
+    - bone
+    - bone-break
+    - bong
+    - brain
     - briefcase-medical
     - burn
     - cannabis
     - capsules
+    - clipboard-prescription
     - diagnoses
     - dna
+    - ear
     - file-medical
     - file-medical-alt
     - file-prescription
     - first-aid
     - heart
+    - heart-rate
     - heartbeat
     - hospital
     - hospital-alt
     - hospital-symbol
     - id-card-alt
+    - inhaler
+    - joint
+    - kidneys
+    - lips
+    - lungs
+    - microscope
+    - monitor-heart-rate
+    - mortar-pestle
     - notes-medical
     - pills
     - plus
+    - poop
     - prescription
     - prescription-bottle
     - prescription-bottle-alt
     - procedures
+    - scalpel
+    - scalpel-path
+    - skeleton
     - smoking
+    - smoking-ban
+    - star-of-life
     - stethoscope
+    - stomach
     - syringe
     - tablets
+    - teeth
+    - teeth-open
     - thermometer
+    - tooth
+    - toothbrush
     - user-md
     - vial
     - vials
+    - watch-fitness
     - weight
     - x-ray
   label: Medical
 moving:
   icons:
     - archive
+    - blanket
+    - box-alt
+    - box-fragile
+    - box-full
     - box-open
+    - box-up
+    - boxes-alt
+    - container-storage
     - couch
     - dolly
+    - dolly-empty
+    - fragile
+    - lamp
+    - loveseat
     - people-carry
+    - person-carry
+    - person-dolly
+    - person-dolly-empty
+    - ramp-loading
+    - route
     - sign
     - suitcase
     - tape
+    - truck-container
+    - truck-couch
     - truck-loading
     - truck-moving
+    - truck-ramp
     - wine-glass
   label: Moving
 objects:
   icons:
+    - alarm-clock
     - ambulance
     - anchor
     - archive
     - award
     - balance-scale
+    - balance-scale-left
+    - balance-scale-right
     - bath
     - bed
     - beer
@@ -1053,6 +1468,7 @@ objects:
     - calendar
     - calendar-alt
     - camera
+    - camera-alt
     - camera-retro
     - car
     - church
@@ -1093,6 +1509,7 @@ objects:
     - file-alt
     - file-prescription
     - film
+    - film-alt
     - fire
     - fire-extinguisher
     - flag
@@ -1121,6 +1538,8 @@ objects:
     - image
     - images
     - industry
+    - industry-alt
+    - jack-o-lantern
     - key
     - keyboard
     - laptop
@@ -1129,7 +1548,9 @@ objects:
     - life-ring
     - lightbulb
     - lock
+    - lock-alt
     - lock-open
+    - lock-open-alt
     - magic
     - magnet
     - map
@@ -1146,6 +1567,8 @@ objects:
     - microphone-alt
     - mobile
     - mobile-alt
+    - mobile-android
+    - mobile-android-alt
     - money-bill
     - money-bill
     - money-bill-alt
@@ -1163,9 +1586,11 @@ objects:
     - pen-alt
     - pen-fancy
     - pen-nib
+    - pencil
     - pencil-alt
     - phone
     - plane
+    - plane-alt
     - plug
     - print
     - puzzle-piece
@@ -1178,6 +1603,7 @@ objects:
     - school
     - screwdriver
     - search
+    - shield
     - shield-alt
     - shopping-bag
     - shopping-basket
@@ -1194,27 +1620,38 @@ objects:
     - sun
     - tablet
     - tablet-alt
+    - tablet-android
+    - tablet-android-alt
+    - tachometer
     - tachometer-alt
     - tag
     - tags
     - taxi
     - thumbtack
+    - ticket
     - ticket-alt
     - toolbox
     - train
     - trash
     - trash-alt
     - tree
+    - tree-alt
     - trophy
+    - trophy-alt
     - truck
     - tv
+    - tv-retro
     - umbrella
     - university
     - unlock
     - unlock-alt
+    - utensil-fork
+    - utensil-knife
     - utensil-spoon
     - utensils
+    - utensils-alt
     - wallet
+    - watch
     - weight
     - wheelchair
     - wine-glass
@@ -1224,10 +1661,12 @@ payments-shopping:
   icons:
     - amazon-pay
     - apple-pay
+    - badge
     - bell
     - bookmark
     - bullhorn
     - camera
+    - camera-alt
     - camera-retro
     - cart-arrow-down
     - cart-plus
@@ -1243,6 +1682,8 @@ payments-shopping:
     - cc-visa
     - certificate
     - credit-card
+    - credit-card-blank
+    - credit-card-front
     - ethereum
     - gem
     - gift
@@ -1257,6 +1698,7 @@ payments-shopping:
     - shopping-basket
     - shopping-cart
     - star
+    - star-exclamation
     - stripe
     - stripe-s
     - tag
@@ -1264,26 +1706,41 @@ payments-shopping:
     - thumbs-down
     - thumbs-up
     - trophy
+    - trophy-alt
   label: Payments & Shopping
 shapes:
   icons:
+    - badge
     - bookmark
     - calendar
     - certificate
     - circle
     - cloud
+    - club
     - comment
+    - diamond
     - file
     - folder
     - heart
+    - hexagon
     - map-marker
+    - octagon
     - play
+    - rectangle-landscape
+    - rectangle-portrait
+    - rectangle-wide
+    - shapes
+    - shield
+    - spade
     - square
     - star
+    - ticket
+    - triangle
   label: Shapes
 spinners:
   icons:
     - asterisk
+    - badge
     - certificate
     - circle-notch
     - cog
@@ -1292,36 +1749,59 @@ spinners:
     - life-ring
     - snowflake
     - spinner
+    - spinner-third
     - sun
     - sync
   label: Spinners
 sports:
   icons:
+    - baseball
     - baseball-ball
     - basketball-ball
+    - basketball-hoop
     - bowling-ball
+    - bowling-pins
+    - boxing-glove
+    - cricket
+    - curling
     - dumbbell
+    - field-hockey
     - football-ball
+    - football-helmet
     - futbol
     - golf-ball
+    - golf-club
     - hockey-puck
+    - hockey-sticks
+    - luchador
+    - pennant
     - quidditch
+    - racquet
+    - shuttlecock
     - table-tennis
+    - tennis-ball
     - volleyball-ball
+    - whistle
   label: Sports
 status:
   icons:
+    - badge
+    - badge-check
     - ban
+    - battery-bolt
     - battery-empty
     - battery-full
     - battery-half
     - battery-quarter
+    - battery-slash
     - battery-three-quarters
     - bell
     - bell-slash
     - calendar
     - calendar-alt
     - calendar-check
+    - calendar-edit
+    - calendar-exclamation
     - calendar-minus
     - calendar-plus
     - calendar-times
@@ -1331,28 +1811,47 @@ status:
     - door-open
     - exclamation
     - exclamation-circle
+    - exclamation-square
     - exclamation-triangle
     - eye
     - eye-slash
     - file
     - file-alt
+    - file-check
+    - file-edit
+    - file-exclamation
+    - file-minus
+    - file-plus
+    - file-times
     - folder
     - folder-open
     - info
     - info-circle
+    - info-square
     - lock
+    - lock-alt
     - lock-open
+    - lock-open-alt
     - minus
     - minus-circle
+    - minus-hexagon
+    - minus-octagon
     - minus-square
     - plus
     - plus-circle
+    - plus-hexagon
+    - plus-octagon
     - plus-square
     - question
     - question-circle
+    - question-square
+    - shield
     - shield-alt
+    - shield-check
     - shopping-cart
+    - sign-in
     - sign-in-alt
+    - sign-out
     - sign-out-alt
     - stream
     - thermometer-empty
@@ -1456,20 +1955,31 @@ vehicles:
     - ambulance
     - bicycle
     - bus
+    - bus-alt
     - car
+    - car-alt
+    - car-bump
+    - car-crash
+    - car-side
+    - car-tilt
     - fighter-jet
     - helicopter
     - motorcycle
     - paper-plane
     - plane
+    - plane-alt
+    - plane-alt
     - rocket
     - ship
     - shopping-cart
+    - shuttle-van
     - space-shuttle
     - subway
     - taxi
     - train
     - truck
+    - truck-monster
+    - truck-pickup
     - wheelchair
   label: Vehicles
 writing:
@@ -1493,6 +2003,7 @@ writing:
     - pen
     - pen-alt
     - pen-square
+    - pencil
     - pencil-alt
     - quote-left
     - quote-right

@@ -235,15 +235,34 @@ hips:
 hire-a-helper:
   icons:
     - archive
+    - blanket
+    - box-alt
+    - box-fragile
+    - box-full
     - box-open
+    - box-up
+    - boxes-alt
+    - container-storage
     - couch
     - dolly
+    - dolly-empty
+    - fragile
+    - lamp
+    - loveseat
     - people-carry
+    - person-carry
+    - person-dolly
+    - person-dolly-empty
+    - ramp-loading
+    - route
     - sign
     - suitcase
     - tape
+    - truck-container
+    - truck-couch
     - truck-loading
     - truck-moving
+    - truck-ramp
     - wine-glass
   label: HireAHelper
   url: 'https://www.hireahelper.com'
@@ -334,6 +353,12 @@ nimblr:
     - nimblr
   label: Nimblr
   url: 'https://nimblr.ai'
+nompse:
+  icons:
+    - chalkboard
+    - chalkboard-teacher
+  label: Nomp.se
+  url: 'https://nomp.se'
 ns8:
   icons:
     - ns8
@@ -398,6 +423,11 @@ resolving:
     - resolving
   label: Resolving
   url: 'https://resolving.com'
+rev-io:
+  icons:
+    - rev
+  label: Rev.io
+  url: 'https://rev.io'
 rock-rms:
   icons:
     - rockrms
@@ -407,18 +437,40 @@ rocket-chat:
   icons:
     - comment
     - comment-alt
+    - comment-alt-check
+    - comment-alt-dots
+    - comment-alt-edit
+    - comment-alt-exclamation
+    - comment-alt-lines
+    - comment-alt-minus
+    - comment-alt-plus
+    - comment-alt-slash
+    - comment-alt-smile
+    - comment-alt-times
+    - comment-check
     - comment-dots
+    - comment-edit
+    - comment-exclamation
+    - comment-lines
+    - comment-minus
+    - comment-plus
     - comment-slash
+    - comment-smile
+    - comment-times
     - comments
+    - comments-alt
     - frown
     - meh
     - phone
+    - phone-plus
     - phone-slash
     - poo
     - quote-left
     - quote-right
     - smile
+    - smile-plus
     - video
+    - video-plus
     - video-slash
   label: Rocket.Chat
   url: 'https://rocket.chat'
@@ -437,6 +489,11 @@ service-stack:
     - servicestack
   label: ServiceStack
   url: 'https://servicestack.net'
+shawn-storie:
+  icons:
+    - teeth
+    - teeth-open
+  label: Shawn Storie
 shopware:
   icons:
     - shopware
@@ -469,16 +526,36 @@ speakap:
   url: 'https://speakap.com'
 stay-linked:
   icons:
+    - barcode-alt
+    - barcode-read
+    - barcode-scan
     - box
+    - box-check
     - boxes
     - clipboard-check
     - clipboard-list
+    - conveyor-belt
+    - conveyor-belt-alt
     - dolly
+    - dolly-empty
     - dolly-flatbed
+    - dolly-flatbed-alt
+    - dolly-flatbed-empty
+    - forklift
+    - hand-holding-box
+    - hand-receiving
+    - inventory
     - pallet
+    - pallet-alt
+    - scanner
+    - scanner-keyboard
+    - scanner-touchscreen
     - shipping-fast
+    - shipping-timed
+    - tablet-rugged
     - truck
     - warehouse
+    - warehouse-alt
   label: StayLinked
   url: 'https://www.staylinked.com'
 sticker-mule:
@@ -498,21 +575,36 @@ supple:
   url: 'https://supple.com.au'
 the-us-sunnah-foundation:
   icons:
+    - book-heart
+    - box-heart
+    - box-usd
     - dollar-sign
     - donate
     - dove
     - gift
     - globe
+    - hand-heart
     - hand-holding-heart
+    - hand-holding-seedling
     - hand-holding-usd
+    - hand-holding-water
+    - hands-heart
     - hands-helping
+    - hands-usd
     - handshake
+    - handshake-alt
     - heart
+    - heart-circle
+    - heart-square
+    - home-heart
     - leaf
+    - leaf-heart
     - parachute-box
     - piggy-bank
     - ribbon
     - seedling
+    - usd-circle
+    - usd-square
   label: The us-Sunnah Foundation
   url: 'https://www.ussunnah.org'
 themeco:
@@ -540,6 +632,17 @@ vaadin:
     - vaadin
   label: Vaadin
   url: 'http://vaadin.com'
+via:
+  icons:
+    - car-crash
+    - draw-circle
+    - draw-polygon
+    - draw-square
+    - layer-group
+    - layers-minus
+    - layers-plus
+  label: VIA Traffic Software Solutions
+  url: 'https://www.via.software'
 vnv:
   icons:
     - vnv

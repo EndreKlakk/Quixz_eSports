@@ -71,7 +71,7 @@
     <a href="index.html"><img src="assets/image/logo/logo_500.png" alt="Quixz eSports logo"></a>
     <nav>
       <div class="toggle">
-        <i class="fas fa-bars menu" aria-hidden="true"></i>
+        <i class="fal fa-bars menu" aria-hidden="true"></i>
       </div>
       <ul>
         <li><a href="../index.html">Home</a></li>
@@ -88,7 +88,7 @@
 </div>
 
 <div class="arrow">
-  <a class="fas fa-chevron-down arrow_button" href="#about"></a>
+  <a class="fal fa-caret-down arrow_button" href="#about"></a>
 </div>
 
 </div>
@@ -123,7 +123,7 @@
 -->
 <div class="matches">
   <h1>Upcoming<span>Matches</span></h1>
-{% for item in site.matches limit:3 | sort: 'date' %}
+{% for item in site.matches limit:3 %}
 
     <div class="matches_cards">
       <div class="card_body">
