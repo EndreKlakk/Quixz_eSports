@@ -289,15 +289,15 @@ body {
 .card_right {
   width: 30%;
   height: 100%;
-  text-align: center;
+  text-align: right;
   display: inline-block;
   float: right;
 }
 
-.card_right h4 {
-  font-size: 3em;
-  margin: 0;
-  margin-top: 15%
+.card_right img {
+  height: 80%;
+  margin: 5%;
+  padding: 0;
 }
 
 .social {

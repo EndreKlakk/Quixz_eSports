@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: default_blog
 image: /assets/image/articles/new_youtube.png
 title: Social media update
 description: We widen our horizons and adopt a new social media platform

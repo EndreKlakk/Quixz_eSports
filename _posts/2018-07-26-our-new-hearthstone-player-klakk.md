@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: default_blog
 image: /assets/image/articles/welcome_klakk.png
 date: 26-07-2018
 title: 'Our new Hearthstone player, Klakk'
