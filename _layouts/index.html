@@ -123,7 +123,7 @@
 -->
 <div class="matches">
   <h1>Upcoming<span>Matches</span></h1>
-{% for item in site.matches limit:3 %}
+{% for item in site.matches limit:3 | sort: 'date' %}
 
     <div class="matches_cards">
       <div class="card_body">
