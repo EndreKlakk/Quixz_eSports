@@ -122,9 +122,8 @@
 
 -->
 <div class="matches">
+  <h1>Upcoming<span>Matches</span></h1>
 {% for item in site.matches limit:3 %}
-
-    <h1>Upcoming<span>Matches</span></h1>
 
     <div class="matches_cards">
       <div class="card_body">
@@ -133,7 +132,7 @@
         </div>
         <div class="card_middle">
           <h2>{{ item.matchdate | date: '%B %d, %Y' }}</h2>
-          <a href="{{ item.link }}" target="_blank">{{ item.game }}</a>
+          <a href="{{ item.matchlink }}" target="_blank">{{ item.game }}</a>
           <h3>VS</h3>
         </div>
         <div class="card_right">
