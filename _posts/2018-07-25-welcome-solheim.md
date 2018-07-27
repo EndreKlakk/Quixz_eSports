@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: default_blog
 image: /assets/image/articles/welcome_solheim.png
 date: 19-07-2018
 title: Welcome Solheim!
