@@ -4,6 +4,9 @@ future: true
 
 include: [_redirects]
 
+collections:
+  - matches
+
 title: Quixz eSports
 email: contact@quixz.eu
 description: >- # this means to ignore newlines until "baseurl:"

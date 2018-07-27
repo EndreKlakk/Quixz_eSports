@@ -121,57 +121,28 @@
 </div>
 
 -->
-
 <div class="matches">
+{% for item in site.matches limit:3 %}
 
-  <h1>Upcoming<span>Matches</span></h1>
-  <div class="matches_cards">
-    <div class="card_body">
-      <div class="card_left">
-        <img src="assets/image/logo/logo_500.png" alt="Quixz eSports logo">
-      </div>
-      <div class="card_middle">
-        <h2>{{ page.matchdate_top }}</h2>
-        <a href="{{ page.matchlink_top }}" target="_blank">{{ page.game_top }}</a>
-        <h3>VS</h3>
-      </div>
-      <div class="card_right">
-        <img src="{{ page.image_bottom }}"></img>
+    <h1>Upcoming<span>Matches</span></h1>
+
+    <div class="matches_cards">
+      <div class="card_body">
+        <div class="card_left">
+          <img src="assets/image/logo/logo_500.png" alt="Quixz eSports logo">
+        </div>
+        <div class="card_middle">
+          <h2>{{ item.matchdate | date: '%B %d, %Y' }}</h2>
+          <a href="{{ item.link }}" target="_blank">{{ item.game }}</a>
+          <h3>VS</h3>
+        </div>
+        <div class="card_right">
+          <img src="{{ item.image }}"></img>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="matches_cards">
-    <div class="card_body">
-      <div class="card_left">
-        <img src="assets/image/logo/logo_500.png" alt="Quixz eSports logo">
-      </div>
-      <div class="card_middle">
-        <h2>{{ page.matchdate_middle }}</h2>
-        <a href="{{ page.link_middle }}" target="_blank">{{ page.game_middle }}</a>
-        <h3>VS</h3>
-      </div>
-      <div class="card_right">
-        <img src="{{ page.image_middle }}"></img>
-      </div>
-    </div>
-  </div>
-
-  <div class="matches_cards">
-    <div class="card_body">
-      <div class="card_left">
-        <img src="assets/image/logo/logo_500.png" alt="Quixz eSports logo">
-      </div>
-      <div class="card_middle">
-        <h2>{{ page.matchdate_bottom }}</h2>
-        <a href="{{ page.link_bottom }}" target="_blank">{{ page.game_bottom }}</a>
-        <h3>VS</h3>
-      </div>
-      <div class="card_right">
-        <img src="{{ page.image_bottom }}"></img>
-      </div>
-    </div>
-  </div>
+{% endfor %}
 </div>
 
 <div class="social">

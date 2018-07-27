@@ -31,36 +31,16 @@ collections:
       - {label: "Body", name: "body", widget: "markdown", tagname: "p"}
       - {label: "Description", name: "description", widget: "string", default: "Only vivible on the Articles page"}
 
-  - name: "homepage" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Homepage" # Used in the UI, ie.: "New Post"
+  - name: "macthes" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Upcoming Matches" # Used in the UI, ie.: "New Post"
     delete: false
-    files: # The path to the folder where the documents are stored
-      - label: "Upcoming Matches"
-        name: "upcoming_matches"
-        widget: list
-        file: "index.md"
-        delete: false
-        fields: # The fields each document in this collection have
-          - {label: "Title", name: "title", widget: "hidden", default: "Home"}
-          - {label: "Layout", name: "layout", widget: "hidden", default: "index"}
-          - {label: "Teamname - Match Top", name: "teamname_top", widget: "string"}
-          - {label: "Date - Match Top", name: "matchdate_top", widget: "date", format: "DD.MM.YY"}
-          - {label: "Game - Match Top", name: "game_top", widget: "select", options: ["Counter Strike", "Rocket League", "League of Legends", "Heathstone"]}
-          - {label: "Link - Match Top", name: "matchlink_top", widget: "string"}
-
-          - {label: "Title", name: "title", widget: "hidden", default: "Home"}
-          - {label: "Layout", name: "layout", widget: "hidden", default: "index"}
-          - {label: "Teamname - Match Middle", name: "teamname_middle", widget: "string"}
-          - {label: "Date - Match Middle", name: "matchdate_middle", widget: "date", format: "DD.MM.YY"}
-          - {label: "Game - Match Middle", name: "game_middle", widget: "select", options: ["Counter Strike", "Rocket League", "League of Legends", "Heathstone"]}
-          - {label: "Link - Match Middle", name: "matchlink_middle", widget: "string"}
-
-          - {label: "Title", name: "title", widget: "hidden", default: "Home"}
-          - {label: "Layout", name: "layout", widget: "hidden", default: "index"}
-          - {label: "Teamname - Match Bottom", name: "teamname_bottom", widget: "string"}
-          - {label: "Date - Match Bottom", name: "matchdate_bottom", widget: "date", format: "DD.MM.YY"}
-          - {label: "Game - Match Bottom", name: "game_bottom", widget: "select", options: ["Counter Strike", "Rocket League", "League of Legends", "Heathstone"]}
-          - {label: "Link - Match Bottom", name: "matchlink_bottom", widget: "string"}
+    folder: "_posts/matches"
+    fields: # The fields each document in this collection have
+          - {label: "Match", name: "title", widget: "string", default:""}
+          - {label: "Team Logo", name: "image", widget: "image", defualt: "assets/image/articles/default_team_logo.png"}
+          - {label: "Date", name: "matchdate", widget: "date", format: "DD-MM-YYYY"}
+          - {label: "Game", name: "game", widget: "select", options: ["Counter Strike", "Rocket League", "League of Legends", "Heathstone"]}
+          - {label: "Link", name: "matchlink", widget: "string"}
 
   - name: "about" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "About" # Used in the UI, ie.: "New Post"
