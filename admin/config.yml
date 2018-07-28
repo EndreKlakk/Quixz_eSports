@@ -34,7 +34,7 @@ collections:
 
   - name: "macthes" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Upcoming Matches" # Used in the UI, ie.: "New Post"
-    delete: false
+    delete: true
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     folder: "_matches"
