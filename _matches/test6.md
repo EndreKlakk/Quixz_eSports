@@ -1,8 +1,7 @@
 ---
 title: test6
 image: /assets/image/articles/default_team_logo.png
-matchdate: 06-08-2018
+matchdate: 2018-08-30
 game: League of Legends
 matchlink: '#'
 ---
-
