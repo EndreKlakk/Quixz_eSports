@@ -124,8 +124,8 @@
 <div class="matches">
   <h1>Upcoming<span>Matches</span></h1>
 {% assign curDate = site.time | date: '%s' %}
-{% for item in site.matches | limit:3 %}
-{% assign sorted = site.matches | sort:"matchdate" %}
+{% for item in site.matches %}
+{% assign sorted = site.matches %}
   {% assign postStartDate = item.matchdate | date: '%s' %}
   {% if postStartDate >= curDate %}
 <div class="matches_cards">
