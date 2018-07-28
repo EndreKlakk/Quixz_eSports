@@ -239,7 +239,7 @@ body {
 .card_body{
   background: linear-gradient(to top right, #ffffff80, #ffffff70);
   width: 70vw;
-  height: 20vh;
+  height: 10rem;
   display: block;
   font-family: "Lato";
   margin: 3rem auto auto auto;
@@ -269,7 +269,7 @@ body {
 }
 
 .card_middle h2 {
-  font-size: 3em;
+  font-size: 1.9em;
   margin: 0;
 }
 
@@ -422,19 +422,11 @@ body {
     display: none
   }
 
- .card_1,.card_3 {
-   display: none
- }
-
- .card_2 {
-   width: 70%;
- }
-
  .icons {
    display: block;
    font-size: 6em;
    text-align: center;
-   width: 100vw;
+   width: 90vw;
  }
 
  .icons a {
@@ -466,10 +458,6 @@ body {
  .about_text {
    height: 80%;
    width: 70%;
- }
-
- .team h1 {
-   font-size: 5em;
  }
 
  .matches h1 {
@@ -528,12 +516,7 @@ body {
   height: 20vh;
 }
 
-.card_left {
-  display: none
-}
-
 .card_middle {
-  width: 100%;
   height: 100%;
   text-align: center;
   display: inline-block;
@@ -542,7 +525,7 @@ body {
 }
 
 .card_middle h2 {
-  font-size: 3em;
+  font-size: 2em;
   margin: 0;
 }
 
@@ -551,14 +534,6 @@ body {
   margin: 0;
   color: #F8B52A;
   font-family: "Raleway"
-}
-
-.card_middle h3 {
-  display: none
-}
-
-.card_right {
-  display: none
 }
 }
 
@@ -646,6 +621,30 @@ body {
   .about_content {
     width: calc(100% - 2em);
     margin: 0;
+  }
+
+  .card_left, .card_right {
+    display: none
+  }
+
+  .card_middle{
+    width: 100%
+  }
+
+  .card_body{
+    height: calc(auto + 1rem);
+  }
+
+  .card_middle h3{
+    display: none
+  }
+
+  .matches h1 {
+    font-size: 3.1em
+  }
+
+  .matches span {
+    font-size: .6em
   }
 }
 
