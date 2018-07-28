@@ -123,24 +123,27 @@
 -->
 <div class="matches">
   <h1>Upcoming<span>Matches</span></h1>
-{% for item in site.matches limit:3 %}
-
-    <div class="matches_cards">
-      <div class="card_body">
-        <div class="card_left">
-          <img src="assets/image/logo/logo_500.png" alt="Quixz eSports logo">
-        </div>
-        <div class="card_middle">
-          <h2>{{ item.matchdate | date: '%B %d, %Y' }}</h2>
-          <a href="{{ item.matchlink }}" target="_blank">{{ item.game }}</a>
-          <h3>VS</h3>
-        </div>
-        <div class="card_right">
-          <img src="{{ item.image }}" alt="Logo of opposing team"></img>
-        </div>
-      </div>
+{% assign curDate = site.time | date: '%s' %}
+{% for item in site.matches | limit:3 %}
+{% assign sorted = site.matches | sort:"matchdate" %}
+  {% assign postStartDate = item.matchdate | date: '%s' %}
+  {% if postStartDate >= curDate %}
+<div class="matches_cards">
+  <div class="card_body">
+    <div class="card_left">
+      <img src="assets/image/logo/logo_500.png" alt="Quixz eSports logo">
     </div>
-
+    <div class="card_middle">
+      <h2>{{ item.matchdate | date: '%B %d, %Y' }}</h2>
+      <a href="{{ item.matchlink }}" target="_blank">{{ item.game }}</a>
+      <h3>VS</h3>
+    </div>
+    <div class="card_right">
+      <img src="{{ item.image }}" alt="Logo of opposing team"></img>
+    </div>
+  </div>
+</div>
+{% endif %}
 {% endfor %}
 </div>
 

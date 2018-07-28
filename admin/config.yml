@@ -36,7 +36,7 @@ collections:
     label: "Upcoming Matches" # Used in the UI, ie.: "New Post"
     delete: true
     create: true
-    slug: "{{date}}-{{slug}}"
+    slug: "{{matchdate}}-{{slug}}"
     folder: "_matches"
     fields: # The fields each document in this collection have
           - {label: "Match", name: "title", widget: "string", default:""}
