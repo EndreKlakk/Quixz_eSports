@@ -1,0 +1,35 @@
+<div class="footer">
+  <ul>
+    <li>Copyright © 2018 Quixz eSports All Rights Reserved.</li>
+    <li style="color:#F8B52A;">contact@quixz.eu</li>
+  </ul>
+  <img src="{{ baseurl }}/assets/image/logo/logo_500.png" alt="Quixz eSports logo">
+</div>
+
+<!-- Hamburger Menu -->
+
+  <script type="text/javascript">
+      $(document).ready(function(){
+        $('.menu').click(function(){
+          $('ul').toggleClass('active');
+        })
+      })
+  </script>
+
+<!-- Smooth Scroll -->
+
+  <script>
+   $(document).ready(function(){
+    $("a").on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 1200, function(){
+          window.location.hash = hash;
+        });
+      }
+    });
+  });
+  </script>
