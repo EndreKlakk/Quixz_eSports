@@ -2,7 +2,7 @@ permalink: /:categories/:year/:title:output_ext
 
 future: true
 
-include: [_redirects]
+include: [_redirects, .htcaccess]
 
 collections:
   - matches
@@ -19,7 +19,6 @@ url: "https://quixz.eu" # the base hostname & protocol for your site, e.g. http:
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-compress-images
 
 defaults:
   -
@@ -27,7 +26,3 @@ defaults:
       path:            "admin"
     values:
       sitemap:         false
-
-
-compress_images:
-  images_path: "assets/image/**/*.{gif,png,jpg,jpeg,svg}"
