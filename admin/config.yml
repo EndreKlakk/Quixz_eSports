@@ -4,8 +4,6 @@ backend:
   accept_roles: #optional - accepts all users if left out
     - admin
 
-publish_mode: editorial_workflow
-
 editor:
    preview: false
 
