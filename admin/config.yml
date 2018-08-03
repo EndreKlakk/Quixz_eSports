@@ -4,6 +4,8 @@ backend:
   accept_roles: #optional - accepts all users if left out
     - admin
 
+publish_mode: editorial_workflow
+
 editor:
    preview: false
 
@@ -20,7 +22,6 @@ collections:
     label: "Article" # Used in the UI, ie.: "New Post"
     folder: "_posts" # The path to the folder where the documents are stored
     layout: "article.html"
-    publish_mode: editorial_workflow
     sort: "date:desc" # Default is title:asc
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
@@ -31,7 +32,7 @@ collections:
       - {label: "Publish Date", name: "date", widget: "date", format: "DD-MM-YYYY"}
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Body", name: "body", widget: "markdown", tagname: "p"}
-      - {label: "Description", name: "description", widget: "string", default: "Only vivible on the Articles page"}
+      - {label: "Description", name: "description", widget: "string", default: "Only visible on the Articles page"}
 
   - name: "macthes" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Upcoming Matches" # Used in the UI, ie.: "New Post"
