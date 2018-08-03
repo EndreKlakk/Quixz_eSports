@@ -2,8 +2,6 @@ backend:
   name: git-gateway
   repo: Barsnes/Quixz_eSports
 
-publish_mode: editorial_workflow
-
 editor:
    preview: false
 
