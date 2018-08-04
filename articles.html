@@ -34,6 +34,8 @@ description: Read new articles from Quixz eSports
   .article_body > div:first-of-type {
     width: 100%;
     margin: 0;
+    padding: 0 1.5% 0 0;
+    float: left;
   }
 
   .article_list img {
@@ -42,19 +44,10 @@ description: Read new articles from Quixz eSports
   }
 
   .article_list {
-    margin: 0;
-    width: 100%
-  }
-
-  .article_list {
-    width: 47.5%;
-    margin: 0 0 0 2.5%;
+    width: 47%;
+    padding: 0 1.5%;
     display: inline-block;
     float: left;
-  }
-
-  .article_body div:nth-of-type(2n) {
-    margin: 0 2.5% 0 0;
   }
 
   .article_list a {
@@ -90,7 +83,7 @@ description: Read new articles from Quixz eSports
   @media (max-width:700px) {
 
     .article_list h1 {
-      font-size: 1.5em
+      font-size: 1.2rem
     }
 
     .article_body{
@@ -98,6 +91,10 @@ description: Read new articles from Quixz eSports
       background-color: #2B63AF;
       font-family:"Lato";
       padding: 7em 10%;
+    }
+
+    .article_readmore {
+      font-size: .8em
     }
   }
 
