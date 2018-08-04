@@ -8,7 +8,7 @@ description: >-
   Today we are excited to announce our dive into Counter Strike, as we sign our
   first roster
 ---
-Quixz eSports is from today on of many organisations, with a team in the game Counter Strike: Global Offensive. This would be the third game added to the Quixz family, also adding five fantastic players to our arsenal.
+Quixz eSports is from today one of many organisations, with a team in the game Counter Strike: Global Offensive. This would be the third game added to the Quixz family, also adding five fantastic players to our arsenal.
 
 The roster is formerly know as "sehrSchade", and has been playing several seasons in the 99dmg league. This season, they will not participate in 99dmg, as the players felt that the league did not fulfill their expectations.
 
