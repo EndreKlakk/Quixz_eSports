@@ -47,14 +47,14 @@ collections:
     label: "Team" # Used in the UI, ie.: "New Post"
     delete: true
     create: true
-    slug: "{{playername}}"
+    slug: "{{playername}}-{{slug}}"
     folder: "_players"
     fields: # The fields each document in this collection have
           - {label: "Player", name: "title", widget: "hidden", default:"title"}
           - {label: "First Name", name: "firstname", widget: "string"}
           - {label: "Nickname", name: "playername", widget: "string"}
           - {label: "Last name", name: "lastname", widget: "string"}
-          - {label: "Photo", name: "playerimage", widget: "image", defualt: "assets/image/articles/Avatar.png"}
+          - {label: "Photo", name: "playerimage", widget: "image", defualt: "assets/image/articles/avatar.png"}
           - {label: "Game", name: "playergame", widget: "select", options: ["Counter Strike", "Rocket League", "League of Legends", "Hearthstone"]}
 
   - name: "about" # Used in routes, ie.: /admin/collections/:slug/edit
