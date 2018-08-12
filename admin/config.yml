@@ -47,9 +47,10 @@ collections:
     label: "Team" # Used in the UI, ie.: "New Post"
     delete: true
     create: true
-    slug: "{{playername}}-{{slug}}"
+    slug: "{{playername}}"
     folder: "_players"
     fields: # The fields each document in this collection have
+          - {label: "Player", name: "title", widget: "hidden", default:""}
           - {label: "First Name", name: "firstname", widget: "string"}
           - {label: "Nickname", name: "playername", widget: "string"}
           - {label: "Last name", name: "lastname", widget: "string"}
