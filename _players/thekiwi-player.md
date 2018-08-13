@@ -1,6 +1,6 @@
 ---
 title: Player
-firstname: Lous
+firstname: Louis
 playername: theKiwi
 lastname: Dubios
 playerimage: /assets/image/articles/Avatar.png
