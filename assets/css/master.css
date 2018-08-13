@@ -384,6 +384,8 @@ body {
   font-size: 2rem;
   text-align: center;
   column-span: all;
+  -moz-column-span: all;
+  -webkit-column-span: all;
 }
 
 .player {
