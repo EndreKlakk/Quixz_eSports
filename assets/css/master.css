@@ -371,8 +371,12 @@ body {
   width: calc(100vw - 12rem);
   min-height: 70vh;
   padding: 6rem;
-  column-count: 5;
-  column-gap: .5rem;
+  -webkit-column-count: 5;
+  -webkit-column-gap:   .5rem;
+  -moz-column-count:    5;
+  -moz-column-gap:      .5rem;
+  column-count:         5;
+  column-gap:           .5rem;
   background-color: #232323;
 }
 
