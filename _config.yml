@@ -6,6 +6,7 @@ include: [_redirects, .htcaccess]
 
 collections:
   - matches
+  - players
 
 title: Quixz eSports
 email: contact@quixz.eu

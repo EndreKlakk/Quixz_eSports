@@ -3,3 +3,19 @@ layout: default
 title: Team
 description: Take a look at what components make up Quixz eSports.
 ---
+
+  <div class="team">
+      <h4>Counter Strike: Global Offensive</h4>
+{% for player in site.players %}
+
+  {% if player.playergame == "Counter Strike" %}
+    <div class="player">
+      <img src="{{ player.playerimage }}" alt="">
+      <h2>{{ player.firstname }}</h2>
+      <h1>"{{ player.playername}}"</h1>
+      <h2 class="lastname">{{ player.lastname }}</h2>
+    </div>
+  {% endif %}
+
+{% endfor %}
+  </div>
