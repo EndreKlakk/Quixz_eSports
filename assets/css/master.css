@@ -368,14 +368,12 @@ body {
 /* Team */
 
 .team {
-  width: 100%;
+  width: calc(100vw - 12rem);
   min-height: 70vh;
-  padding-top: 6rem;
+  padding: 6rem;
   column-count: 5;
   column-gap: .5rem;
   background-color: #232323;
-  padding-left: 2rem;
-  padding-right: 2rem
 }
 
 .team h4 {
@@ -385,9 +383,10 @@ body {
 }
 
 .player {
-  width: 100%;
+  width: calc(100% - 3rem) !important;
   font-family: "Lato";
-  display: inline-block;
+  display: block;
+  padding: 1.5rem
 }
 
 .player img {
