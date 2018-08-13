@@ -43,14 +43,14 @@ collections:
           - {label: "Game", name: "game", widget: "select", options: ["Counter Strike", "Rocket League", "League of Legends", "Hearthstone"]}
           - {label: "Link", name: "matchlink", widget: "string"}
 
-  - name: "player" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Player" # Used in the UI, ie.: "New Post"
+  - name: "player"
+    label: "Player"
     delete: true
     create: true
     slug: "{{playername}}-{{slug}}"
     folder: "_players"
-    fields: # The fields each document in this collection have
-          - {label: "Title", name: "title", widget: "hidden", default:"Player"}
+    fields:
+          - {label: "Title", name: "title", widget: "hidden", default: "Player"}
           - {label: "First Name", name: "firstname", widget: "string"}
           - {label: "Nickname", name: "playername", widget: "string"}
           - {label: "Last name", name: "lastname", widget: "string"}
