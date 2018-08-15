@@ -370,7 +370,7 @@ body {
 .team {
   width: calc(100vw - 12rem);
   min-height: 70vh;
-  padding: 6rem;
+  padding: 7rem 6rem;
   -webkit-column-count: 5;
   -webkit-column-gap:   .5rem;
   -moz-column-count:    5;
@@ -386,6 +386,7 @@ body {
   column-span: all;
   -moz-column-span: all;
   -webkit-column-span: all;
+  margin: 0;
 }
 
 .player {
@@ -602,6 +603,40 @@ body {
   color: #F8B52A;
   font-family: "Raleway"
 }
+
+/* Team */
+
+.team {
+  padding: 7rem 1em;
+  width: calc(100vw - 2em);
+  column-count: 5;
+  column-gap: .1rem;
+  -webkit-column-count: 5;
+  -webkit-column-gap:   .1rem;
+  -moz-column-count:    5;
+  -moz-column-gap:      .1rem;
+}
+
+.team h4 {
+  font-size: 2rem;
+}
+
+.player {
+  padding: .5rem
+}
+
+.player h2 {
+  font-size: .4rem;
+}
+
+.player h1 {
+  font-size: .6rem;
+}
+
+.lastname {
+  text-align: right;
+}
+
 }
 
 @media (max-width:700px) {
@@ -663,10 +698,6 @@ body {
   .navbar ul {
     margin-top: 0;
     margin-right: -1.5em;
-  }
-
-  .team h1 {
-    font-size: 3em;
   }
 
   .icons {
@@ -802,10 +833,6 @@ body {
     margin-top: 0;
     margin-right: -1.5em;
   }
-
-  .team h1 {
-    font-size: 3em;
-  }
 }
 
 @media (max-width:500px) {
@@ -868,25 +895,6 @@ body {
   .navbar ul {
     margin-top: 0;
     margin-right: -1.5em;
-  }
-
-
-  .team {
-    height: auto;
-    background-color: #232323;
-    margin: 0;
-    padding: 1rem;
-  }
-
-  .team h1 {
-    font-size: 3em;
-    margin-top: .5em;
-  }
-
-  .team_inner {
-    width: 100%;
-    background-color: #F8B52A;
-    height: 60vh;
   }
 
   .footer {
