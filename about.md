@@ -14,3 +14,5 @@ Quixz has never had a lot of money, and has therefore relied on dedication from 
 ![Quixz eSports logo](/assets/image/articles/about_middle.png)
 
 > _The current Quixz eSports logo_
+
+2018 has been the year that Quixz has grown the most. The growth started with the new logo in 2017, and in 2018 the homepage was done. After the rebirth, Quixz started to sign team and players in various games. Rocket League was the first game, where we signed Solheim. It shortly followed with the addition of Klakk, playing the card game Hearthstone.
