@@ -1,0 +1,17 @@
+---
+layout: default
+title: Team
+description: Take a look at what components make up Quixz eSports.
+---
+
+  <div class="server">
+      <h4>Servers</h4>
+{% for server in site.servers %}
+
+    <div class="server_content">
+      <h1>{{ server.servername }}</h1>
+      <h2>"{{ server.serverip }}"</h2>
+    </div>
+
+{% endfor %}
+  </div>

@@ -377,7 +377,7 @@ body {
   -moz-column-gap:      .5rem;
   column-count:         5;
   column-gap:           .5rem;
-  background-color: #232323;
+  background-color: #2B63AF;
 }
 
 .team h4 {
@@ -415,6 +415,22 @@ body {
 
 .lastname {
   text-align: right;
+}
+
+/* Servers */
+
+.server {
+  column-count: 2;
+  column-gap: 3rem;
+  padding: 5rem 5rem;
+  text-align: center;
+  background-color: #2B63AF;
+  min-height: 100vh;
+}
+
+.server h4 {
+  column-span: all;
+  font-size: 3rem;
 }
 
 @media (max-width:1200px) {

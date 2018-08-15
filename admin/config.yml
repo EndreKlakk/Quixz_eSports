@@ -57,6 +57,17 @@ collections:
           - {label: "Photo", name: "playerimage", widget: "image", defualt: "avatar.png"}
           - {label: "Game", name: "playergame", widget: "select", options: ["Counter Strike", "Rocket League", "League of Legends", "Hearthstone"]}
 
+  - name: "server"
+    label: "Servers"
+    delete: true
+    create: true
+    slug: "{{servername}}-{{slug}}"
+    folder: "_servers"
+    fields:
+          - {label: "Title", name: "title", widget: "hidden", default: "Server"}
+          - {label: "Server Name", name: "servername", widget: "string"}
+          - {label: "Server IP", name: "serverip", widget: "string"}
+
   - name: "about" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "About" # Used in the UI, ie.: "New Post"
     delete: false
