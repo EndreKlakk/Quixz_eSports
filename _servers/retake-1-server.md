@@ -1,6 +1,6 @@
 ---
 title: Server
 servername: 'Retake #1'
-serverip: retake.quixz.eu
+serverip: '54.36.236.19:27015'
 ---
 
