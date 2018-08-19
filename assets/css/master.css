@@ -450,7 +450,7 @@ body {
   margin: 0;
   font-family: "Lato";
   padding: 1.3rem auto;
-  display: inline-block;
+  display: block;
 }
 
 .server_content h1 {
