@@ -9,8 +9,7 @@ description: Quixz eSports offers a selection of CSGO servers you can enjoy with
 {% for server in site.servers %}
 
     <div class="server_content">
-      <h1>{{ server.servername }}</h1>
-      <h2>{{ server.serverip }}</h2>
+      {{ server.server }}
     </div>
 
 {% endfor %}

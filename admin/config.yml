@@ -64,9 +64,8 @@ collections:
     slug: "{{servername}}-{{slug}}"
     folder: "_servers"
     fields:
-          - {label: "Title", name: "title", widget: "hidden", default: "Server"}
-          - {label: "Server Name", name: "servername", widget: "string"}
-          - {label: "Server IP", name: "serverip", widget: "string"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Server Info", name: "server", widget: "string"}
 
   - name: "about" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "About" # Used in the UI, ie.: "New Post"
