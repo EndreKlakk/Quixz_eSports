@@ -438,11 +438,13 @@ body {
   -webkit-column-span: all;
   -moz-column-span: all;
   font-size: 3rem;
+  margin: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem
 }
 
 .server_content {
   width: 100%;
-  border: 2px solid #FFF;
   font-size: 2rem;
   column-span: 1;
   -webkit-column-span: 1;
