@@ -367,70 +367,7 @@ body {
 
 /* Team */
 
-.team {
-  width: calc(100% - 6rem);
-  margin: 0;
-  padding: 6rem 3rem;
-  background-color: #2B63AF;
-  min-height: 100vh;
-}
 
-.team h4 {
-  font-size: 2rem;
-  text-align: center;
-}
-
-.row {
-  width: auto;
-  margin: 0 1px;
-}
-
-.column {
-  float: left;
-  width: 20%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-  box-sizing: border-box;
-  display: inline-block;
-}
-
-@media screen and (max-width: 650px) {
-  .column {
-    width: 50%;
-    display: contents;
-  }
-
-  .team__cs {
-    width: calc(100% - 2rem);
-    padding: 6rem 1rem;
-  }
-
-  .container::after, .column::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-  .card {
-    width: 50%;
-    float: left;
-    display: -webkit-inline-box;
-}
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.container {
-  padding: 0 16px;
-}
-
-.container::after, .column::after {
-  content: "";
-  clear: both;
-  display: table;
-}
 
 /* Servers */
 
@@ -620,40 +557,8 @@ body {
   font-family: "Raleway"
 }
 
-/* Team */
-
-.team {
-  padding: 7rem 1em;
-  width: calc(100vw - 2em);
-  column-count: 5;
-  column-gap: .1rem;
-  -webkit-column-count: 5;
-  -webkit-column-gap:   .1rem;
-  -moz-column-count:    5;
-  -moz-column-gap:      .1rem;
 }
 
-.team h4 {
-  font-size: 2rem;
-}
-
-.player {
-  padding: .5rem
-}
-
-.player h2 {
-  font-size: .4rem;
-}
-
-.player h1 {
-  font-size: .6rem;
-}
-
-.lastname {
-  text-align: right;
-}
-
-}
 
 @media (max-width:700px) {
 
