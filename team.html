@@ -39,3 +39,21 @@ description: Take a look at what components make up Quixz eSports.
 
 {% endfor %}
 </div>
+
+<div class="team">
+  <h4>Rocket League</h4>
+{% for player in site.players limit: 1 %}
+
+{% if player.playergame == "Heathstone" %}
+    <div class="column">
+      <div class="card">
+        <img src="{{ player.playerimage }}" alt="" style="width:100%">
+        <div class="container">
+          <h2>{{ player.firstname }} <b style="color: #F8B52A">{{ player.playername}}</b> {{ player.lastname }}</h2>
+        </div>
+      </div>
+    </div>
+{% endif %}
+
+{% endfor %}
+</div>
