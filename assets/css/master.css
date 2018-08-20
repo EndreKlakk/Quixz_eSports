@@ -368,54 +368,68 @@ body {
 /* Team */
 
 .team {
-  width: calc(100vw - 12rem);
-  min-height: 70vh;
-  padding: 7rem 6rem;
-  -webkit-column-count: 5;
-  -webkit-column-gap:   .5rem;
-  -moz-column-count:    5;
-  -moz-column-gap:      .5rem;
-  column-count:         5;
-  column-gap:           .5rem;
+  width: calc(100% - 6rem);
+  margin: 0;
+  padding: 6rem 3rem;
   background-color: #2B63AF;
+  min-height: 100vh;
 }
 
 .team h4 {
   font-size: 2rem;
   text-align: center;
-  column-span: all;
-  -moz-column-span: all;
-  -webkit-column-span: all;
-  margin: 0;
 }
 
-.player {
-  width: calc(100% - 3rem) !important;
-  font-family: "Lato";
-  display: block;
-  padding: 1.5rem
+.row {
+  width: auto;
+  margin: 0 1px;
 }
 
-.player img {
-  width: 100%;
-  margin: 0 auto;
+.column {
+  float: left;
+  width: 20%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  box-sizing: border-box;
+  display: inline-block;
 }
 
-.player h2 {
-  font-size: 1rem;
-  color: #FFF;
-  margin: 0;
+@media screen and (max-width: 650px) {
+  .column {
+    width: 50%;
+    display: contents;
+  }
+
+  .team__cs {
+    width: calc(100% - 2rem);
+    padding: 6rem 1rem;
+  }
+
+  .container::after, .column::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .card {
+    width: 50%;
+    float: left;
+    display: -webkit-inline-box;
+}
 }
 
-.player h1 {
-  font-size: 2rem;
-  color: #F8B52A;
-  margin: 0;
-  text-align: center;
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.lastname {
-  text-align: right;
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .column::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 /* Servers */
