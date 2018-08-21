@@ -16,6 +16,6 @@ During the next days we will also have a practice server going online which will
 
 If you have questions, feedback or requests or want an overview of all servers when we add new ones in the future you can visit the server forum in our steam group. 
 
-The retake server can be reached at **retake.quixz.eu** 
+The retake server can be reached at [**retake.quixz.eu**](steam://connect/retake.quixz.eu) 
 
-and our practice server will go online at **prac.quixz.eu**
+and our practice server will go online at [**prac.quixz.eu**](steam://connect/prac.quixz.eu)
