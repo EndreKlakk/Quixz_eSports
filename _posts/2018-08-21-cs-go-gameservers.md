@@ -1,6 +1,6 @@
 ---
 layout: default_blog
-author: Tim "dasBunny" Strutzberg
+author: Tim Strutzberg
 image: /assets/image/articles/retake_server.png
 date: 21-08-2018
 title: 'CS:GO Gameservers!'
