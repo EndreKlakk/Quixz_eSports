@@ -1,5 +1,5 @@
 ---
-title: main
-server: main.quixz.eu
+title: prac
+server: prac.quixz.eu
 ---
 
