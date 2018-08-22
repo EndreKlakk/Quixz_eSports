@@ -1,0 +1,13 @@
+{% include header.html %}
+
+{% for person in site.players %}
+
+  <div class="player__profile">
+
+    <img src="{{ person.playerimage }}" alt="">
+
+  </div>
+
+{% endfor %}
+
+{% include footer.html %}
