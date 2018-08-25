@@ -5,6 +5,7 @@ date: 19-07-2018
 title: Welcome Solheim!
 description: Solheim is the new Rocket League 1v1 player!
 author: Tobias Barsnes
+categories: news
 ---
 When looking for players in different games, we decided to start small. Therefore, the 1v1 gamemode in Rocket League was where we started first. The game's main focus when talking about esports, is 3v3, but 1v1 still has a community.
 

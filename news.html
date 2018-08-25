@@ -5,7 +5,7 @@ description: Read new articles from Quixz eSports
 ---
 <div class="article_body">
 
-  {% for post in site.posts limit:10 %}
+  {% for post in site.categories.news limit:10 %}
     <div class="article_list">
 
       <a href="{{ post.url | remove: '.html' }}"><img src="..{{ post.image }}" alt="{{ post.description }}" og:image></a>

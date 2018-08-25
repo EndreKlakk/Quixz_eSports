@@ -5,6 +5,7 @@ title: Social media update
 description: We widen our horizons and adopt a new social media platform
 date: 19-07-2018
 author: Tobias Barsnes
+categories: news
 ---
 Today marks the date we launch our new youtube channel!
 

@@ -29,6 +29,7 @@ collections:
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Body", name: "body", widget: "markdown", tagname: "p"}
       - {label: "Description", name: "description", widget: "string", default: "Only visible on the Articles page"}
+      - {label: "categories", name: "categories", widget: "hidden", default: "news"}
 
   - name: "macthes" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Upcoming Matches" # Used in the UI, ie.: "New Post"
@@ -56,6 +57,7 @@ collections:
           - {label: "Last name", name: "lastname", widget: "string"}
           - {label: "Photo", name: "playerimage", widget: "image", defualt: "avatar.png"}
           - {label: "Game", name: "playergame", widget: "select", options: ["Counter Strike", "Rocket League", "League of Legends", "Hearthstone"]}
+          - {label: "categories", name: "categories", widget: "hidden", default: "player"}
 
   - name: "server"
     label: "Servers"

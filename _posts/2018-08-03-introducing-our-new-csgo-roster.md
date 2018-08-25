@@ -7,6 +7,7 @@ title: Introducing our new CSGO roster!
 description: >-
   Today we are excited to announce our dive into Counter Strike, as we sign our
   first roster
+categories: news
 ---
 Quixz eSports is from today one of many organisations, with a team in the game Counter Strike: Global Offensive. This would be the third game added to the Quixz family, also adding five fantastic players to our arsenal.
 

@@ -1,13 +1,53 @@
 {% include header.html %}
 
-{% for person in site.players %}
-
   <div class="player__profile">
+    <div class="player_image">
+      <img src="{{ page.playerimage }}" alt="">
+    </div>
 
-    <img src="{{ person.playerimage }}" alt="">
+    <div class="player_name">
+      <h1>{{ page.firstname }} <b style="color:#F8B52A">{{ page.playername }}</b> {{ page.lastname }}</h1>
+    </div>
 
   </div>
 
-{% endfor %}
-
 {% include footer.html %}
+
+<style>
+
+.player__profile {
+  width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  padding: 2rem 0;
+  background-color: #2B63AF;
+  margin: 0 auto;
+  text-align: left;
+  padding-top: 6rem
+}
+
+.player_image {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 6;
+  width: 100%
+}
+
+.player_image img {
+  width: 100%;
+  height: auto;
+}
+
+.player_name {
+  grid-column-start: 3;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  width: 100%
+}
+
+</style>
