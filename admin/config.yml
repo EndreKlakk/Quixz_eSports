@@ -51,6 +51,7 @@ collections:
     slug: "{{playername}}-{{slug}}"
     folder: "_posts/player"
     fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "players"}
           - {label: "Title", name: "title", widget: "hidden", default: "Player"}
           - {label: "First Name", name: "firstname", widget: "string"}
           - {label: "Nickname", name: "playername", widget: "string"}
