@@ -1,40 +1,72 @@
 {% include header.html %}
-
+<div class="player">
   <div class="player__profile">
     <div class="player_image">
       <img src="{{ page.playerimage }}" alt="">
     </div>
 
+  <div class="player_info">
     <div class="player_name">
       <h1>{{ page.firstname }} <b style="color:#F8B52A">{{ page.playername }}</b> {{ page.lastname }}</h1>
     </div>
 
+    <div class="player_game">
+      <p>{{ page.playergame }}</p>
+    </div>
+
+    <div class="social-media">
+      <a href="{{ page.twitch }}"><i class="fab fa-twitch"></i></a>
+      <a href="{{ page.twitter }}"><i class="fab fa-twitter"></i></a>
+      <a href="{{ page.youtube }}"><i class="fab fa-youtube"></i></a>
+      <a href="{{ page.steam }}"><i class="fab fa-steam"></i></a>
+    </div>
+  </div>
   </div>
 
+  <div class="player__text">
+    <h1 class="title">About {{ page.playername }}</h1>
+
+    {{ page.text }}
+  </div>
+
+  <div class="player__gallery">
+    <h1 class="title">Videos and Pictures</h1>
+
+    {{ page.gallery }}
+
+  </div>
+</div>
 {% include footer.html %}
 
 <style>
 
-.player__profile {
-  width: 100vw;
-  min-height: 100vh;
-  display: grid;
-  grid-gap: 1em;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  padding: 2rem 0;
+.player {
   background-color: #2B63AF;
-  margin: 0 auto;
-  text-align: left;
-  padding-top: 6rem
+  min-height: 100vh;
+  padding-top: 8rem;
+  text-align: center;
 }
 
-.player_image {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 6;
-  width: 100%
+.player__profile {
+  width: calc(100vw - 12rem);
+  height: auto;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: 2fr 4fr;
+  grid-template-rows: auto;
+  padding: 2rem 0;
+  margin: 0 auto;
+  text-align: left;
+  margin: 1rem 7rem;
+  background-color: #FFFFFF20;
+  box-shadow: 0 0 50px #00000020;
+}
+
+.player_info {
+  grid-column: 2 / 5;
+  grid-row: 1 / 2;
+  width: 100%;
+  height: 100%
 }
 
 .player_image img {
@@ -43,11 +75,85 @@
 }
 
 .player_name {
-  grid-column-start: 3;
-  grid-column-end: 7;
-  grid-row-start: 2;
-  grid-row-end: 3;
   width: 100%
 }
 
+.social-media {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 50%
+}
+
+.social-media a {
+  color: #FFF;
+  text-decoration: none;
+  font-size: 2rem;
+  grid-column: span 1;
+}
+
+.player__text {
+  width: 80%;
+  margin: 0 auto;
+  text-align: left
+}
+
+.player__text .title {
+  text-align: center;
+}
+
+.player__gallery {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+}
+
+.player__gallery p {
+  display: none;
+}
+
+.player__gallery h1 {
+  display: none;
+}
+
+.player__gallery .title {
+  display: block;
+  grid-column: span 3;
+}
+
+.player__gallery img {
+  display: block;
+  width: 100%;
+  grid-column: span 1
+}
+
+@media screen and (max-width: 650px) {
+
+  .player__profile {
+    width: calc(100vw - 2rem);
+    height: auto;
+    display: grid;
+    grid-gap: .5em;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 2rem 0;
+    margin: 0 auto;
+    text-align: left;
+    margin: 1rem 1rem;
+  }
+
+  .social-media {
+    width: 100%;
+    text-align: center;
+  }
+
+  .player_info {
+    grid-column: 1 / 2;
+    grid-row: 2 / 2;
+    padding: 1rem;
+    width: calc(100% - 2rem)
+  }
+}
 </style>
