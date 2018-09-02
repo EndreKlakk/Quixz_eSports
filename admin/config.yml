@@ -58,10 +58,11 @@ collections:
           - {label: "Photo", name: "playerimage", widget: "image", defualt: "avatar.png"}
           - {label: "Game", name: "playergame", widget: "select", options: ["Counter Strike", "Rocket League", "League of Legends", "Hearthstone"]}
           - {label: "Text", name: "text", widget: "markdown"}
-          - {label: "Gallery", name: "gallery", widget: "markdown"} 
+          - {label: "Gallery", name: "gallery", widget: "markdown"}
           - {label: "Twitter", name: "twitter", widget: "string"}
           - {label: "Twitch", name: "twitch", widget: "string"}
           - {label: "Youtube", name: "youtube", widget: "string"}
+          - {label: "Steam", name: "steam", widget: "string"}
           - {label: "categories", name: "categories", widget: "hidden", default: "player"}
           - {label: "permalink", name: "permalink", widget: "hidden", default: "permalink: /player/:slug"}
 
