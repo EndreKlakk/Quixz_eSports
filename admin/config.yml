@@ -56,7 +56,7 @@ collections:
           - {label: "First Name", name: "firstname", widget: "string"}
           - {label: "Nickname", name: "playername", widget: "string"}
           - {label: "Last name", name: "lastname", widget: "string"}
-          - {label: "Photo", name: "playerimage", widget: "image", defualt: "avatar.png"}
+          - {label: "Photo", name: "playerimage", widget: "image", defualt: "/assets/image/articles/avatar.png"}
           - {label: "Game", name: "playergame", widget: "select", options: ["Counter Strike", "Rocket League", "League of Legends", "Hearthstone"]}
           - {label: "Text", name: "text", widget: "markdown"}
           - {label: "Gallery", name: "gallery", widget: "markdown"}
