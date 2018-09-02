@@ -30,7 +30,7 @@
   </div>
 
   <div class="player__gallery">
-    <h1 class="title">Videos and Pictures</h1>
+    <h1 class="title">Pictures of {{ page.playername }}</h1>
 
     {{ page.gallery }}
 
@@ -45,6 +45,7 @@
   min-height: 100vh;
   padding-top: 8rem;
   text-align: center;
+  width: 100vw
 }
 
 .player__profile {
@@ -106,8 +107,10 @@
   width: 80%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 5rem auto;
+  padding-bottom: 2rem;
+  text-align: left
 }
 
 .player__gallery p {
@@ -120,14 +123,15 @@
 
 .player__gallery .title {
   display: block;
-  grid-column: span 3;
+  grid-column: span 2;
+  text-align: center;
 }
 
 .player__gallery img {
-  display: block;
   width: 100%;
   grid-column: span 1
 }
+
 
 @media screen and (max-width: 650px) {
 
