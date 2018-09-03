@@ -1,4 +1,108 @@
-{% include header.html %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KKG798F');</script>
+<!-- End Google Tag Manager -->
+
+  <!-- Google / Search Engine Tags -->
+  <meta itemprop="name" content="{{ page.playername }}">
+  <meta itemprop="description" content="{{ page.content | truncate: 100 }}">
+  <meta itemprop="image" content="https://quixz.eu/assets/image/about/about_middle.png">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://quixz.eu">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ page.playername }}">
+  <meta property="og:description" content="{{ page.content | truncate: 100 }}">
+  <meta property="og:image" content="https://quixz.eu/assets/image/about/about_middle.png">
+  <meta property="fb:app_id" content="859803764205246">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.playername }}">
+  <meta name="twitter:description" content="{{ page.content | truncate: 100 }}">
+  <meta name="twitter:image" content="https://quixz.eu/assets/image/about/about_middle.png">
+
+  <title>Quixz eSports - {{ page.playername }}</title>
+  <link REL="SHORTCUT ICON" HREF="{{ baseurl }}/assets/image/logo/logo_500.png">
+  <meta name="google-site-verification" content="x7yK7kt6bcjL-iz3Vw9X0BDJlCR8mjrBVt_rDVekI04" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ page.content | truncate: 100 }}" />
+  <meta name="keywords" content="Quixz eSports, quixz"/>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="{{ baseurl }}/assets/css/master.css">
+  <link href="{{ baseurl }}/assets/css/fontawesome/css/all.css" rel="stylesheet">
+  <!-- Netlify Identity -->
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <!-- Cookies Consent -->
+  <link rel="stylesheet" type="text/css" href="{{ baseurl }}/assets/css/cookies.css"/>
+  <!-- Jquery -->
+  <script src="{{ baseurl }}/assets/js/jquery.js"></script>
+  <!-- Google Strucutred Data -->
+  <script type="application/ld+json">
+   { "@context": "http://schema.org",
+   "@type": "Organization",
+   "name": "Quixz eSports",
+   "legalName" : "Quixz eSports",
+   "url": "https://quixz.eu",
+   "logo": "https://quixz.eu/assets/image/logo/logo_2000.png",
+   "foundingDate": "2015",
+   "founders": [
+   {
+   "@type": "Person",
+   "name": "Tobias Barsnes"
+   }],
+   "contactPoint": {
+   "@type": "ContactPoint",
+   "contactType": "customer support",
+   "email": "contact@quixz.eu",
+   "telephone": "+47 913 65 195"
+   },
+   "sameAs": [
+   "https://twitter.com/QuixzeSports",
+   "https://www.facebook.com/quixzesports",
+   "https://www.gamer.no/klubber/quixz-esports/43274/lag/43275",
+   "https://www.youtube.com/channel/UChgzQGcnVEn_nqdSfnggkcw"
+   ]}
+</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-6482501953820040",
+          enable_page_level_ads: true
+     });
+</script>
+{% feed_meta %}
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KKG798F"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="header">
+  <div class="navbar">
+    <a href="{{ baseurl }}/index"><img src="{{ baseurl }}/assets/image/logo/logo_500.png" alt="Quixz eSports logo"></a>
+    <nav>
+      <div class="toggle">
+        <i class="fas fa-bars menu" aria-hidden="true"></i>
+      </div>
+      <ul>
+        <li><a href="{{ baseurl }}/index">Home</a></li>
+        <li><a href="{{ baseurl }}/about">About</a></li>
+        <li><a href="{{ baseurl }}/news">News</a></li>
+        <li><a href="{{ baseurl }}/team">Team</a></li>
+        <li><a href="{{ baseurl }}/servers">Servers</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
 <div class="player">
   <div class="player__profile">
     <div class="player_image">
