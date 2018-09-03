@@ -26,7 +26,7 @@
   <div class="player__text">
     <h1 class="title">About {{ page.playername }}</h1>
 
-    {{ page.text }}
+    {{ content }}
   </div>
 
   <div class="player__gallery">
@@ -94,13 +94,15 @@
 }
 
 .player__text {
-  width: 80%;
+  width: 50%;
   margin: 0 auto;
-  text-align: left
+  text-align: left;
+  font-family: "Lato"
 }
 
 .player__text .title {
   text-align: center;
+  font-family: "Raleway"
 }
 
 .player__gallery {
@@ -151,6 +153,10 @@
   .social-media {
     width: 100%;
     text-align: center;
+  }
+
+  .player__text {
+    width: 80%;
   }
 
   .player_info {
