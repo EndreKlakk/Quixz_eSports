@@ -1,7 +1,7 @@
 ---
 layout: default
 title: News
-description: We constantly update our fanbase on new players, changes and other miscellaneous content! Click to read new the newest updates from Quixz eSports. 
+description: We constantly update our fanbase on new players, changes and other miscellaneous content! Click to read new the newest updates from Quixz eSports.
 ---
 <div class="article_body">
 
@@ -11,7 +11,7 @@ description: We constantly update our fanbase on new players, changes and other 
       <a href="{{ post.url | remove: '.html' }}"><img src="..{{ post.image }}" alt="{{ post.description }}" og:image></a>
       <h1><a href="{{ post.url | remove: '.html' }}">{{ post.title }}</a></h1>
       <h5>{{ post.date | date: '%B %d, %Y' }}</h5>
-      <p>{{ post.description }}</p>
+      <p>{{ post.content | truncate: 100 }}</p>
       <a href="{{ post.url | remove: '.html' }}" class="article_readmore"><p>Read more...</p></a>
       <hr>
 
