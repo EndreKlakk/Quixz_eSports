@@ -59,11 +59,11 @@ collections:
           - {label: "Photo", name: "playerimage", widget: "image", defualt: "/assets/image/articles/avatar.png"}
           - {label: "Game", name: "playergame", widget: "select", options: ["Counter Strike", "Rocket League", "League of Legends", "Hearthstone"]}
           - {label: "Text", name: "body", widget: "markdown", tagname: "p"}
-          - {label: "Gallery", name: "gallery", widget: "markdown", default: "We currently do not have any pictures"}
-          - {label: "Twitter", name: "twitter", widget: "string"}
-          - {label: "Twitch", name: "twitch", widget: "string"}
-          - {label: "Youtube", name: "youtube", widget: "string"}
-          - {label: "Steam", name: "steam", widget: "string"}
+          - {label: "Gallery", name: "gallery", widget: "markdown", default: "We currently do not have any pictures", required: false}
+          - {label: "Twitter", name: "twitter", widget: "string", required: false}
+          - {label: "Twitch", name: "twitch", widget: "string", required: false}
+          - {label: "Youtube", name: "youtube", widget: "string", required: false}
+          - {label: "Steam", name: "steam", widget: "string", required: false}
           - {label: "categories", name: "categories", widget: "hidden", default: "player"}
           - {label: "permalink", name: "permalink", widget: "hidden", default: "permalink: /player/:slug"}
 
