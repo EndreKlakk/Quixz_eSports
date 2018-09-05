@@ -38,7 +38,7 @@ body {
 
 .background_top h1 {
   text-align: center;
-  padding-top: 30vh;
+  padding-top: 20vh;
   font-size: 7em;
   text-shadow: 0 0 30px #000;
   margin: 0;
@@ -50,45 +50,53 @@ body {
   line-height: .5em
 }
 
-.navbar {
-  position: absolute;
+/* Header */
+
+.header {
   height: 6em;
+  width: 100%;
   font-family: "Lato";
   text-decoration: none;
   background-color: #F8B52A;
   width: 100%;
   color: #FFF;
+  display: grid;
+  grid-template-columns: 20% 10% 70%;
+  grid-template-rows: 6em;
+  align-items: center;
 }
 
-.navbar img {
+.header img {
   height: 80%;
-  padding-left: 3em;
-  display: block;
-  position: absolute;
-  top: 10%
+  grid-column: 1 / 2;
+  margin: 0 auto;
 }
 
-.navbar nav {
+.header nav {
   text-align: right;
-  height: 80%;
-  position: absolute;
-  right: 1.5em;
-  top: 25%
+  grid-column: 3 / 4;
+  height: 100%
 }
 
-.navbar ul {
-
+.header ul {
+  margin: 0;
+  height: 100%
 }
 
-.navbar li {
+.header li {
   display: inline-block;
+  height: 100%
 }
 
-.navbar a {
+.header a {
   color: #FFF;
   text-decoration: none;
   padding-right: 1.5em;
-  padding-left: 1.5em
+  padding-left: 1.5em;
+  grid-column: 1 / 2;
+  height: 100%;
+  display: grid;
+  align-items: center;
 }
 
 .toggle {
@@ -97,6 +105,7 @@ body {
   font-size: 2rem;
   height: 80%;
   margin: 0;
+  padding-left: 3em;
   padding-top: 25%;
 }
 
@@ -409,7 +418,7 @@ body {
   font-family: "Lato";
   background-color: #2B63AF;
   min-height: 100vh;
-  padding-top: 6rem
+  padding-top: 1rem
 }
 
 .about_content h1 {
@@ -655,32 +664,47 @@ body {
     display: none
   }
 
-  .navbar img {
-    padding-left: 1em;
-  }
 
-  .active {
-    display: block;
+  /* Header */
+
+  .header {
+    height: 6em;
+    width: 100%;
+    font-family: "Lato";
+    text-decoration: none;
+    background-color: #F8B52A;
+    width: 100%;
+    color: #FFF;
+    display: grid;
+    grid-template-columns: 30% 40% 20% 10% ;
+    grid-template-rows: 6em;
+    align-items: center;
   }
 
   .toggle {
     display: block;
-    margin-top: 0;
-    padding: 0;
+    font-size: 2rem;
+    height: 80%;
+    grid-column: 3 / 4
   }
 
-  .navbar li {
+  .active {
     display: block;
+    position: absolute;
+    width: 100%;
     text-align: center;
-    padding: 1rem;
-    margin: 0;
+    padding-left: 0;
+    top: 6em;
+    left: 0;
+    height: auto;
     background-color: #F8B52A;
-    font-size: 3vw;
+    margin: 0;
   }
 
-  .navbar ul {
-    margin-top: 0;
-    margin-right: -1.5em;
+  .active li {
+    width: 100%;
+    padding: 1.5em 0;
+
   }
 
   .icons {
