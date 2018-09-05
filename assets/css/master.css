@@ -61,7 +61,7 @@ body {
   width: 100%;
   color: #FFF;
   display: grid;
-  grid-template-columns: 20% 10% 70%;
+  grid-template-columns: 20% 10% 60% 10%;
   grid-template-rows: 6em;
   align-items: center;
 }
