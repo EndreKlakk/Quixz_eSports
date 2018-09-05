@@ -4,7 +4,7 @@ title: Team
 description: Currently Quixz eSports is hosting a full roster in CSGO, 1v1 Rocket League and Hearthstone. Click to browse our players!
 ---
 
-<div class="team">
+<div class="team top-team">
   <h4>Counter Strike: Global Offensive</h4>
 {% for player in site.categories.player %}
 
@@ -66,9 +66,13 @@ body {
 .team {
   width: calc(100% - 6rem);
   margin: 0;
-  padding: 6rem 3rem;
+  padding: 7rem 3rem;
   background-color: #2B63AF;
   min-height: 40vh;
+}
+
+.top-team {
+  padding: 1rem 3rem;
 }
 
 .team h4 {
