@@ -39,7 +39,7 @@ collections:
         options:
           media_library:
             config:
-              publicKey: "dcd4677d02e4ff379685"
+              publickey: "dcd4677d02e4ff379685"
               multiple: true
 
   - name: "macthes" # Used in routes, ie.: /admin/collections/:slug/edit
@@ -60,7 +60,7 @@ collections:
             options:
               media_library:
                 config:
-                  publicKey: "dcd4677d02e4ff379685"
+                  publickey: "dcd4677d02e4ff379685"
                   multiple: true
 
   - name: "player"
@@ -82,7 +82,7 @@ collections:
             options:
               media_library:
                 config:
-                  publicKey: "dcd4677d02e4ff379685"
+                  publickey: "dcd4677d02e4ff379685"
                   multiple: true
           - {label: "Game", name: "playergame", widget: "select", options: ["Counter Strike", "Rocket League", "League of Legends", "Hearthstone"]}
           - {label: "Text", name: "body", widget: "markdown", tagname: "p", required: false}
