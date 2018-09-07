@@ -40,7 +40,7 @@ collections:
         options:
           media_library:
             config:
-              publicKey: "dcd4677d02e4ff379685"
+              publicKey: dcd4677d02e4ff379685
               multiple: true
               
   - name: "macthes" # Used in routes, ie.: /admin/collections/:slug/edit
