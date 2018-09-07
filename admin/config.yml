@@ -50,10 +50,18 @@ collections:
     folder: "_matches"
     fields: # The fields each document in this collection have
           - {label: "Match", name: "title", widget: "string", default:""}
-          - {label: "Team Logo", name: "image", widget: "image", defualt: "default_team_logo.png"}
           - {label: "Date", name: "matchdate", widget: "date", format: "YYYY-MM-DD"}
           - {label: "Game", name: "game", widget: "select", options: ["Counter Strike", "Rocket League", "League of Legends", "Hearthstone"]}
           - {label: "Link", name: "matchlink", widget: "string", required: false}
+          - label: "Team logo"
+            name: "image"
+            widget: "image"
+            defualt: "default_team_logo.png"
+            options:
+              media_library:
+                config:
+                  publicKey: "dcd4677d02e4ff379685"
+                  multiple: true
 
   - name: "player"
     label: "Player"
@@ -67,7 +75,15 @@ collections:
           - {label: "First Name", name: "firstname", widget: "string"}
           - {label: "Nickname", name: "playername", widget: "string"}
           - {label: "Last name", name: "lastname", widget: "string"}
-          - {label: "Photo", name: "playerimage", widget: "image", defualt: "/assets/image/articles/avatar.png"}
+          - label: "Photo"
+            name: "playerimage"
+            widget: "image"
+            defualt: "/assets/image/articles/avatar.png"
+            options:
+              media_library:
+                config:
+                  publicKey: "dcd4677d02e4ff379685"
+                  multiple: true
           - {label: "Game", name: "playergame", widget: "select", options: ["Counter Strike", "Rocket League", "League of Legends", "Hearthstone"]}
           - {label: "Text", name: "body", widget: "markdown", tagname: "p", required: false}
           - {label: "Gallery", name: "gallery", widget: "markdown", default: "We currently do not have any pictures", required: false}
@@ -78,6 +94,8 @@ collections:
           - {label: "Instagram", name: "instagram", widget: "string", required: false}
           - {label: "categories", name: "categories", widget: "hidden", default: "player"}
           - {label: "permalink", name: "permalink", widget: "hidden", default: "permalink: /player/:slug"}
+          
+          
 
   - name: "server"
     label: "Servers"
