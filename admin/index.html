@@ -15,6 +15,17 @@ search: exclude
 
     <script src="https://ucarecdn.com/libs/widget/3.6.0/uploadcare.full.min.js"></script>
   
+  <script>
+        uploadcare.openDialog(null, {
+        crop: "disabled",
+        imagesOnly: true
+      }).done(function(file) {
+        file.promise().done(function(fileInfo){
+          console.log(fileInfo.cdnUrl);
+        });
+      });
+  </script>
+  
 </head>
 <body>
   <!-- Include the script that builds the page and powers Netlify CMS -->
