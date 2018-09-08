@@ -8,12 +8,11 @@ editor:
 display_url: https://quixz.eu
 
 media_folder: "/assets/image/articles" # Media files will be stored in the repo under images/uploads
-
-media_library:
-  name: uploadcare
-  config:
-    publicKey: dcd4677d02e4ff379685
-    multiple: true
+# media_library:
+#  name: uploadcare
+#  config:
+#    publicKey: dcd4677d02e4ff379685
+#    multiple: true
 
 slug:
   encoding: "ascii"

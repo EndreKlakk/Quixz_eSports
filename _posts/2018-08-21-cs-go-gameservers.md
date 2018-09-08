@@ -4,8 +4,7 @@ author: Tim Strutzberg
 date: 21-08-2018
 title: CSGO Gameservers!
 categories: news
-image:
-  - 'https://ucarecdn.com/bbf58d83-ccb5-48aa-8498-35d13c951f02~1/nth/0/'
+image: /assets/image/articles/retake_servers.png
 ---
 Today we are announcing our first own retake sever.
 
