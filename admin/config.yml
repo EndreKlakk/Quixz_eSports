@@ -35,9 +35,9 @@ collections:
       - {label: "Body", name: "body", widget: "markdown", tagname: "p"}
       - {label: "categories", name: "categories", widget: "hidden", default: "news"}
       - label: "Featured Image"
-        name: "Image"
+        name: "image"
         widget: "image"
-              
+
   - name: "macthes" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Upcoming Matches" # Used in the UI, ie.: "New Post"
     delete: true
@@ -80,8 +80,8 @@ collections:
           - {label: "Instagram", name: "instagram", widget: "string", required: false}
           - {label: "categories", name: "categories", widget: "hidden", default: "player"}
           - {label: "permalink", name: "permalink", widget: "hidden", default: "permalink: /player/:slug"}
-          
-          
+
+
 
   - name: "server"
     label: "Servers"
