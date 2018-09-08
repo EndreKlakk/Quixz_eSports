@@ -1,11 +1,11 @@
 ---
 layout: default_blog
 author: Tim Strutzberg
-image: /assets/image/articles/retake_server.png
 date: 21-08-2018
 title: CSGO Gameservers!
-description: Today we are announcing our first retake server!
 categories: news
+Image:
+  - 'https://ucarecdn.com/bbf58d83-ccb5-48aa-8498-35d13c951f02~1/nth/0/'
 ---
 Today we are announcing our first own retake sever.
 
