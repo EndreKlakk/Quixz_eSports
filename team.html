@@ -4,59 +4,60 @@ title: Team
 description: Currently Quixz eSports is hosting a full roster in CSGO, 1v1 Rocket League and Hearthstone. Click to browse our players!
 ---
 
-<div class="team top-team">
+<div class="team">
   <h4>Counter Strike: Global Offensive</h4>
+  <div class="filler"> <h1> </h1> </div>
 {% for player in site.categories.player %}
 
 {% if player.playergame == "Counter Strike" %}
-    <div class="column">
       <div class="card">
         <img src="{{ player.playerimage }}" alt="" style="width:100%">
         <div class="container">
           <a href="https://quixz.eu/player/{{ player.playername }}" style="text-decoration: none; color: #FFF"><h2>{{ player.firstname }} <b style="color: #F8B52A">{{ player.playername}}</b> {{ player.lastname }}</h2></a>
         </div>
       </div>
-    </div>
 {% endif %}
 
 {% endfor %}
+  <div class="filler2"> <h1> </h1> </div>
 </div>
 
 <div class="team">
 <h4>Rocket League</h4>
+<div class="filler"> <h1> </h1> </div>
 {% for player in site.categories.player %}
 
 {% if player.playergame == "Rocket League" %}
-  <div class="column">
-    <div class="card">
-      <img src="{{ player.playerimage }}" alt="" style="width:100%">
-      <div class="container">
-        <a href="https://quixz.eu/player/{{ player.playername }}" style="text-decoration: none; color: #FFF"><h2>{{ player.firstname }} <b style="color: #F8B52A">{{ player.playername}}</b> {{ player.lastname }}</h2></a>
-      </div>
+  <div class="card">
+    <img src="{{ player.playerimage }}" alt="" style="width:100%">
+    <div class="container">
+      <a href="https://quixz.eu/player/{{ player.playername }}" style="text-decoration: none; color: #FFF"><h2>{{ player.firstname }} <b style="color: #F8B52A">{{ player.playername}}</b> {{ player.lastname }}</h2></a>
     </div>
   </div>
 {% endif %}
 
 {% endfor %}
+<div class="filler2"> <h1> </h1> </div>
 </div>
 
 <div class="team" style="padding-bottom: 15rem">
 <h4>Hearthstone</h4>
+<div class="filler"> <h1> </h1> </div>
 {% for player in site.categories.player %}
 
 {% if player.playergame == "Hearthstone" %}
-  <div class="column">
-    <div class="card">
-      <img src="{{ player.playerimage }}" alt="" style="width:100%">
-      <div class="container">
-        <a href="https://quixz.eu/player/{{ player.playername }}" style="text-decoration: none; color: #FFF"><h2>{{ player.firstname }} <b style="color: #F8B52A">{{ player.playername}}</b> {{ player.lastname }}</h2></a>
-      </div>
+  <div class="card">
+    <img src="{{ player.playerimage }}" alt="" style="width:100%">
+    <div class="container">
+      <a href="https://quixz.eu/player/{{ player.playername }}" style="text-decoration: none; color: #FFF"><h2>{{ player.firstname }} <b style="color: #F8B52A">{{ player.playername}}</b> {{ player.lastname }}</h2></a>
     </div>
   </div>
 {% endif %}
 
 {% endfor %}
+<div class="filler2"> <h1> </h1> </div>
 </div>
+
 <style>
 
 body {
@@ -64,34 +65,43 @@ body {
 }
 
 .team {
-  width: calc(100% - 6rem);
-  margin: 0;
-  padding: 7rem 3rem;
+  width: 100%;
   background-color: #2B63AF;
   min-height: 40vh;
+  display: grid;
+  grid-template-columns: 15% repeat(5, 1fr) 15%;
+  grid-template-rows: 1fr 2fr;
+  grid-gap: 1rem
 }
 
-.top-team {
-  padding: 1rem 3rem;
+.card {
+  grid-column: span 1;
+  width: 100%;
+  padding: .2rem
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card a {
+  font-size: .8rem
 }
 
 .team h4 {
   font-size: 2rem;
   text-align: center;
+  grid-column: 1 / 8
 }
 
-.row {
-  width: auto;
-  margin: 0 1px;
+.filler {
+  grid-column: 1 / 2;
+  width: 100%
 }
 
-.column {
-  float: left;
-  width: 20%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-  box-sizing: border-box;
-  display: inline-block;
+.filler2 {
+  grid-column: 7 / 8;
+  width: 100%
 }
 
 @media screen and (max-width: 650px) {
@@ -116,19 +126,5 @@ body {
     float: left;
     display: -webkit-inline-box;
 }
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.container {
-  padding: 0 16px;
-}
-
-.container::after, .column::after {
-  content: "";
-  clear: both;
-  display: table;
 }
 </style>
