@@ -5,7 +5,7 @@
 </div>
 
 <div class="arrow">
-  <a class="fal fa-caret-down arrow_button" href="#about"></a>
+  <a class="fas fa-angle-down arrow_button" href="#about"></a>
 </div>
 
 </div>
@@ -60,7 +60,6 @@
     {% assign postStartDate = item.matchdate | date: '%Y-%m-%d' %}
     {% if postStartDate >= curDate and printedEvents < eventsNumber %}
         {% assign printedEvents = printedEvents | plus: 1 %}
-        <div class="matches_cards">
           <div class="card_body">
             <div class="card_left">
               <img src="assets/image/logo/logo_500.png" alt="Quixz eSports logo">
@@ -74,7 +73,7 @@
               <img src="{{ item.image }}" alt="Logo of opposing team"></img>
             </div>
           </div>
-        </div>
+
     {% endif %}
 {% endfor %}
 </div>

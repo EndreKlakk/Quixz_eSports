@@ -62,16 +62,24 @@ collections:
     fields:
           - {label: "Layout", name: "layout", widget: "hidden", default: "players"}
           - {label: "Title", name: "title", widget: "hidden", default: "Player"}
-          - {label: "First Name", name: "firstname", widget: "string"}
-          - {label: "Nickname", name: "playername", widget: "string"}
-          - {label: "Last name", name: "lastname", widget: "string"}
+          - label: "Name"
+            name: "address"
+            widget: "object"
+            fields:
+              - {label: "First Name", name: "firstname", widget: "string"}
+              - {label: "Nickname", name: "playername", widget: "string"}
+              - {label: "Last name", name: "lastname", widget: "string"}
           - label: "Photo"
             name: "playerimage"
             widget: "image"
             defualt: "/assets/image/articles/avatar.png"
           - {label: "Game", name: "playergame", widget: "select", options: ["Counter Strike", "Rocket League", "League of Legends", "Hearthstone"]}
           - {label: "Text", name: "body", widget: "markdown", tagname: "p", required: false}
-          - {label: "Gallery", name: "gallery", widget: "markdown", default: "We currently do not have any pictures", required: false}
+          - label: "Gallery"
+            name: "galleryImages"
+            widget: "list"
+            field:
+              - {label: Image, name: image, widget: image}
           - {label: "Twitter", name: "twitter", widget: "string", required: false}
           - {label: "Twitch", name: "twitch", widget: "string", required: false}
           - {label: "Youtube", name: "youtube", widget: "string", required: false}

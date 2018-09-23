@@ -23,6 +23,7 @@ description: Currently Quixz eSports is hosting a full roster in CSGO, 1v1 Rocke
 </div>
 
 <div class="team">
+  <hr>
 <h4>Rocket League</h4>
 <div class="filler"> <h1> </h1> </div>
 {% for player in site.categories.player %}
@@ -38,6 +39,7 @@ description: Currently Quixz eSports is hosting a full roster in CSGO, 1v1 Rocke
 
 {% endfor %}
 <div class="filler2"> <h1> </h1> </div>
+<hr>
 </div>
 
 <div class="team" style="padding-bottom: 15rem">
@@ -68,10 +70,14 @@ body {
   width: 100%;
   background-color: #2B63AF;
   min-height: 40vh;
+  margin-top: 1em;
   display: grid;
   grid-template-columns: 15% repeat(5, 1fr) 15%;
-  grid-template-rows: 1fr 2fr;
   grid-gap: 1rem
+}
+
+.team:nth-child(even) {
+  background-color: #232323
 }
 
 .card {
@@ -104,27 +110,52 @@ body {
   width: 100%
 }
 
+.team hr {
+  width: 30%;
+  height: 0;
+  margin: 0 auto;
+  border: 1.5px solid #FFF;
+  grid-column: 1 / 8
+}
+
 @media screen and (max-width: 650px) {
-  .column {
-    width: 50%;
-    display: contents;
-  }
-
   .team {
-    width: calc(100% - 2rem);
-    padding: 6rem 1rem;
-  }
-
-  .container::after, .column::after {
-    content: "";
-    clear: both;
-    display: table;
+    width: calc(100% - 4rem);
+    background-color: #2B63AF;
+    min-height: 40vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    padding: 1rem 2rem
   }
 
   .card {
-    width: 50%;
-    float: left;
-    display: -webkit-inline-box;
-}
+    grid-column: span 1;
+    width: 100%;
+    padding: .2rem
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .card a {
+    font-size: .8rem
+  }
+
+  .team h4 {
+    font-size: 1.5rem;
+    text-align: center;
+    grid-column: 1 / 3
+  }
+
+  .filler, .filler2 {
+    display: none
+  }
+
+  .team hr {
+    margin-top: 1rem;
+    grid-column: 1 / 3
+  }
 }
 </style>
