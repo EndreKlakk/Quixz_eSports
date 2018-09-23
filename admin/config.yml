@@ -61,7 +61,7 @@ collections:
     folder: "_posts/player"
     fields:
           - {label: "Layout", name: "layout", widget: "hidden", default: "players"}
-          - {label: "Title", name: "title", widget: "hidden", default: "{{playername}}"}
+          - {label: "Playername", name: "title", widget: "string"}
           - {label: "Active", name: "status", widget: "select", options: ["true", "false"]}
           - label: "Name"
             name: "name"
