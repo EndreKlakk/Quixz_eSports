@@ -81,7 +81,7 @@ collections:
             widget: "list"
             required: false
             field:
-              - {label: Image, name: image, widget: "image"}
+              - {label: "Image", name: "image", widget: "image"}
           - {label: "Twitter", name: "twitter", widget: "string", required: false}
           - {label: "Twitch", name: "twitch", widget: "string", required: false}
           - {label: "Youtube", name: "youtube", widget: "string", required: false}
