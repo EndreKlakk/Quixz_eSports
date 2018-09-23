@@ -1,0 +1,178 @@
+---
+title: CSGO Team
+permalink: teams/csgo
+layout: default
+---
+
+<div class="team">
+
+  {% for player in site.categories.player %}
+
+  {% if player.playergame == "Counter Strike" and player.status == 'true' %}
+        <div class="card">
+          <img src="{{ player.playerimage }}" alt="" style="width:100%">
+          <div class="container">
+            <a href="https://quixz.eu/player/{{ player.name.playername }}" style="text-decoration: none; color: #FFF"><h2>{{ player.name.firstname }} <b style="color: #F8B52A">{{ player.name.playername}}</b> {{ player.name.lastname }}</h2></a>
+          </div>
+        </div>
+  {% endif %}
+
+  {% endfor %}
+
+</div>
+
+<div class="teamMatches">
+
+  <div class="recentMatches">
+    <h1>Recent Matches</h1>
+
+    {% assign eventPost = site.matches | sort: 'date' %}
+    {% assign eventsNumber = 3 %}
+    {% assign printedEvents = 0 %}
+    {% assign sorted = site.matches | sort: 'matchdate' %}
+
+    {% for item in sorted %}
+      {% assign curDate = site.time | date: '%Y-%m-%d' %}
+      {% assign postStartDate = item.matchdate | date: '%Y-%m-%d' %}
+      {% if postStartDate <= curDate and printedEvents < eventsNumber and "game == Counter Strike" %}
+          {% assign printedEvents = printedEvents | plus: 1 %}
+      <div class="match_body">
+          <img src="../assets/image/logo/logo_500.png" alt="Quixz eSports logo">
+            <h2>{{ item.score.quixzScore }}</h2>
+            <h3>VS</h3>
+            <h2>{{ item.score.opponentScore }}</h2>
+          <img src="{{ item.image }}" alt="Logo of opposing team"></img>
+      </div>
+    {% endif %}
+  {% endfor %}
+  </div>
+
+  <div class="upcomingMatches">
+    <h1>Upcoming Matches</h1>
+
+  {% assign eventPost = site.matches | sort: 'date' %}
+  {% assign eventsNumber = 3 %}
+  {% assign printedEvents = 0 %}
+  {% assign sorted = site.matches | sort: 'matchdate' %}
+
+  {% for item in sorted %}
+    {% assign curDate = site.time | date: '%Y-%m-%d' %}
+    {% assign postStartDate = item.matchdate | date: '%Y-%m-%d' %}
+    {% if postStartDate >= curDate and printedEvents < eventsNumber and "game == Counter Strike" %}
+        {% assign printedEvents = printedEvents | plus: 1 %}
+
+      <div class="match_body">
+          <img src="../assets/image/logo/logo_500.png" alt="Quixz eSports logo">
+            <h2>{{ item.score.quixzScore }}</h2>
+            <div style="margin: auto">
+              <h3>VS</h3>
+              <a href="{{ item.matchpage }}" style="color: #F8B52A; text-decoration: none"><h3>Match</h3></a>
+            </div>
+            <h2>{{ item.score.opponentScore }}</h2>
+          <img src="{{ item.image }}" alt="Logo of opposing team"></img>
+      </div>
+
+  {% endif %}
+{% endfor %}
+  </div>
+
+</div>
+
+<div class="teamAbout">
+  <h1>History</h1>
+  {% for info in teams %}
+    {% if "game == Counter Strike" %}
+
+      { content }
+
+    {% endif %}
+  {% endfor %}
+</div>
+
+<style>
+
+body {
+  background-color: #232323;
+  box-sizing: border-box;
+}
+
+.team {
+  width: 50%;
+  padding: 0 25%;
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1rem;
+  margin-bottom: 2rem
+}
+
+.card {
+  grid-column: span 1;
+  width: 100%;
+  padding: .2rem
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card a {
+  font-size: .8rem
+}
+
+.teamMatches {
+  display: grid;
+  grid-template-columns: repeat(2, calc(50% - 1rem));
+  grid-gap: 2rem;
+  width: 70%;
+  padding: 0 15% 0 15%;
+  background-color: #F8B52A
+}
+
+.recentMatches, .upcomingMatches {
+  width: 100%;
+  grid-column: span 1
+}
+
+.match_body {
+  width: 100%;
+  background-color: #2B63AF;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  height: 5rem;
+  grid-template-rows: 5rem;
+  text-align: center;
+  font-family: Lato;
+  margin-bottom: .5rem
+}
+
+.match_body img {
+  height: 80%;
+  margin: auto;
+}
+
+.match_body h2, .match_body h3 {
+  margin: auto;
+}
+
+@media screen and (max-width: 650px) {
+  .teamMatches {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: .5rem;
+    width: 90%;
+    padding: 0 5%;
+  }
+
+  .team {
+    width: 90%;
+    padding: 0 5%;
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    margin-bottom: 2rem
+  }
+}
+
+</style>

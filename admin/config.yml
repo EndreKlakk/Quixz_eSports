@@ -46,12 +46,18 @@ collections:
     fields: # The fields each document in this collection have
           - {label: "Match", name: "title", widget: "string", default:""}
           - {label: "Date", name: "matchdate", widget: "date", format: "YYYY-MM-DD"}
-          - {label: "Game", name: "game", widget: "select", options: ["Counter Strike", "Rocket League", "League of Legends", "Hearthstone"]}
+          - {label: "Game", name: "game", widget: "select", options: ["Counter Strike", "Rocket League", "League of Legends", "Hearthstone", "Overwatch"]}
           - {label: "Link", name: "matchlink", widget: "string", required: false}
           - label: "Team logo"
             name: "image"
             widget: "image"
             defualt: "default_team_logo.png"
+          - label: "Score"
+            name: "score"
+            widget: "object"
+            fields:
+              - {label: "Quixz", name: "quixzScore", widget: "string", default:"0"}
+              - {label: "Quixz", name: "opponentScore", widget: "string", default:"0"}
 
   - name: "player"
     label: "Player"
@@ -114,3 +120,25 @@ collections:
           - {label: "Title", name: "title_about", default: "Our History"}
           - {label: "Layout", name: "layout", widget: "hidden", default: "about"}
           - {label: "Body", name: "body", widget: "markdown", tagname: "p"}
+
+  - name: "teams"
+    label: "Team Pages"
+    delete: false
+    create: true
+    slug: "{{teamgame}}-{{slug}}"
+    folder: "_teams"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Game", name: "game", widget: "select", options: ["Counter Strike", "Rocket League", "League of Legends", "Hearthstone", "Overwatch"]}
+      - {label: "About", name: "body", widget: "markdown"}
+      - label: "Gallery"
+        name: "galleryImages"
+        widget: "list"
+        required: false
+        object:
+          - {label: Image, name: image, widget: image}
+      - label: "Page Design"
+        name: "pageDesign"
+        widget: "object"
+        fields:
+          - {label: "Background Image", name: "bgImage", widget: "image"}
