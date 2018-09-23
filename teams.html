@@ -5,7 +5,7 @@ description: Currently Quixz eSports is hosting a full roster in CSGO, 1v1 Rocke
 ---
 
 <div class="team">
-  <h4>Counter Strike: Global Offensive</h4>
+  <h4><a href="{{ baseurl }}/teams/csgo" style="color: #FFF">Counter Strike: Global Offensive</a></h4>
   <div class="filler"> <h1> </h1> </div>
 {% for player in site.categories.player %}
 
@@ -93,7 +93,13 @@ body {
 .team h4 {
   font-size: 2rem;
   text-align: center;
-  grid-column: 1 / 8
+  grid-column: 1 / 8;
+  text-decoration: none;
+  color: #FFF
+}
+
+.team a {
+  text-decoration: none;
 }
 
 .filler {
