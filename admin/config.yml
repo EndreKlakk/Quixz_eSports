@@ -80,7 +80,7 @@ collections:
             name: "galleryImages"
             widget: "list"
             required: false
-            field:
+            object:
               - {label: "Image", name: "image", widget: "image"}
           - {label: "Twitter", name: "twitter", widget: "string", required: false}
           - {label: "Twitch", name: "twitch", widget: "string", required: false}
