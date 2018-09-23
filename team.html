@@ -9,11 +9,11 @@ description: Currently Quixz eSports is hosting a full roster in CSGO, 1v1 Rocke
   <div class="filler"> <h1> </h1> </div>
 {% for player in site.categories.player %}
 
-{% if player.playergame == "Counter Strike" %}
+{% if player.playergame == "Counter Strike" and player.status == 'true' %}
       <div class="card">
         <img src="{{ player.playerimage }}" alt="" style="width:100%">
         <div class="container">
-          <a href="https://quixz.eu/player/{{ player.name.playername }}" style="text-decoration: none; color: #FFF"><h2>{{ player.name.firstname }} <b style="color: #F8B52A">{{ player.name.playername}}</b> {{ player.name.lastname }}</h2></a>
+          <a href="https://quixz.eu/player/{{ player.name.title }}" style="text-decoration: none; color: #FFF"><h2>{{ player.name.firstname }} <b style="color: #F8B52A">{{ player.name.title}}</b> {{ player.name.lastname }}</h2></a>
         </div>
       </div>
 {% endif %}
@@ -28,11 +28,11 @@ description: Currently Quixz eSports is hosting a full roster in CSGO, 1v1 Rocke
 <div class="filler"> <h1> </h1> </div>
 {% for player in site.categories.player %}
 
-{% if player.playergame == "Rocket League" %}
+{% if player.playergame == "Rocket League" and player.status == 'true' %}
   <div class="card">
     <img src="{{ player.playerimage }}" alt="" style="width:100%">
     <div class="container">
-      <a href="https://quixz.eu/player/{{ player.name.playername }}" style="text-decoration: none; color: #FFF"><h2>{{ player.name.firstname }} <b style="color: #F8B52A">{{ player.name.playername}}</b> {{ player.name.lastname }}</h2></a>
+      <a href="https://quixz.eu/player/{{ player.name.title }}" style="text-decoration: none; color: #FFF"><h2>{{ player.name.firstname }} <b style="color: #F8B52A">{{ player.name.title}}</b> {{ player.name.lastname }}</h2></a>
     </div>
   </div>
 {% endif %}
@@ -47,11 +47,11 @@ description: Currently Quixz eSports is hosting a full roster in CSGO, 1v1 Rocke
 <div class="filler"> <h1> </h1> </div>
 {% for player in site.categories.player %}
 
-{% if player.playergame == "Hearthstone" %}
+{% if player.playergame == "Hearthstone" and player.status == 'true' %}
   <div class="card">
     <img src="{{ player.playerimage }}" alt="" style="width:100%">
     <div class="container">
-      <a href="https://quixz.eu/player/{{ player.name.playername }}" style="text-decoration: none; color: #FFF"><h2>{{ player.name.firstname }} <b style="color: #F8B52A">{{ player.name.playername}}</b> {{ player.name.lastname }}</h2></a>
+      <a href="https://quixz.eu/player/{{ player.name.title }}" style="text-decoration: none; color: #FFF"><h2>{{ player.name.firstname }} <b style="color: #F8B52A">{{ player.name.title}}</b> {{ player.name.lastname }}</h2></a>
     </div>
   </div>
 {% endif %}
