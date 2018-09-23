@@ -63,7 +63,7 @@ collections:
           - {label: "Layout", name: "layout", widget: "hidden", default: "players"}
           - {label: "Title", name: "title", widget: "hidden", default: "Player"}
           - label: "Name"
-            name: "address"
+            name: "name"
             widget: "object"
             fields:
               - {label: "First Name", name: "firstname", widget: "string"}

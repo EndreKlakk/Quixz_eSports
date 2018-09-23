@@ -1,9 +1,10 @@
 ---
 layout: players
 title: Player
-firstname: Victor
-playername: vlox
-lastname: Loxen
+name:
+  firstname: Victor
+  playername: vlox
+  lastname: Loxen
 playerimage: /assets/image/articles/Avatar.png
 playergame: Counter Strike
 text: We currently do not have any information
@@ -15,4 +16,3 @@ steam: '#'
 categories: player
 permalink: 'permalink: /player/:slug'
 ---
-
