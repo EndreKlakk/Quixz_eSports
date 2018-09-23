@@ -136,7 +136,7 @@ collections:
         widget: "list"
         required: false
         object:
-          - {label: Image, name: image, widget: image}
+          - {label: "Image", name: "image", widget: "image"}
       - label: "Page Design"
         name: "pageDesign"
         widget: "object"
