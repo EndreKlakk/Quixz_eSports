@@ -11,25 +11,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 
   <!-- Google / Search Engine Tags -->
-  <meta itemprop="name" content="{{ page.playername }}">
+  <meta itemprop="name" content="{{ page.name.playername }}">
   <meta itemprop="description" content="{{ page.content | truncate: 100 }}">
   <meta itemprop="image" content="https://quixz.eu/assets/image/about/about_middle.png">
 
   <!-- Facebook Meta Tags -->
   <meta property="og:url" content="https://quixz.eu">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="{{ page.playername }}">
+  <meta property="og:title" content="{{ page.name.playername }}">
   <meta property="og:description" content="{{ page.content | truncate: 100 }}">
   <meta property="og:image" content="https://quixz.eu/assets/image/about/about_middle.png">
   <meta property="fb:app_id" content="859803764205246">
 
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Quixz eSports - {{ page.playername }}">
+  <meta name="twitter:title" content="Quixz eSports - {{ page.name.playername }}">
   <meta name="twitter:description" content="{{ page.content | truncate: 100 }}">
   <meta name="twitter:image" content="https://quixz.eu/assets/image/about/about_middle.png">
 
-  <title>Quixz eSports - {{ page.playername }}</title>
+  <title>Quixz eSports - {{ page.name.playername }}</title>
   <link REL="SHORTCUT ICON" HREF="{{ baseurl }}/assets/image/logo/logo_500.png">
   <meta name="google-site-verification" content="x7yK7kt6bcjL-iz3Vw9X0BDJlCR8mjrBVt_rDVekI04" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
