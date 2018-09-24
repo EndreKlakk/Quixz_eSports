@@ -87,7 +87,7 @@ collections:
             widget: "list"
             required: false
             object:
-              - {label: Image, name: image, widget: image}
+              - {label: "Image", name: "image", widget: "image"}
           - label: "Social Media"
             name: "sm"
             widget: "object"
