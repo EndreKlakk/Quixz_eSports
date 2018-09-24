@@ -152,7 +152,7 @@ collections:
     delete: true
     create: true
     slug: "{{title}}-{{slug}}"
-    folder: "_servers"
+    folder: "_partners"
     fields:
       - {label: "Partner", name: "title", widget: "string"}
       - {label: "Active", name: "status", widget: "select", options: ["true", "false"]}
