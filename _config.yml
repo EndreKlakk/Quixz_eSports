@@ -9,6 +9,7 @@ collections:
   - players
   - servers
   - teams
+  - partners
 
 title: Quixz eSports
 email: contact@quixz.eu
