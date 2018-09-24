@@ -1,11 +1,12 @@
 ---
-title: CSGO Team
-permalink: teams/csgo
-layout: default
+title: Hearthstone Team
+permalink: teams/hearthstone
 ---
 
+{% include header.html %}
+
 {% for team in site.teams %}
-  {% if team.game == "Counter Strike" %}
+  {% if team.game == "Hearthstone" %}
 <div class="teamHeader">
 <h1>{{ team.game }}</h1>
 </div>
@@ -34,7 +35,7 @@ layout: default
 
   {% for player in site.categories.player %}
 
-  {% if player.playergame == "Counter Strike" and player.status == 'true' %}
+  {% if player.playergame == "Hearthstone" and player.status == 'true' %}
         <div class="card">
           <img src="{{ player.playerimage }}" alt="" style="width:100%">
           <div class="container">
@@ -60,7 +61,7 @@ layout: default
     {% for item in sorted %}
       {% assign curDate = site.time | date: '%Y-%m-%d' %}
       {% assign postStartDate = item.matchdate | date: '%Y-%m-%d' %}
-      {% if postStartDate <= curDate and printedEvents < eventsNumber and "game == Counter Strike" %}
+      {% if postStartDate <= curDate and printedEvents < eventsNumber and "game == Hearthstone" %}
           {% assign printedEvents = printedEvents | plus: 1 %}
       <div class="match_body">
           <img src="../assets/image/logo/logo_500.png" alt="Quixz eSports logo">
@@ -84,7 +85,7 @@ layout: default
   {% for item in sorted %}
     {% assign curDate = site.time | date: '%Y-%m-%d' %}
     {% assign postStartDate = item.matchdate | date: '%Y-%m-%d' %}
-    {% if postStartDate >= curDate and printedEvents < eventsNumber and "game == Counter Strike" %}
+    {% if postStartDate >= curDate and printedEvents < eventsNumber and "game == Hearthstone" %}
         {% assign printedEvents = printedEvents | plus: 1 %}
 
       <div class="match_body">
@@ -107,7 +108,7 @@ layout: default
 <div class="teamAbout">
   <h1>History</h1>
   {% for info in site.teams %}
-    {% if info.game == "Counter Strike" %}
+    {% if info.game == "Hearthstone" %}
   <div class="">
         {{ info.content }}
   </div>
@@ -116,7 +117,7 @@ layout: default
   {% endfor %}
 
   {% for info in site.teams %}
-    {% if info.game == "Counter Strike" %}
+    {% if info.game == "Hearthstone" %}
 <div class="teamGallery">
   <h1>Gallery</h1>
   <div class="teamImages">
@@ -127,7 +128,7 @@ layout: default
 <div class="teamArticles">
   <h1>Related Articles</h1>
   <div class="news">
-  {% for post in site.categories.csgo limit:4 %}
+  {% for post in site.categories.hs limit:4 %}
     <div class="article_list">
 
       <a href="{{ post.url | remove: '.html' }}"><img src="{{ post.image }}" alt="{{ post.description }}" og:image></a>
@@ -268,3 +269,9 @@ body {
 }
 
 </style>
+
+{% include footer.html %}
+
+</body>
+
+</html>
