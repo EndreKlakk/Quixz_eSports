@@ -88,13 +88,17 @@ collections:
             required: false
             object:
               - {label: Image, name: image, widget: image}
-          - {label: "Twitter", name: "twitter", widget: "string", required: false}
-          - {label: "Twitch", name: "twitch", widget: "string", required: false}
-          - {label: "Youtube", name: "youtube", widget: "string", required: false}
-          - {label: "Steam", name: "steam", widget: "string", required: false}
-          - {label: "Instagram", name: "instagram", widget: "string", required: false}
-          - {label: "categories", name: "categories", widget: "hidden", default: "player"}
-          - {label: "permalink", name: "permalink", widget: "hidden", default: "permalink: /player/:slug"}
+          - label: "Social Media"
+            name: "sm"
+            widget: "object"
+            fields:
+              - {label: "Twitter", name: "twitter", widget: "string", required: false}
+              - {label: "Twitch", name: "twitch", widget: "string", required: false}
+              - {label: "Youtube", name: "youtube", widget: "string", required: false}
+              - {label: "Steam", name: "steam", widget: "string", required: false}
+              - {label: "Instagram", name: "instagram", widget: "string", required: false}
+              - {label: "categories", name: "categories", widget: "hidden", default: "player"}
+              - {label: "permalink", name: "permalink", widget: "hidden", default: "permalink: /player/:slug"}
 
   - name: "server"
     label: "Servers"
