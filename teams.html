@@ -23,6 +23,24 @@ description: Currently Quixz eSports is hosting a full roster in CSGO, 1v1 Rocke
 </div>
 
 <div class="team">
+  <h4><a href="{{ baseurl }}/teams/overwatch" style="color: #FFF">Overwatch</a></h4>
+  <div class="filler"> <h1> </h1> </div>
+{% for player in site.categories.player %}
+
+{% if player.playergame == "Overwatch" and player.status == 'true' %}
+      <div class="card">
+        <img src="{{ player.playerimage }}" alt="" style="width:100%">
+        <div class="container">
+          <a href="https://quixz.eu/player/{{ player.name.playername }}" style="text-decoration: none; color: #FFF"><h2>{{ player.name.firstname }} <b style="color: #F8B52A">{{ player.name.playername}}</b> {{ player.name.lastname }}</h2></a>
+        </div>
+      </div>
+{% endif %}
+
+{% endfor %}
+  <div class="filler2"> <h1> </h1> </div>
+</div>
+
+<div class="team">
   <hr>
 <h4><a href="{{ baseurl }}/teams/rocketleague" style="color: #FFF">Rocket League</a></h4>
 <div class="filler"> <h1> </h1> </div>
