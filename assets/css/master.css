@@ -283,25 +283,26 @@ body {
 }
 
 .footer {
-  height: 6rem;
+  height: auto;
   background: #232323;
   color: #FFF;
   padding: 2rem;
   display: grid;
-  justify-items: stretch;
-  grid-template-columns: 1fr;
-  grid-template-rows: 6rem;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 1rem;
+  grid-template-rows: 6rem
 }
 
 .footer img {
-  grid-column: 2 / 3;
+  grid-column: 6 / 7;
   height: 100%;
   align-items: left;
+  margin: auto;
 }
 
 .footer ul {
   display: inline-block;
-  grid-column: 1 / 2;
+  grid-column: 1 / 5;
   text-align: left;
   justify-items: start;
   padding: 0;
@@ -312,6 +313,15 @@ body {
   display: block;
   font-family: "Lato";
   justify-items: start;
+}
+
+.footer h1 {
+  grid-column: 1 / 7
+}
+
+.footer a {
+  grid-column: span 2;
+  margin: auto;
 }
 
 /* Index News */

@@ -146,3 +146,15 @@ collections:
         widget: "object"
         fields:
           - {label: "Background Image", name: "bgImage", widget: "image"}
+
+  - name: "partner"
+    label: "Partners"
+    delete: true
+    create: true
+    slug: "{{title}}-{{slug}}"
+    folder: "_servers"
+    fields:
+      - {label: "Partner", name: "title", widget: "string"}
+      - {label: "Active", name: "status", widget: "select", options: ["true", "false"]}
+      - {label: "Website", name: "website", widget: "string"}
+      - {label: "Logo", name: "image", widget: "image"}

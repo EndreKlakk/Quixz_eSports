@@ -4,6 +4,20 @@
     <li style="color:#F8B52A;">contact@quixz.eu</li>
   </ul>
   <img src="{{ baseurl }}/assets/image/logo/logo_500.png" alt="Quixz eSports logo">
+
+<h1>Partners</h1>
+
+{% for partner in site.partners %}
+
+  {% if partner.status == 'true' %}
+
+    <div class="partner">
+      <a href="{{ partner.website }}"><img src="{{ partner.image }}" alt=""></a>
+    </div>
+
+  {% endif %}
+
+{% endfor %}
 </div>
 
 <!-- Hamburger Menu -->
