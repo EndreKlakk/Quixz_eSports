@@ -19,6 +19,7 @@ permalink: teams/rocketleague
     background-image: url({{ team.pageDesign.bgImage }});
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     margin: 0;
     display: grid;
   }
@@ -61,7 +62,7 @@ permalink: teams/rocketleague
     {% for item in sorted %}
       {% assign curDate = site.time | date: '%Y-%m-%d' %}
       {% assign postStartDate = item.matchdate | date: '%Y-%m-%d' %}
-      {% if postStartDate <= curDate and printedEvents < eventsNumber and "game == Rocket League" %}
+      {% if postStartDate <= curDate and printedEvents < eventsNumber and item.game == "Rocket League" %}
           {% assign printedEvents = printedEvents | plus: 1 %}
       <div class="match_body">
           <img src="../assets/image/logo/logo_500.png" alt="Quixz eSports logo">
@@ -85,7 +86,7 @@ permalink: teams/rocketleague
   {% for item in sorted %}
     {% assign curDate = site.time | date: '%Y-%m-%d' %}
     {% assign postStartDate = item.matchdate | date: '%Y-%m-%d' %}
-    {% if postStartDate >= curDate and printedEvents < eventsNumber and "game == Rocket League" %}
+    {% if postStartDate >= curDate and printedEvents < eventsNumber and item.game == "Rocket League" %}
         {% assign printedEvents = printedEvents | plus: 1 %}
 
       <div class="match_body">
