@@ -239,22 +239,19 @@ body {
   background-color: #2B63AF;
   height: auto;
   padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
 }
 
 .social h1 {
   text-align: center;
-  padding: 0;
-  padding-bottom: 1rem;
-  margin: 0;
-  margin-top: -1rem;
-  font-size: 2em
+  grid-column: span 2;
 }
 
 .twitter {
-  height: auto;
-  width: auto;
-  display: inline-block;
-  width: 40vw;
+  width: 100%;
+  grid-column: 1 / 2
 }
 
 .twitter_mobile {
@@ -263,18 +260,24 @@ body {
 }
 
 .icons {
-  display: inline-block;
-  font-size: 6em;
+  font-size: 2em;
   text-align: center;
-  width: 55vw;
-  position: absolute;
-  margin-top: 15%
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr)
+}
+
+.icons h1 {
+  font-size: 2rem;
+  grid-column: span 3;
 }
 
 .icons a {
-  margin: 3rem;
+  margin: auto;
   color: #FFF;
-  text-decoration: none
+  text-decoration: none;
+  font-size: 3rem
 }
 
 .icons a:hover {
@@ -425,10 +428,6 @@ body {
   margin: 0 25%;
 }
 
-/* Team */
-
-
-
 /* Servers */
 
 .server {
@@ -476,28 +475,6 @@ body {
   font-size: 1em;
 }
 
-@media (max-width:1200px) {
-
- .icons {
-   display: block;
-   font-size: 6em;
-   text-align: center;
-   width: 90vw;
- }
-
- .icons a {
-   margin: 3rem;
-   color: #FFF;
-   text-decoration: none
- }
-
- .icons {
-   position: relative;
- }
-
-
-}
-
 @media (max-width:1050px) {
 
   .background_top h1 {
@@ -533,51 +510,43 @@ body {
    width: 100%;
  }
 
-.twitter_mobile {
-  display: block;
-}
+  .card_body{
+    width: 90vw;
+    height: 20vh;
+  }
 
-.twitter {
-  display: none
-}
+  .card_middle {
+    height: 100%;
+    text-align: center;
+    display: inline-block;
+    margin: 0;
+    text-shadow: 0 0 10px #000000
+  }
 
-.card_body{
-  width: 90vw;
-  height: 20vh;
-}
+  .card_middle h2 {
+    font-size: 2em;
+    margin: 0;
+  }
 
-.card_middle {
-  height: 100%;
-  text-align: center;
-  display: inline-block;
-  margin: 0;
-  text-shadow: 0 0 10px #000000
-}
+  .card_middle a {
+    font-size: 1.6em;
+    margin: 0;
+    color: #F8B52A;
+    font-family: "Raleway"
+  }
 
-.card_middle h2 {
-  font-size: 2em;
-  margin: 0;
-}
+  .about {
+    grid-template-columns: 1fr 3fr 1fr;
+  }
 
-.card_middle a {
-  font-size: 1.6em;
-  margin: 0;
-  color: #F8B52A;
-  font-family: "Raleway"
-}
+  .about img {
+    display: none
+  }
 
-.about {
-  grid-template-columns: 1fr 3fr 1fr;
-}
-
-.about img {
-  display: none
-}
-
-.about_text {
-  grid-column: 2 / 3;
-  margin: auto;
-}
+  .about_text {
+    grid-column: 2 / 3;
+    margin: auto;
+  }
 
 }
 
@@ -601,6 +570,30 @@ body {
     display: none
   }
 
+  .social {
+    background-color: #2B63AF;
+    height: auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+
+  .social h1 {
+    grid-column: span 1
+  }
+
+  .icons {
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto
+  }
+
+  .icons h1 {
+    font-size: 2rem;
+    grid-column: span 3;
+  }
 
   /* Header */
 
@@ -649,23 +642,6 @@ body {
 
   .header ul {
     height: auto;
-  }
-
-  .icons {
-    display: block;
-    font-size: 2em;
-    text-align: center;
-    width: auto;
-  }
-
-  .icons a {
-    margin: 1rem;
-    color: #FFF;
-    text-decoration: none
-  }
-
-  .social h1 {
-    font-size: 4em
   }
 
   .about_content {
