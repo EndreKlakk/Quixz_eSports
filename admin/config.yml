@@ -57,7 +57,7 @@ collections:
             widget: "object"
             fields:
               - {label: "Quixz", name: "quixzScore", widget: "string", default:"0"}
-              - {label: "Quixz", name: "opponentScore", widget: "string", default:"0"}
+              - {label: "Opponent", name: "opponentScore", widget: "string", default:"0"}
 
   - name: "player"
     label: "Player"
