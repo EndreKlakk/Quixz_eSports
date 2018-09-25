@@ -1,5 +1,5 @@
 ---
-title: Retake 3
-server: retake3.quixz.eu
+title: Deathmatch 1
+server: dm.quixz.eu
 ---
 
