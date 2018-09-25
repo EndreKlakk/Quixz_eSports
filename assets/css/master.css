@@ -254,11 +254,6 @@ body {
   grid-column: 1 / 2
 }
 
-.twitter_mobile {
-  display: none;
-  margin: 0 auto;
-}
-
 .icons {
   font-size: 2em;
   text-align: center;
