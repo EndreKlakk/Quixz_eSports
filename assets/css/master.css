@@ -323,6 +323,10 @@ body {
   margin: auto 0;
 }
 
+.links_right a {
+  font-size: 2rem
+}
+
 .links a:hover {
   color: #FFF;
   cursor: pointer;
