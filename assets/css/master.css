@@ -298,15 +298,11 @@ body {
 
 .icons {
   font-size: 1em;
-  text-align: left;
+  text-align: center;
   grid-column: 4 / 5;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: .5fr 1fr
-}
-
-.icons h1 {
-  text-align: center;
 }
 
 .icons a {
