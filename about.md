@@ -2,8 +2,9 @@
 title: About
 title_about: Our History
 layout: about
+image: /assets/image/about/about_middle.png
 ---
-In 2015, Tobias Barsnes and Arne Farestveit created Quixz eSports. It started small with the goal of becoming a full norwegian Counter Strike team. Arne left a few years later, as he did not seek a future in the esports industry. He is still  They played several seasons in Telenorligaen, but the roster kept changing. In 2016 Quixz attended their first Lan event, and it ended with a 7-12th place. In the first quarter of 2017, the players decided to split, as they did not have the motivation to keep playing together. 
+In 2015, Tobias Barsnes and Arne Farestveit created Quixz eSports. It started small with the goal of becoming a full norwegian Counter Strike team. Arne left a few years later, as he did not seek a future in the esports industry. He is still  They played several seasons in Telenorligaen, but the roster kept changing. In 2016 Quixz attended their first Lan event, and it ended with a 7-12th place. In the first quarter of 2017, the players decided to split, as they did not have the motivation to keep playing together.
 
 ![Old Quixz eSports logo](/assets/image/articles/old_logo.png)
 
