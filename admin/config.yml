@@ -3,6 +3,7 @@ backend:
   repo: Barsnes/Quixz_eSports
   accept_roles:
     - admin
+  base_url: https://api.netlify.com
 
 editor:
    preview: false
