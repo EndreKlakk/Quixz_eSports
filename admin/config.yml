@@ -1,6 +1,8 @@
 backend:
   name: git-gateway
   repo: Barsnes/Quixz_eSports
+  accept_roles:
+    - admin
 
 editor:
    preview: false
