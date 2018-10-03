@@ -112,7 +112,7 @@ collections:
   - name: "team"
     label: "Teampages and Players"
     delete: false
-    files:
+    fields:
       - name: "teams"
         label: "Team Pages"
         delete: false
