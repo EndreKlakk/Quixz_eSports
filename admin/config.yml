@@ -109,31 +109,27 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Server Info", name: "server", widget: "string"}
 
-  - name: "team"
-    label: "Teampages and Players"
+  - name: "teams"
+    label: "Team Pages"
     delete: false
+    create: true
+    slug: "{{teamgame}}-{{slug}}"
+    folder: "_teams"
     fields:
-      - name: "teams"
-        label: "Team Pages"
-        delete: false
-        create: true
-        slug: "{{teamgame}}-{{slug}}"
-        folder: "_teams"
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Game", name: "game", widget: "select", options: ["Counter Strike", "Rocket League", "League of Legends", "Hearthstone", "Overwatch"]}
+      - {label: "About", name: "body", widget: "markdown"}
+      - label: "Gallery"
+        name: "galleryImages"
+        widget: "list"
+        required: false
+        object:
+          - {label: "Image", name: "image", widget: "image"}
+      - label: "Page Design"
+        name: "pageDesign"
+        widget: "object"
         fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Game", name: "game", widget: "select", options: ["Counter Strike", "Rocket League", "League of Legends", "Hearthstone", "Overwatch"]}
-          - {label: "About", name: "body", widget: "markdown"}
-          - label: "Gallery"
-            name: "galleryImages"
-            widget: "list"
-            required: false
-            object:
-              - {label: "Image", name: "image", widget: "image"}
-          - label: "Page Design"
-            name: "pageDesign"
-            widget: "object"
-            fields:
-              - {label: "Background Image", name: "bgImage", widget: "image"}
+          - {label: "Background Image", name: "bgImage", widget: "image"}
 
   - name: "pages"
     label: "Pages"
