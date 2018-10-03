@@ -1,11 +1,11 @@
 ---
-title: hearthstone
-matchdate: '2018-08-22'
+title: Duel Cup
+matchdate: '2018-10-09'
 game: Hearthstone
-matchlink: '#'
-image: /assets/image/articles/default_team_logo.png
+matchlink: 'https://eu.glory4gamers.com/en/tournament/duel-cup-2-en-98469/infos'
+image: /assets/image/articles/hearthstonebg.png
 score:
-  opponentScore: '2'
-  quixzScore: '3'
+  opponentScore: ''
+  quixzScore: ''
 ---
 
