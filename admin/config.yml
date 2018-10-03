@@ -7,26 +7,21 @@ editor:
 
 display_url: https://quixz.eu
 
-media_folder: "/assets/image/articles" # Media files will be stored in the repo under images/uploads
-# media_library:
-#  name: uploadcare
-#  config:
-#    publicKey: dcd4677d02e4ff379685
-#    multiple: true
+media_folder: "/assets/image/articles"
 
 slug:
   encoding: "ascii"
   clean_accents: true
 
 collections:
-  - name: "article" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Article" # Used in the UI, ie.: "New Post"
-    folder: "_posts" # The path to the folder where the documents are stored
+  - name: "article"
+    label: "Article"
+    folder: "_posts"
     layout: "article.html"
-    sort: "date:asc" # Default is title:asc
-    create: true # Allow users to create new documents in this collection
+    sort: "date:asc"
+    create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields: # The fields each document in this collection have
+    fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "default_blog"}
       - {label: "Author", name: "author", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "date", format: "DD-MM-YYYY"}
@@ -37,13 +32,13 @@ collections:
         name: "image"
         widget: "image"
 
-  - name: "matches" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Upcoming Matches" # Used in the UI, ie.: "New Post"
+  - name: "matches"
+    label: "Upcoming Matches"
     delete: true
     create: true
     slug: "{{matchdate}}-{{slug}}"
     folder: "_matches"
-    fields: # The fields each document in this collection have
+    fields:
           - {label: "Match", name: "title", widget: "string", default:""}
           - {label: "Date", name: "matchdate", widget: "date", format: "YYYY-MM-DD"}
           - {label: "Game", name: "game", widget: "select", options: ["Counter Strike", "Rocket League", "League of Legends", "Hearthstone", "Overwatch"]}
@@ -110,16 +105,16 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Server Info", name: "server", widget: "string"}
 
-  - name: "about" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Pages" # Used in the UI, ie.: "New Post"
+  - name: "about"
+    label: "Pages"
     delete: false
-    files: # The path to the folder where the documents are stored
+    files:
       - label: "About"
         name: "about"
         slug: "about"
         file: "about.md"
         delete: false
-        fields: # The fields each document in this collection have
+        fields:
           - {label: "Title", name: "title", widget: "hidden", default: "About"}
           - {label: "Title", name: "title_about", default: "Our History"}
           - {label: "Layout", name: "layout", widget: "hidden", default: "about"}
