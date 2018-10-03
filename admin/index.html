@@ -6,26 +6,8 @@ search: exclude
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Content Manager</title>
-  
-    <script>
-  UPLOADCARE_LOCALE = "en";
-  UPLOADCARE_TABS = "file url gdrive";
-  UPLOADCARE_PUBLIC_KEY = "dcd4677d02e4ff379685";
-</script>
-<script charset="utf-8" src="//ucarecdn.com/libs/widget/3.6.0/uploadcare.full.min.js"></script>
-  
-  <script>
-        uploadcare.openDialog(null, {
-        crop: "disabled",
-        imagesOnly: true
-      }).done(function(file) {
-        file.promise().done(function(fileInfo){
-          console.log(fileInfo.cdnUrl);
-        });
-      });
-  </script>
-  
+  <title>Quixz eSports - Content Manager</title>
+  <link REL="SHORTCUT ICON" HREF="{{ baseurl }}/assets/image/logo/logo_500.png">
 </head>
 <body>
   <!-- Include the script that builds the page and powers Netlify CMS -->
