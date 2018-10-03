@@ -125,7 +125,7 @@ permalink: teams/hearthstone
 
   var ratio = ({{ team.ratio.win }} / ({{ team.ratio.loss }} + {{ team.ratio.win }})) * 100;
 
-  document.getElementById("ratio").innerHTML = ratio + "%";
+  document.getElementById("ratio").innerHTML = Math.round(ratio) + "%";
 
 </script>
 
