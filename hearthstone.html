@@ -105,6 +105,8 @@ permalink: teams/hearthstone
   </div>
 
 </div>
+{% for team in site.teams %}
+  {% if team.game == "Hearthstone" %}
 
 <div class="winRatio">
 
@@ -127,7 +129,8 @@ permalink: teams/hearthstone
 
 </script>
 
-
+  {% endif %}
+{% endfor %}
 
 <div class="teamAbout">
   <h1>History</h1>
