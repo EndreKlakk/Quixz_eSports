@@ -130,6 +130,13 @@ collections:
         widget: "object"
         fields:
           - {label: "Background Image", name: "bgImage", widget: "image"}
+      - label: "Win / Loss"
+        name: "ratio"
+        widget: "object"
+        required: false
+        fields:
+          - {label: "Wins", name: "win", widget: "string"}
+          - {label: "Loss", name: "loss", widget: "string"}
 
   - name: "pages"
     label: "Pages"

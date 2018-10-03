@@ -106,6 +106,29 @@ permalink: teams/hearthstone
 
 </div>
 
+<div class="winRatio">
+
+  <h1>Win/Loss Ratio</h1>
+
+  <div class="ratioText">
+
+    <h2>{{ item.ratio.win }} / {{ item.ratio.loss }}</h2>
+    <h2 class="Ration"></h2>
+
+  </div>
+
+</div>
+
+<script type="text/javascript">
+
+  var result = ({{ item.ratio.win }} + {{ item.ratio.loss }}) / {{ item.ration.win }};
+
+  document.getElementById("ratio").innerHTML = ratio + "%";
+
+</script>
+
+
+
 <div class="teamAbout">
   <h1>History</h1>
   {% for info in site.teams %}
