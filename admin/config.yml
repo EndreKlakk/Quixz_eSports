@@ -135,16 +135,6 @@ collections:
     label: "Pages"
     delete: false
     files:
-      - label: "About"
-        name: "about"
-        slug: "about"
-        file: "about.md"
-        delete: false
-        fields:
-          - {label: "Title", name: "title", widget: "hidden", default: "About"}
-          - {label: "Title", name: "title_about", default: "Our History"}
-          - {label: "Layout", name: "layout", widget: "hidden", default: "about"}
-          - {label: "Body", name: "body", widget: "markdown", tagname: "p"}
       - label: "Homepage"
         name: "index"
         slug: "index"
@@ -155,6 +145,16 @@ collections:
           - {label: "Layout", name: "layout", widget: "hidden", default: "index"}
           - {label: "Description", name: "description", widget: "markdown", default: "Quixz eSports is an organization, founded in 2015. We represent teams in several esport titles, such as CSGO and Rocket League. Our passions for the esport community is strong, and try our best to make it grow better!"}
           - {label: "About", name: "about", widget: "markdown"}
+      - label: "About"
+        name: "about"
+        slug: "about"
+        file: "about.md"
+        delete: false
+        fields:
+          - {label: "Title", name: "title", widget: "hidden", default: "About"}
+          - {label: "Title", name: "title_about", default: "Our History"}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "about"}
+          - {label: "Body", name: "body", widget: "markdown", tagname: "p"}
 
   - name: "partner"
     label: "Partners"
