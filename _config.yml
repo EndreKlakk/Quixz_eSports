@@ -9,9 +9,6 @@ collections:
   - servers
   - teams
   - partners
-
-  
-collections:
   players:
     output: true
 
