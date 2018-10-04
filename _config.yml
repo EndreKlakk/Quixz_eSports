@@ -7,7 +7,7 @@ include: [_redirects, .htcaccess]
 collections:
   - matches
   - players
-      output: true
+    output: true
   - servers
   - teams
   - partners
