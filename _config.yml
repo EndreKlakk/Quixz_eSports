@@ -6,11 +6,11 @@ include: [_redirects, .htcaccess]
 
 collections:
   - matches
-  - players
-    output: true
   - servers
   - teams
   - partners
+    players:
+        output: true
 
 title: Quixz eSports
 email: contact@quixz.eu
