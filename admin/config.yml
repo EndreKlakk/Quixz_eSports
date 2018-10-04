@@ -61,7 +61,7 @@ collections:
     delete: true
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{playername}}-{{slug}}"
-    folder: "_posts/player"
+    folder: "_players"
     fields:
           - {label: "Layout", name: "layout", widget: "hidden", default: "players"}
           - {label: "Playername", name: "title", widget: "string"}
