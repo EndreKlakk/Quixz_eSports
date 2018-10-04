@@ -21,7 +21,6 @@ collections:
     label: "Article"
     folder: "_posts"
     layout: "article.html"
-    sort: "date:desc"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
