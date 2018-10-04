@@ -7,7 +7,7 @@ description: Currently Quixz eSports is hosting a full roster in CSGO, 1v1 Rocke
 <div class="team">
   <h4><a href="{{ baseurl }}/teams/csgo" style="color: #FFF">Counter Strike: Global Offensive</a></h4>
   <div class="filler"> <h1> </h1> </div>
-{% for player in site.categories.player %}
+{% for player in site.players %}
 
 {% if player.playergame == "Counter Strike" and player.status == 'true' %}
       <div class="card">
@@ -25,7 +25,7 @@ description: Currently Quixz eSports is hosting a full roster in CSGO, 1v1 Rocke
 <div class="team">
   <h4><a href="{{ baseurl }}/teams/overwatch" style="color: #FFF">Overwatch</a></h4>
   <div class="filler"> <h1> </h1> </div>
-{% for player in site.categories.player %}
+{% for player in site.players %}
 
 {% if player.playergame == "Overwatch" and player.status == 'true' %}
       <div class="card">
@@ -44,7 +44,7 @@ description: Currently Quixz eSports is hosting a full roster in CSGO, 1v1 Rocke
   <hr>
 <h4><a href="{{ baseurl }}/teams/rocketleague" style="color: #FFF">Rocket League</a></h4>
 <div class="filler"> <h1> </h1> </div>
-{% for player in site.categories.player %}
+{% for player in site.players %}
 
 {% if player.playergame == "Rocket League" and player.status == 'true' %}
   <div class="card">
@@ -63,7 +63,7 @@ description: Currently Quixz eSports is hosting a full roster in CSGO, 1v1 Rocke
 <div class="team" style="padding-bottom: 15rem">
 <h4><a href="{{ baseurl }}/teams/hearthstone" style="color: #FFF">Hearthstone</a></h4>
 <div class="filler"> <h1> </h1> </div>
-{% for player in site.categories.player %}
+{% for player in site.players %}
 
 {% if player.playergame == "Hearthstone" and player.status == 'true' %}
   <div class="card">
