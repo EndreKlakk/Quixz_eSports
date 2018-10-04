@@ -84,7 +84,7 @@ collections:
             name: "gallery"
             widget: "list"
             field:
-              - {label: "Gallery Image", name: image, widget: image}
+              - {label: "Gallery Image", name: "Galleryimage", widget: image}
           - label: "Social Media"
             name: "sm"
             widget: "object"
