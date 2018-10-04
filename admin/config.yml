@@ -84,8 +84,8 @@ collections:
             name: "galleryImages"
             widget: "list"
             required: false
-            object:
-              - {label: "Image", name: "image", widget: "image"}
+            field:
+              - {label: Image, name: image, widget: image}
           - label: "Social Media"
             name: "sm"
             widget: "object"
@@ -120,11 +120,11 @@ collections:
       - {label: "Game", name: "game", widget: "select", options: ["Counter Strike", "Rocket League", "League of Legends", "Hearthstone", "Overwatch"]}
       - {label: "About", name: "body", widget: "markdown"}
       - label: "Gallery"
-        name: "galleryImages"
+        name: "gallery"
         widget: "list"
         required: false
-        object:
-          - {label: "Image", name: "image", widget: "image"}
+        field:
+          - {label: Image, name: image, widget: image}
       - label: "Page Design"
         name: "pageDesign"
         widget: "object"
