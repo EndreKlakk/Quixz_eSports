@@ -81,9 +81,8 @@ collections:
           - {label: "Game", name: "playergame", widget: "select", options: ["Counter Strike", "Rocket League", "League of Legends", "Hearthstone"]}
           - {label: "Text", name: "body", widget: "markdown", tagname: "p", required: false}
           - label: "Gallery"
-            name: "galleryImages"
+            name: "gallery"
             widget: "list"
-            required: false
             field:
               - {label: "Image", name: "image", widget: "image"}
           - label: "Social Media"
