@@ -9,7 +9,7 @@ collections:
   - servers
   - teams
   - partners
-    players:
+  - players
         output: true
 
 title: Quixz eSports
