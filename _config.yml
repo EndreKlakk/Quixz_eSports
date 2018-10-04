@@ -5,10 +5,14 @@ future: true
 include: [_redirects, .htcaccess]
 
 collections:
-  - matches
-  - servers
-  - teams
-  - partners
+  matches:
+    output: false
+  servers:
+    output: false
+  teams:
+    output: false
+  partners:
+    output: false
   players:
     output: true
 
