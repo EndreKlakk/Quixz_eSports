@@ -84,7 +84,7 @@ collections:
             name: "galleryImages"
             widget: "list"
             required: false
-            field:
+            fields:
               - {label: "Image", name: "image", widget: "image"}
           - label: "Social Media"
             name: "sm"
