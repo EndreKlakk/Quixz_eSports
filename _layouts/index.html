@@ -48,38 +48,118 @@
   </div>
 </div>
 
-<div class="matches" id="matches">
-  <h1>Upcoming Matches</h1>
+<div class="teamMatches">
+
+  <div class="upcomingMatches">
+    <h1>Upcoming Matches</h1>
+
   {% assign eventPost = site.matches | sort: 'date' %}
   {% assign eventsNumber = 3 %}
   {% assign printedEvents = 0 %}
   {% assign sorted = site.matches | sort: 'matchdate' %}
 
-{% for item in sorted %}
+  {% for item in sorted %}
     {% assign curDate = site.time | date: '%Y-%m-%d' %}
     {% assign postStartDate = item.matchdate | date: '%Y-%m-%d' %}
     {% if postStartDate >= curDate and printedEvents < eventsNumber %}
         {% assign printedEvents = printedEvents | plus: 1 %}
-          <div class="card_body">
-            <div class="card_left">
-              <img src="assets/image/logo/logo_500.png" alt="Quixz eSports logo">
-            </div>
-            <div class="card_middle">
-              <h2>{{ item.matchdate | date: '%B %d, %Y' }}</h2>
-              <a href="{{ item.matchlink }}" target="_blank">{{ item.game }}</a>
-              <h3>VS</h3>
-            </div>
-            <div class="card_right">
-              <img src="{{ item.image }}" alt="Logo of opposing team"></img>
-            </div>
-          </div>
 
-    {% endif %}
+      <div class="match_body">
+          <img src="../assets/image/logo/logo_500.png" alt="Quixz eSports logo">
+            <h2></h2>
+            <div style="margin: auto">
+              <h3>VS</h3>
+              <a target="_blank" href="{{ item.matchlink }}" style="color: #F8B52A; text-decoration: none"><h3>Match</h3></a>
+              <h6>{{ item.game }}</h6>
+            </div>
+            <h2></h2>
+          <img src="{{ item.image }}" alt="Logo of opposing team"></img>
+      </div>
+
+  {% endif %}
 {% endfor %}
+  </div>
+
+  <div class="recentMatches">
+    <h1>Recent Matches</h1>
+
+    {% assign eventPost = site.matches | sort: 'date' %}
+    {% assign eventsNumber = 3 %}
+    {% assign printedEvents = 0 %}
+    {% assign sorted = site.matches | sort: 'matchdate' %}
+
+    {% for item in sorted %}
+      {% assign curDate = site.time | date: '%Y-%m-%d' %}
+      {% assign postStartDate = item.matchdate | date: '%Y-%m-%d' %}
+      {% if postStartDate <= curDate and printedEvents < eventsNumber %}
+          {% assign printedEvents = printedEvents | plus: 1 %}
+      <div class="match_body">
+          <img src="../assets/image/logo/logo_500.png" alt="Quixz eSports logo">
+            <h2>{{ item.score.quixzScore }}</h2>
+            <div style="margin: auto">
+              <h3>VS</h3>
+              <a target="_blank" href="{{ item.matchlink }}" style="color: #F8B52A; text-decoration: none"><h3>Match</h3></a>
+              <h6>{{ item.game }}</h6>
+            </div>
+            <h2>{{ item.score.opponentScore }}</h2>
+          <img src="{{ item.image }}" alt="Logo of opposing team"></img>
+      </div>
+    {% endif %}
+  {% endfor %}
+  </div>
+
 </div>
 
-
 {% include footer.html %}
+
+<style>
+
+.teamMatches {
+  display: grid;
+  grid-template-columns: repeat(2, calc(50% - 1rem));
+  grid-gap: 2rem;
+  width: 70%;
+  padding: 2rem 15% 3rem 15%;
+  background-image: url(/assets/image/backgrounds/matches.png);
+}
+
+.recentMatches, .upcomingMatches {
+  width: 100%;
+  grid-column: span 1
+}
+
+.match_body {
+  width: 100%;
+  background-color: #2B63AF;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  height: 5rem;
+  grid-template-rows: 5rem;
+  text-align: center;
+  font-family: Lato;
+  margin-bottom: .5rem
+}
+
+.match_body img {
+  height: 80%;
+  margin: auto;
+}
+
+.match_body h2, .match_body h3, .match_body h6 {
+  margin: auto;
+}
+
+@media screen and (max-width: 650px) {
+  .teamMatches {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: .5rem;
+    width: 90%;
+    padding: 0 5%;
+  }
+}
+
+</style>
 
 <!-- Netlify CMS redirect to /admin -->
 
