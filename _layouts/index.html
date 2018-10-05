@@ -110,6 +110,21 @@
 
 </div>
 
+  <div class="teams">
+
+    <h1>Our Teams</h1>
+
+  {% for team in site.teams %}
+
+  <a class="team" href="../{{ team.permalink }}" style="background-image: url({{ team.pageDesign.bgImage }}); background-size: cover; background-position: center">
+
+      <h1>{{ team.game }}</h1>
+
+  </a>
+  {% endfor %}
+
+  </div>
+
 {% include footer.html %}
 
 <style>
@@ -149,7 +164,51 @@
   margin: auto;
 }
 
+.teams {
+  background-color: #F8B52A;
+  display: grid;
+  padding: 0 15% 2rem 15%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 5rem 5rem 5rem;
+  grid-gap: .5rem;
+  text-align: center;
+}
+
+.teams h1 {
+  grid-column: 1 / 4;
+  font-size: 2rem
+}
+
+.team {
+  width: 100%;
+  background-color: #2B63AF;
+  color: #FFF;
+  text-decoration: none;
+  grid-column: span 1;
+  width: 100%;
+  display: grid;
+  align-content: center;
+}
+
+.team h4 {
+  margin: auto;
+  font-size: 70%
+}
+
 @media screen and (max-width: 650px) {
+  .teams {
+    min-height: 100vh;
+    display: grid;
+    padding: 2rem 15%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem auto;
+    text-align: center;
+  }
+
+  .teams h1 {
+    grid-column: 1 / 2
+  }
+
   .teamMatches {
     display: grid;
     grid-template-columns: 100%;
