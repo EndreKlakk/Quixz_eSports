@@ -109,7 +109,7 @@ collections:
   - name: "teams"
     label: "Team Pages"
     delete: false
-    create: true
+    create: false
     slug: "{{teamgame}}-{{slug}}"
     folder: "_teams"
     fields:
