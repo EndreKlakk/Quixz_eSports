@@ -3,79 +3,17 @@ layout: default
 title: Team
 description: Currently Quixz eSports is hosting a full roster in CSGO, 1v1 Rocket League and Hearthstone. Click to browse our players!
 ---
+<div class="teams">
 
-<div class="team">
-  <h4><a href="{{ baseurl }}/teams/csgo" style="color: #FFF">Counter Strike: Global Offensive</a></h4>
-  <div class="filler"> <h1> </h1> </div>
-{% for player in site.players %}
+{% for team in site.teams %}
 
-{% if player.playergame == "Counter Strike" and player.status == 'true' %}
-      <div class="card">
-        <img src="{{ player.playerimage }}" alt="" style="width:100%">
-        <div class="container">
-          <a href="https://quixz.eu/player/{{ player.name.playername }}" style="text-decoration: none; color: #FFF"><h2>{{ player.name.firstname }} <b style="color: #F8B52A">{{ player.name.playername}}</b> {{ player.name.lastname }}</h2></a>
-        </div>
-      </div>
-{% endif %}
+<a class="team" href="../{{ team.permalink }}" style="background-image: url({{ team.pageDesign.bgImage }}); background-size: cover; background-position: center">
 
+    <h1>{{ team.game }}</h1>
+
+</a>
 {% endfor %}
-  <div class="filler2"> <h1> </h1> </div>
-</div>
 
-<div class="team">
-  <h4><a href="{{ baseurl }}/teams/overwatch" style="color: #FFF">Overwatch</a></h4>
-  <div class="filler"> <h1> </h1> </div>
-{% for player in site.players %}
-
-{% if player.playergame == "Overwatch" and player.status == 'true' %}
-      <div class="card">
-        <img src="{{ player.playerimage }}" alt="" style="width:100%">
-        <div class="container">
-          <a href="https://quixz.eu/player/{{ player.name.playername }}" style="text-decoration: none; color: #FFF"><h2>{{ player.name.firstname }} <b style="color: #F8B52A">{{ player.name.playername}}</b> {{ player.name.lastname }}</h2></a>
-        </div>
-      </div>
-{% endif %}
-
-{% endfor %}
-  <div class="filler2"> <h1> </h1> </div>
-</div>
-
-<div class="team">
-  <hr>
-<h4><a href="{{ baseurl }}/teams/rocketleague" style="color: #FFF">Rocket League</a></h4>
-<div class="filler"> <h1> </h1> </div>
-{% for player in site.players %}
-
-{% if player.playergame == "Rocket League" and player.status == 'true' %}
-  <div class="card">
-    <img src="{{ player.playerimage }}" alt="" style="width:100%">
-    <div class="container">
-      <a href="https://quixz.eu/player/{{ player.name.playername }}" style="text-decoration: none; color: #FFF"><h2>{{ player.name.firstname }} <b style="color: #F8B52A">{{ player.name.playername}}</b> {{ player.name.lastname }}</h2></a>
-    </div>
-  </div>
-{% endif %}
-
-{% endfor %}
-<div class="filler2"> <h1> </h1> </div>
-<hr>
-</div>
-
-<div class="team" style="padding-bottom: 15rem">
-<h4><a href="{{ baseurl }}/teams/hearthstone" style="color: #FFF">Hearthstone</a></h4>
-<div class="filler"> <h1> </h1> </div>
-{% for player in site.players %}
-
-{% if player.playergame == "Hearthstone" and player.status == 'true' %}
-  <div class="card">
-    <img src="{{ player.playerimage }}" alt="" style="width:100%">
-    <div class="container">
-      <a href="https://quixz.eu/player/{{ player.name.playername }}" style="text-decoration: none; color: #FFF"><h2>{{ player.name.firstname }} <b style="color: #F8B52A">{{ player.name.playername}}</b> {{ player.name.lastname }}</h2></a>
-    </div>
-  </div>
-{% endif %}
-
-{% endfor %}
-<div class="filler2"> <h1> </h1> </div>
 </div>
 
 <style>
@@ -84,98 +22,39 @@ body {
   background-color: #2B63AF
 }
 
+.teams {
+  min-height: 100vh;
+  display: grid;
+  padding: 2rem 15%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 15rem 15rem;
+  text-align: center;
+}
+
 .team {
   width: 100%;
   background-color: #2B63AF;
-  min-height: 40vh;
-  margin-top: 1em;
-  display: grid;
-  grid-template-columns: 15% repeat(5, 1fr) 15%;
-  grid-gap: 1rem
-}
-
-.card {
+  color: #FFF;
+  text-decoration: none;
   grid-column: span 1;
   width: 100%;
-  padding: .2rem
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.card a {
-  font-size: .8rem
+  display: grid;
+  align-content: center;
 }
 
 .team h4 {
-  font-size: 2rem;
-  text-align: center;
-  grid-column: 1 / 8;
-  text-decoration: none;
-  color: #FFF
-}
-
-.team a {
-  text-decoration: none;
-}
-
-.filler {
-  grid-column: 1 / 2;
-  width: 100%
-}
-
-.filler2 {
-  grid-column: 7 / 8;
-  width: 100%
-}
-
-.team hr {
-  width: 30%;
-  height: 0;
-  margin: 0 auto;
-  border: 1.5px solid #FFF;
-  grid-column: 1 / 8
+  margin: auto;
+  font-size: 70%
 }
 
 @media screen and (max-width: 650px) {
-  .team {
-    width: calc(100% - 4rem);
-    background-color: #2B63AF;
-    min-height: 40vh;
+  .teams {
+    min-height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
-    padding: 1rem 2rem
-  }
-
-  .card {
-    grid-column: span 1;
-    width: 100%;
-    padding: .2rem
-  }
-
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  }
-
-  .card a {
-    font-size: .8rem
-  }
-
-  .team h4 {
-    font-size: 1.5rem;
+    padding: 2rem 15%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15rem;
     text-align: center;
-    grid-column: 1 / 3
-  }
-
-  .filler, .filler2 {
-    display: none
-  }
-
-  .team hr {
-    margin-top: 1rem;
-    grid-column: 1 / 3
   }
 }
 </style>

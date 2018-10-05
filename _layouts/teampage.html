@@ -1,14 +1,7 @@
----
-title: Hearthstone Team
-permalink: teams/hearthstone
----
-
 {% include header.html %}
 
-{% for team in site.teams %}
-  {% if team.game == "Hearthstone" %}
 <div class="teamHeader">
-<h1>{{ team.game }}</h1>
+<h1>{{ page.game }}</h1>
 </div>
 
 <style>
@@ -29,14 +22,11 @@ permalink: teams/hearthstone
   }
 </style>
 
-  {% endif %}
-{% endfor %}
-
 <div class="team">
 
   {% for player in site.players %}
 
-  {% if player.playergame == "Hearthstone" and player.status == 'true' %}
+  {% if player.playergame == page.game and player.status == 'true' %}
         <div class="card">
           <img src="{{ player.playerimage }}" alt="" style="width:100%">
           <div class="container">
@@ -62,12 +52,15 @@ permalink: teams/hearthstone
     {% for item in sorted %}
       {% assign curDate = site.time | date: '%Y-%m-%d' %}
       {% assign postStartDate = item.matchdate | date: '%Y-%m-%d' %}
-      {% if postStartDate <= curDate and printedEvents < eventsNumber and item.game == "Hearthstone" %}
+      {% if postStartDate <= curDate and printedEvents < eventsNumber and item.game == page.game %}
           {% assign printedEvents = printedEvents | plus: 1 %}
       <div class="match_body">
           <img src="../assets/image/logo/logo_500.png" alt="Quixz eSports logo">
             <h2>{{ item.score.quixzScore }}</h2>
-            <h3>VS</h3>
+            <div style="margin: auto">
+              <h3>VS</h3>
+              <a href="{{ item.matchlink }}" style="color: #F8B52A; text-decoration: none"><h3>Match</h3></a>
+            </div>
             <h2>{{ item.score.opponentScore }}</h2>
           <img src="{{ item.image }}" alt="Logo of opposing team"></img>
       </div>
@@ -86,7 +79,7 @@ permalink: teams/hearthstone
   {% for item in sorted %}
     {% assign curDate = site.time | date: '%Y-%m-%d' %}
     {% assign postStartDate = item.matchdate | date: '%Y-%m-%d' %}
-    {% if postStartDate >= curDate and printedEvents < eventsNumber and item.game == "Hearthstone" %}
+    {% if postStartDate >= curDate and printedEvents < eventsNumber and item.game == page.game %}
         {% assign printedEvents = printedEvents | plus: 1 %}
 
       <div class="match_body">
@@ -105,8 +98,6 @@ permalink: teams/hearthstone
   </div>
 
 </div>
-{% for team in site.teams %}
-  {% if team.game == "Hearthstone" %}
 
 <div class="winRatio">
 
@@ -114,7 +105,7 @@ permalink: teams/hearthstone
 
   <div class="ratioText">
 
-    <h2>Wins <b>{{ team.ratio.win }} / {{ team.ratio.loss }}</b> Losses</h2>
+    <h2>Wins <b>{{ page.ratio.win }} / {{ page.ratio.loss }}</b> Losses</h2>
     <h2>Win ratio:</h2> <h2 id="ratio"></h2>
 
   </div>
@@ -123,19 +114,16 @@ permalink: teams/hearthstone
 
 <script type="text/javascript">
 
-  var ratio = ({{ team.ratio.win }} / ({{ team.ratio.loss }} + {{ team.ratio.win }})) * 100;
+  var ratio = ({{ page.ratio.win }} / ({{ page.ratio.loss }} + {{ page.ratio.win }})) * 100;
 
   document.getElementById("ratio").innerHTML = Math.round(ratio) + "%";
 
 </script>
 
-  {% endif %}
-{% endfor %}
-
 <div class="teamAbout">
   <h1>History</h1>
   {% for info in site.teams %}
-    {% if info.game == "Hearthstone" %}
+    {% if info.game == page.game %}
   <div class="">
         {{ info.content }}
   </div>
@@ -144,7 +132,7 @@ permalink: teams/hearthstone
   {% endfor %}
 
   {% for info in site.teams %}
-    {% if info.game == "Hearthstone" %}
+    {% if info.game == page.game %}
 <div class="teamGallery">
   <h1>Gallery</h1>
   <div class="teamImages">
@@ -152,25 +140,93 @@ permalink: teams/hearthstone
   </div>
 </div>
 
-<div class="teamArticles">
-  <h1>Related Articles</h1>
-  <div class="news">
-  {% for post in site.categories.hs limit:4 %}
-    <div class="article_list">
-
-      <a href="{{ post.url | remove: '.html' }}"><img src="{{ post.image }}" alt="{{ post.description }}" og:image></a>
-      <h1><a href="{{ post.url | remove: '.html' }}">{{ post.title }}</a></h1>
-      <h5>{{ post.date | date: '%B %d, %Y' }}</h5>
-      <p class="news__desc">{{ post.content | truncate: 100 }}</p>
-      <a href="{{ post.url | remove: '.html' }}" class="article_readmore" style="color: #2B63AF"><p>Read more...</p></a>
-      <hr>
-
-    </div>
-  {% endfor %}
-  </div>
-</div>
     {% endif %}
   {% endfor %}
+
+
+{% if page.game == "Counter Strike" %}
+  <div class="teamArticles">
+    <h1>Related Articles</h1>
+    <div class="news">
+    {% for post in site.categories.csgo limit:4 %}
+      <div class="article_list">
+
+        <a href="{{ post.url | remove: '.html' }}"><img src="{{ post.image }}" alt="{{ post.description }}" og:image></a>
+        <h1><a href="{{ post.url | remove: '.html' }}">{{ post.title }}</a></h1>
+        <h5>{{ post.date | date: '%B %d, %Y' }}</h5>
+        <p class="news__desc">{{ post.content | truncate: 100 }}</p>
+        <a href="{{ post.url | remove: '.html' }}" class="article_readmore" style="color: #2B63AF"><p>Read more...</p></a>
+        <hr>
+
+      </div>
+    {% endfor %}
+    </div>
+  </div>
+{% endif %}
+
+{% if page.game == "Hearthstone" %}
+  <div class="teamArticles">
+    <h1>Related Articles</h1>
+    <div class="news">
+    {% for post in site.categories.hs limit:4 %}
+      <div class="article_list">
+
+        <a href="{{ post.url | remove: '.html' }}"><img src="{{ post.image }}" alt="{{ post.description }}" og:image></a>
+        <h1><a href="{{ post.url | remove: '.html' }}">{{ post.title }}</a></h1>
+        <h5>{{ post.date | date: '%B %d, %Y' }}</h5>
+        <p class="news__desc">{{ post.content | truncate: 100 }}</p>
+        <a href="{{ post.url | remove: '.html' }}" class="article_readmore" style="color: #2B63AF"><p>Read more...</p></a>
+        <hr>
+
+      </div>
+    {% endfor %}
+    </div>
+  </div>
+{% endif %}
+
+{% if page.game == "Overwatch" %}
+  <div class="teamArticles">
+    <h1>Related Articles</h1>
+    <div class="news">
+    {% for post in site.categories.ow limit:4 %}
+      <div class="article_list">
+
+        <a href="{{ post.url | remove: '.html' }}"><img src="{{ post.image }}" alt="{{ post.description }}" og:image></a>
+        <h1><a href="{{ post.url | remove: '.html' }}">{{ post.title }}</a></h1>
+        <h5>{{ post.date | date: '%B %d, %Y' }}</h5>
+        <p class="news__desc">{{ post.content | truncate: 100 }}</p>
+        <a href="{{ post.url | remove: '.html' }}" class="article_readmore" style="color: #2B63AF"><p>Read more...</p></a>
+        <hr>
+
+      </div>
+    {% endfor %}
+    </div>
+  </div>
+{% endif %}
+
+{% if page.game == "Rocket League" %}
+  <div class="teamArticles">
+    <h1>Related Articles</h1>
+    <div class="news">
+    {% for post in site.categories.rl limit:4 %}
+      <div class="article_list">
+
+        <a href="{{ post.url | remove: '.html' }}"><img src="{{ post.image }}" alt="{{ post.description }}" og:image></a>
+        <h1><a href="{{ post.url | remove: '.html' }}">{{ post.title }}</a></h1>
+        <h5>{{ post.date | date: '%B %d, %Y' }}</h5>
+        <p class="news__desc">{{ post.content | truncate: 100 }}</p>
+        <a href="{{ post.url | remove: '.html' }}" class="article_readmore" style="color: #2B63AF"><p>Read more...</p></a>
+        <hr>
+
+      </div>
+    {% endfor %}
+    </div>
+  </div>
+{% endif %}
+
+{% include footer.html %}
+
+
 <style>
 
 body {
@@ -233,10 +289,6 @@ body {
   margin: auto;
 }
 
-.match_body h2, .match_body h3 {
-  margin: auto;
-}
-
 .winRatio {
   text-align: center;
   font-family: "Lato";
@@ -247,6 +299,10 @@ body {
 
 .ratioText b {
   color: #F8B52A;
+}
+
+.match_body h2, .match_body h3 {
+  margin: auto;
 }
 
 .teamAbout {
@@ -308,9 +364,3 @@ body {
 }
 
 </style>
-
-{% include footer.html %}
-
-</body>
-
-</html>

@@ -10,7 +10,7 @@ collections:
   servers:
     output: false
   teams:
-    output: false
+    output: true
   partners:
     output: false
   players:

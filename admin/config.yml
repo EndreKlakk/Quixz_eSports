@@ -113,6 +113,7 @@ collections:
     slug: "{{teamgame}}-{{slug}}"
     folder: "_teams"
     fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "teampage"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Game", name: "game", widget: "select", options: ["Counter Strike", "Rocket League", "League of Legends", "Hearthstone", "Overwatch"]}
       - {label: "About", name: "body", widget: "markdown"}
