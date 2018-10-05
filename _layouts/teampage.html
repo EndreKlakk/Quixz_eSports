@@ -4,24 +4,6 @@
 <h1>{{ page.game }}</h1>
 </div>
 
-<style>
-  .teamHeader {
-    width: 100%;
-    height: 15rem;
-    text-align: center;
-    background-image: url({{ page.pageDesign.bgImage }});
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin: 0;
-    display: grid;
-  }
-
-  .teamHeader h1 {
-    margin: auto;
-  }
-</style>
-
 <div class="team">
 
   {% for player in site.players %}
@@ -232,6 +214,22 @@
 body {
   background-color: #232323;
   box-sizing: border-box;
+}
+
+.teamHeader {
+  width: 100%;
+  height: 15rem;
+  text-align: center;
+  background-image: url({{ page.pageDesign.bgImage }});
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  display: grid;
+}
+
+.teamHeader h1 {
+  margin: auto;
 }
 
 .team {
