@@ -70,8 +70,8 @@
             <h2></h2>
             <div style="margin: auto">
               <h3>VS</h3>
-              <a target="_blank" href="{{ item.matchlink }}" style="color: #F8B52A; text-decoration: none"><h3>{{ item.matchType }}</h3></a>
               <h6>{{ item.game }}</h6>
+              <a target="_blank" href="{{ item.matchlink }}" style="color: #F8B52A; text-decoration: none"><h3 class="matchButton">{{ item.matchType }}</h3></a>
             </div>
             <h2></h2>
           <img src="{{ item.image }}" alt="Logo of opposing team"></img>
@@ -100,8 +100,8 @@
             <h2>{{ item.score.quixzScore }}</h2>
             <div style="margin: auto">
               <h3>VS</h3>
-              <a target="_blank" href="{{ item.matchlink }}" style="color: #F8B52A; text-decoration: none"><h3>{{ item.matchType }}</h3></a>
               <h6>{{ item.game }}</h6>
+              <a target="_blank" href="{{ item.matchlink }}" style="color: #F8B52A; text-decoration: none"><h3 class="matchButton">{{ item.matchType }}</h3></a>
             </div>
             <h2>{{ item.score.opponentScore }}</h2>
           <img src="{{ item.image }}" alt="Logo of opposing team"></img>
@@ -170,6 +170,25 @@
 
 .match_body h2, .match_body h3, .match_body h6 {
   margin: auto;
+}
+
+.match_body a {
+  margin-top: 1rem
+}
+
+.match_body h6 {
+  margin-bottom: .5rem;
+}
+
+.matchButton {
+  border: 2px solid #F8B52A;
+  padding: .2rem .4rem;
+}
+
+.matchButton:hover {
+  background-color: #F8B52A;
+  color: #FFF;
+  transition: all ease-in-out 150ms
 }
 
 .teams {
