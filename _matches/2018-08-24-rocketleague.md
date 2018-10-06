@@ -7,5 +7,5 @@ image: /assets/image/articles/default_team_logo.png
 score:
   opponentScore: '2'
   quixzScore: '5'
+matchType: Tournament
 ---
-

@@ -37,11 +37,12 @@
       {% if postStartDate <= curDate and printedEvents < eventsNumber and item.game == page.game %}
           {% assign printedEvents = printedEvents | plus: 1 %}
       <div class="match_body">
+          <h1>{{ item.matchdate | date: '%B %d, %Y' }}</h1>
           <img src="../assets/image/logo/logo_500.png" alt="Quixz eSports logo">
             <h2>{{ item.score.quixzScore }}</h2>
             <div style="margin: auto">
               <h3>VS</h3>
-              <a target="_blank" href="{{ item.matchlink }}" style="color: #F8B52A; text-decoration: none"><h3>Match</h3></a>
+              <a target="_blank" href="{{ item.matchlink }}" style="color: #F8B52A; text-decoration: none"><h3>{{ item.matchType }}</h3></a>
             </div>
             <h2>{{ item.score.opponentScore }}</h2>
           <img src="{{ item.image }}" alt="Logo of opposing team"></img>
@@ -65,11 +66,12 @@
         {% assign printedEvents = printedEvents | plus: 1 %}
 
       <div class="match_body">
+          <h1>{{ item.matchdate | date: '%B %d, %Y' }}</h1>
           <img src="../assets/image/logo/logo_500.png" alt="Quixz eSports logo">
             <h2>{{ item.score.quixzScore }}</h2>
             <div style="margin: auto">
               <h3>VS</h3>
-              <a target="_blank" href="{{ item.matchlink }}" style="color: #F8B52A; text-decoration: none"><h3>Match</h3></a>
+              <a target="_blank" href="{{ item.matchlink }}" style="color: #F8B52A; text-decoration: none"><h3>{{ item.matchType}}</h3></a>
             </div>
             <h2>{{ item.score.opponentScore }}</h2>
           <img src="{{ item.image }}" alt="Logo of opposing team"></img>
@@ -275,15 +277,25 @@ body {
   background-color: #2B63AF;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  height: 5rem;
-  grid-template-rows: 5rem;
+  height: 8rem;
+  grid-template-rows: 2rem 5rem;
   text-align: center;
   font-family: Lato;
   margin-bottom: .5rem
 }
 
+.match_body h1 {
+  grid-column: 1 / 6;
+  font-size: 1rem
+}
+
 .match_body img {
-  height: 80%;
+  width: 80%;
+  height: auto;
+  margin: auto;
+}
+
+.match_body h2, .match_body h3, .match_body h6 {
   margin: auto;
 }
 

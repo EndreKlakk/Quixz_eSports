@@ -7,5 +7,5 @@ image: /assets/image/articles/hearthstone-logo.png
 score:
   opponentScore: ''
   quixzScore: ''
+matchType: Tournament
 ---
-
