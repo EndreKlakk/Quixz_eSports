@@ -43,7 +43,7 @@ collections:
     fields:
           - {label: "Match", name: "title", widget: "string", default:""}
           - {label: "Date", name: "matchdate", widget: "date", format: "YYYY-MM-DD"}
-          - {label: "Game", name: "game", widget: "select", options: ["Counter Strike", "Rocket League", "League of Legends", "Hearthstone", "Overwatch"]}
+          - {label: "Game", name: "game", widget: "select", options: ["Counter Strike", "Rocket League 1v1", "Rocket League 3v3", "League of Legends", "Hearthstone", "Overwatch"]}
           - {label: "Match Type", name: "matchType", widget: "select", options: ["Match", "Tournament"]}
           - {label: "Link", name: "matchlink", widget: "string", required: false}
           - label: "Team logo"
@@ -78,7 +78,7 @@ collections:
             name: "playerimage"
             widget: "image"
             defualt: "/assets/image/articles/avatar.png"
-          - {label: "Game", name: "playergame", widget: "select", options: ["Counter Strike", "Rocket League", "League of Legends", "Hearthstone"]}
+          - {label: "Game", name: "playergame", widget: "select", options: ["Counter Strike", "Rocket League 1v1", "Rocket League 3v3", "League of Legends", "Hearthstone"]}
           - {label: "Text", name: "body", widget: "markdown", tagname: "p", required: false}
           - label: "Gallery"
             name: "gallery"
@@ -116,7 +116,7 @@ collections:
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "teampage"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Game", name: "game", widget: "select", options: ["Counter Strike", "Rocket League", "League of Legends", "Hearthstone", "Overwatch"]}
+      - {label: "Game", name: "game", widget: "select", options: ["Counter Strike", "Rocket League 1v1", "Rocket League 3v3", "League of Legends", "Hearthstone", "Overwatch"]}
       - {label: "About", name: "body", widget: "markdown"}
       - label: "Gallery"
         name: "gallery"
