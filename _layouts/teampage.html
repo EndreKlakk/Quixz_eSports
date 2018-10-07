@@ -23,34 +23,6 @@
 
 <div class="teamMatches">
 
-  <div class="recentMatches">
-    <h1>Recent Matches</h1>
-
-    {% assign eventPost = site.matches | sort: 'date' %}
-    {% assign eventsNumber = 3 %}
-    {% assign printedEvents = 0 %}
-    {% assign sorted = site.matches | sort: 'matchdate' %}
-
-    {% for item in sorted %}
-      {% assign curDate = site.time | date: '%Y-%m-%d' %}
-      {% assign postStartDate = item.matchdate | date: '%Y-%m-%d' %}
-      {% if postStartDate <= curDate and printedEvents < eventsNumber and item.game == page.game %}
-          {% assign printedEvents = printedEvents | plus: 1 %}
-      <div class="match_body">
-          <h1>{{ item.matchdate | date: '%B %d, %Y' }}</h1>
-          <img src="../assets/image/logo/logo_500.png" alt="Quixz eSports logo">
-            <h2>{{ item.score.quixzScore }}</h2>
-            <div style="margin: auto">
-              <h3>VS</h3>
-              <a target="_blank" href="{{ item.matchlink }}" style="color: #F8B52A; text-decoration: none"><h3 class="matchButton">{{ item.matchType }}</h3></a>
-            </div>
-            <h2>{{ item.score.opponentScore }}</h2>
-          <img src="{{ item.image }}" alt="Logo of opposing team"></img>
-      </div>
-    {% endif %}
-  {% endfor %}
-  </div>
-
   <div class="upcomingMatches">
     <h1>Upcoming Matches</h1>
 
@@ -79,6 +51,34 @@
 
   {% endif %}
 {% endfor %}
+  </div>
+
+  <div class="recentMatches">
+    <h1>Recent Matches</h1>
+
+    {% assign eventPost = site.matches | sort: 'date' %}
+    {% assign eventsNumber = 3 %}
+    {% assign printedEvents = 0 %}
+    {% assign sorted = site.matches | sort: 'matchdate' %}
+
+    {% for item in sorted %}
+      {% assign curDate = site.time | date: '%Y-%m-%d' %}
+      {% assign postStartDate = item.matchdate | date: '%Y-%m-%d' %}
+      {% if postStartDate <= curDate and printedEvents < eventsNumber and item.game == page.game %}
+          {% assign printedEvents = printedEvents | plus: 1 %}
+      <div class="match_body">
+          <h1>{{ item.matchdate | date: '%B %d, %Y' }}</h1>
+          <img src="../assets/image/logo/logo_500.png" alt="Quixz eSports logo">
+            <h2>{{ item.score.quixzScore }}</h2>
+            <div style="margin: auto">
+              <h4>VS</h4>
+              <a target="_blank" href="{{ item.matchlink }}" style="color: #F8B52A; text-decoration: none"><h3 class="matchButton">{{ item.matchType }}</h3></a>
+            </div>
+            <h2>{{ item.score.opponentScore }}</h2>
+          <img src="{{ item.image }}" alt="Logo of opposing team"></img>
+      </div>
+    {% endif %}
+  {% endfor %}
   </div>
 
 </div>
@@ -319,8 +319,9 @@ body {
   margin: auto;
 }
 
-.match_body h6 {
+.match_body h4 {
   margin-bottom: .5rem;
+  font-size: 1.1rem
 }
 
 .matchButton {
