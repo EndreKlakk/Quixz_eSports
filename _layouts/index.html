@@ -190,9 +190,13 @@
 .matchButton:hover {
   background-color: #F8B52A;
   color: #FFF;
-  transition: all ease-in-out 150ms
+  transition: 150ms;
 }
 
+ .matchButton:not(hover) {
+   transition: 150ms;
+}
+  
 .teams {
   background-color: #2B63AF;
   display: grid;
@@ -201,6 +205,15 @@
   grid-template-rows: 5rem 5rem 5rem;
   grid-gap: .5rem;
   text-align: center;
+}
+  
+.teams:hover {
+  transition: 150ms;
+  filter: opacity(25%);
+}
+  
+.teams:not(hover) {
+  transition: 150ms;
 }
 
 .teams h1 {
