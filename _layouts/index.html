@@ -48,6 +48,21 @@
   </div>
 </div>
 
+<div class="teams">
+
+  <h1>Our Teams</h1>
+
+{% for team in site.teams %}
+
+<a class="team" href="../{{ team.permalink }}" style="background-image: url({{ team.pageDesign.bgImage }}); background-size: cover; background-position: center">
+
+    <h1>{{ team.game }}</h1>
+
+</a>
+{% endfor %}
+
+</div>
+
 <div class="teamMatches">
 
   <div class="upcomingMatches">
@@ -112,21 +127,6 @@
 
 </div>
 
-  <div class="teams">
-
-    <h1>Our Teams</h1>
-
-  {% for team in site.teams %}
-
-  <a class="team" href="../{{ team.permalink }}" style="background-image: url({{ team.pageDesign.bgImage }}); background-size: cover; background-position: center">
-
-      <h1>{{ team.game }}</h1>
-
-  </a>
-  {% endfor %}
-
-  </div>
-
 {% include footer.html %}
 
 <style>
@@ -138,6 +138,8 @@
   width: 70%;
   padding: 2rem 15% 3rem 15%;
   background-image: url(/assets/image/backgrounds/matches.png);
+  background-size: cover;
+  background-position: center
 }
 
 .recentMatches, .upcomingMatches {
@@ -192,7 +194,7 @@
 }
 
 .teams {
-  background-color: #F8B52A;
+  background-color: #2B63AF;
   display: grid;
   padding: 0 15% 2rem 15%;
   grid-template-columns: 1fr 1fr 1fr;
@@ -208,7 +210,6 @@
 
 .team {
   width: 100%;
-  background-color: #2B63AF;
   color: #FFF;
   text-decoration: none;
   grid-column: span 1;
